@@ -1,0 +1,18 @@
+{
+  "name": "slidetester",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node scripts/check-project.mjs",
+    "audit:figma-script": "node src/audit/build-figma-index-script.mjs",
+    "parse:pptx": "node src/pptx/parse-pptx.mjs",
+    "classify": "node src/classify-slides.mjs",
+    "patterns": "node src/audit/build-pattern-library.mjs",
+    "figma:pilot-script": "node src/figma/print-create-pilot-script.mjs"
+  },
+  "dependencies": {
+    "jszip": "^3.10.1",
+    "fast-xml-parser": "^4.5.0"
+  }
+}
