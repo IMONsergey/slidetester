@@ -1,0 +1,133 @@
+{
+  "generatedAt": "2026-05-23T07:51:46.127Z",
+  "generatedFrom": {
+    "sourceFigmaFileKey": "735drrzVTmf4AhQJwQe6vX",
+    "sourceFigmaPageId": "0:1",
+    "notes": [
+      "Built from direct compact Figma MCP inspection plus master prompt guidance.",
+      "Entries marked needs_more_mcp_reference should receive deeper targeted MCP follow-up before final production."
+    ]
+  },
+  "pilotSlides": [
+    {
+      "slideNumber": 1,
+      "slideTitle": "Таск менеджер сотрудника магазина",
+      "patternId": "hero_product_initiative_cover",
+      "primaryReferenceFrameId": "25:6981",
+      "primaryReferenceFrameName": "1",
+      "sourcePatternFrameId": "25:6981",
+      "sourcePatternFrameName": "1",
+      "sourcePatternId": "hero_cover_glow",
+      "whatIsBorrowed": [
+        "central hero title composition",
+        "black base and horizon glow",
+        "small uppercase eyebrow",
+        "controlled secondary line",
+        "cinematic opening mood"
+      ],
+      "visualFidelityScore": 4.8,
+      "referenceStatus": "ready"
+    },
+    {
+      "slideNumber": 2,
+      "slideTitle": "Поиск и реализация кардинальных изменений - правильный путь оптимизации операционных расходов",
+      "patternId": "problem_friction_map",
+      "primaryReferenceFrameId": "25:10434",
+      "primaryReferenceFrameName": "4609",
+      "secondaryReferenceFrameId": "25:7247",
+      "secondaryReferenceFrameName": "6",
+      "tertiaryReferenceFrameId": "25:11194",
+      "tertiaryReferenceFrameName": "4625",
+      "sourcePatternFrameId": "25:10434",
+      "sourcePatternFrameName": "4609",
+      "sourcePatternId": "operating_model_architecture",
+      "whatIsBorrowed": [
+        "numbered system-breakdown logic from 4609",
+        "dark glass panel density from 6",
+        "priority framing from 4625"
+      ],
+      "visualFidelityScore": 4.1,
+      "referenceStatus": "needs_more_mcp_reference"
+    },
+    {
+      "slideNumber": 3,
+      "slideTitle": "Поиск и реализация кардинальных изменений - правильный путь оптимизации операционных расходов",
+      "patternId": "target_state_outcome_pillars",
+      "primaryReferenceFrameId": "25:10717",
+      "primaryReferenceFrameName": "4615",
+      "secondaryReferenceFrameId": "25:8560",
+      "secondaryReferenceFrameName": "4585",
+      "sourcePatternFrameId": "25:10717",
+      "sourcePatternFrameName": "4615",
+      "sourcePatternId": "three_pillar_outcome_architecture",
+      "whatIsBorrowed": [
+        "three-pillar strategic card rhythm",
+        "balanced spacing and hierarchy",
+        "restrained accent linework"
+      ],
+      "visualFidelityScore": 4.4,
+      "referenceStatus": "ready"
+    },
+    {
+      "slideNumber": 4,
+      "slideTitle": "Возможное решение: Автоматизированный менеджер заданий: Повышение производительности команды магазина за счет назначения самых приоритетных задач в каждый момент времени, покрытие всех процессов цифровым следом, внедрение сдельной оплаты труда",
+      "patternId": "solution_engine_operating_loop",
+      "primaryReferenceFrameId": "25:10876",
+      "primaryReferenceFrameName": "4618",
+      "secondaryReferenceFrameId": "25:10479",
+      "secondaryReferenceFrameName": "4610",
+      "tertiaryReferenceFrameId": "25:11061",
+      "tertiaryReferenceFrameName": "4622",
+      "sourcePatternFrameId": "25:10876",
+      "sourcePatternFrameName": "4618",
+      "sourcePatternId": "operating_model_architecture",
+      "whatIsBorrowed": [
+        "process-stage sequencing from 4618",
+        "role card semantics from 4610",
+        "priority framing from 4622"
+      ],
+      "visualFidelityScore": 4.2,
+      "referenceStatus": "needs_more_mcp_reference"
+    },
+    {
+      "slideNumber": 5,
+      "slideTitle": "Предполагаемый эффект",
+      "patternId": "business_effect_metric_cards",
+      "primaryReferenceFrameId": "25:7247",
+      "primaryReferenceFrameName": "6",
+      "secondaryReferenceFrameId": "25:10355",
+      "secondaryReferenceFrameName": "4608",
+      "sourcePatternFrameId": "25:7247",
+      "sourcePatternFrameName": "6",
+      "sourcePatternId": "strategy_metric_strip",
+      "whatIsBorrowed": [
+        "large-left/smaller-right metric zone logic",
+        "executive chart-card treatment",
+        "footnote and commentary hierarchy"
+      ],
+      "visualFidelityScore": 4.5,
+      "referenceStatus": "ready"
+    },
+    {
+      "slideNumber": 6,
+      "slideTitle": "Сроки",
+      "patternId": "pilot_to_scale_roadmap",
+      "primaryReferenceFrameId": "25:10664",
+      "primaryReferenceFrameName": "4614",
+      "secondaryReferenceFrameId": "25:11061",
+      "secondaryReferenceFrameName": "4622",
+      "tertiaryReferenceFrameId": "25:8501",
+      "tertiaryReferenceFrameName": "4584",
+      "sourcePatternFrameId": "25:10664",
+      "sourcePatternFrameName": "4614",
+      "sourcePatternId": "evolution_roadmap",
+      "whatIsBorrowed": [
+        "year-anchored evolution line from 4614",
+        "priority rollout framing from 4622",
+        "section opener restraint from 4584"
+      ],
+      "visualFidelityScore": 4,
+      "referenceStatus": "needs_more_mcp_reference"
+    }
+  ]
+}

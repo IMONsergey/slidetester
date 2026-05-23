@@ -1,0 +1,220 @@
+{
+  "generatedAt": "2026-05-23T07:51:46.125Z",
+  "generatedFrom": {
+    "slidesJson": "output/slides.json",
+    "designRulePriority": "DESIGN_FIDELITY_ADDENDUM.md > MASTER_CODEX_PROMPT.md > docs/*",
+    "directFigmaMcpAvailable": true,
+    "auditArchivePresent": false,
+    "designFidelityArchivePresent": false
+  },
+  "directMcpAuditFrames": {
+    "25:6981": {
+      "name": "1",
+      "role": "cover / hero title",
+      "observed": [
+        "black base",
+        "red/orange horizon glow",
+        "large central title",
+        "top small uppercase line",
+        "bottom mark logic"
+      ]
+    },
+    "25:7247": {
+      "name": "6",
+      "role": "dense executive analytics / chart slide",
+      "observed": [
+        "top-left title",
+        "large glass chart panel left",
+        "secondary red/dark chart panel right",
+        "footnote bottom-left",
+        "dense but controlled information hierarchy"
+      ]
+    },
+    "25:10434": {
+      "name": "4609",
+      "role": "structured architecture / numbered strategic system slide",
+      "observed": [
+        "numbered story blocks",
+        "dark card clusters",
+        "strong title",
+        "executive narrative with semantic callouts"
+      ]
+    },
+    "25:10717": {
+      "name": "4615",
+      "role": "three-pillar strategic foundation slide",
+      "observed": [
+        "three-column logic",
+        "large section title",
+        "clean supporting statements",
+        "balanced white/red accent usage"
+      ]
+    },
+    "25:10876": {
+      "name": "4618",
+      "role": "end-to-end operating journey / process architecture slide",
+      "observed": [
+        "longitudinal process flow",
+        "platform/system storyline",
+        "modular stages",
+        "dense operational annotations"
+      ]
+    },
+    "25:10355": {
+      "name": "4608",
+      "role": "strategy metrics overview slide",
+      "observed": [
+        "metric-led hierarchy",
+        "executive dashboard density",
+        "top-row year comparison"
+      ]
+    },
+    "25:10664": {
+      "name": "4614",
+      "role": "evolution / maturity roadmap slide",
+      "observed": [
+        "year anchor",
+        "horizontal maturity progression",
+        "phase cards with concise descriptions"
+      ]
+    },
+    "25:11061": {
+      "name": "4622",
+      "role": "priorities / rollout agenda slide",
+      "observed": [
+        "year-specific priorities",
+        "modular agenda blocks",
+        "operational rollout framing"
+      ]
+    },
+    "25:10479": {
+      "name": "4610",
+      "role": "role model / operating role card slide",
+      "observed": [
+        "central role framing",
+        "supporting cards",
+        "dark card stack"
+      ]
+    },
+    "25:8501": {
+      "name": "4584",
+      "role": "section cover / annual plans opener",
+      "observed": [
+        "minimal section opener",
+        "year anchor",
+        "spacious composition"
+      ]
+    }
+  },
+  "patterns": [
+    {
+      "patternId": "hero_cover_glow",
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "sourceFrameNames": [
+        "1"
+      ],
+      "visualRole": "cover / hero title",
+      "composition": "central large title, black background, red/orange horizon glow, top small uppercase label, bottom mark logic",
+      "reuseFor": [
+        "cover",
+        "initiative title",
+        "section opening"
+      ]
+    },
+    {
+      "patternId": "dense_market_chart",
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "sourceFrameNames": [
+        "6"
+      ],
+      "visualRole": "dense executive analytics / chart slide",
+      "composition": "large chart panel left, smaller chart panel right, top-left title, bottom-left footnote, dark glass cards, red/orange emphasis",
+      "reuseFor": [
+        "business metrics",
+        "market dynamics",
+        "multi-series comparison",
+        "effect proof"
+      ]
+    },
+    {
+      "patternId": "three_pillar_outcome_architecture",
+      "sourceFrameIds": [
+        "25:10717",
+        "25:8560"
+      ],
+      "sourceFrameNames": [
+        "4615",
+        "4585"
+      ],
+      "visualRole": "three-pillar strategic outcome slide",
+      "composition": "strong title followed by three controlled content pillars with disciplined spacing and restrained accent logic",
+      "reuseFor": [
+        "target state",
+        "strategic pillars",
+        "future-state proof"
+      ]
+    },
+    {
+      "patternId": "operating_model_architecture",
+      "sourceFrameIds": [
+        "25:10434",
+        "25:10876",
+        "25:10479"
+      ],
+      "sourceFrameNames": [
+        "4609",
+        "4618",
+        "4610"
+      ],
+      "visualRole": "operating model / process engine / structured system slide",
+      "composition": "numbered or staged operating system with dark panels, semantic red accents, and executive narrative blocks",
+      "reuseFor": [
+        "solution engine",
+        "process loop",
+        "capability architecture"
+      ]
+    },
+    {
+      "patternId": "strategy_metric_strip",
+      "sourceFrameIds": [
+        "25:7247",
+        "25:10355"
+      ],
+      "sourceFrameNames": [
+        "6",
+        "4608"
+      ],
+      "visualRole": "metric-heavy strategy effect slide",
+      "composition": "asymmetric metric treatment, large numerical focus, supporting commentary, glass panels",
+      "reuseFor": [
+        "KPI effect",
+        "business impact",
+        "value proof"
+      ]
+    },
+    {
+      "patternId": "evolution_roadmap",
+      "sourceFrameIds": [
+        "25:10664",
+        "25:11061",
+        "25:8501"
+      ],
+      "sourceFrameNames": [
+        "4614",
+        "4622",
+        "4584"
+      ],
+      "visualRole": "roadmap / year-based evolution slide",
+      "composition": "clear annual anchors, phased progression, strong narrative line from pilot to scale",
+      "reuseFor": [
+        "roadmap",
+        "timeline",
+        "scale plan"
+      ]
+    }
+  ]
+}
