@@ -1,0 +1,1529 @@
+{
+  "generatedAt": "2026-05-23T10:36:31.890Z",
+  "deck": {
+    "name": "Эксплуатация и ИТ — Годовой отчёт 2025",
+    "targetFigmaFileKey": "735drrzVTmf4AhQJwQe6vX",
+    "slideSize": {
+      "width": 1920,
+      "height": 1080
+    },
+    "sourcePptx": "input/current-draft.pptx"
+  },
+  "slides": [
+    {
+      "name": "CURRENT / 01 / Cover",
+      "role": "cover",
+      "productionMode": "clean-clone-remove-content-rebuild",
+      "sourcePptxTitle": "Код успеха: Годовой отчёт 2025",
+      "content": {
+        "title": "Код успеха: Годовой отчёт 2025",
+        "subtitle": "12 месяцев надежности и сервиса",
+        "department": "Департамент Эксплуатации и информационной поддержки",
+        "speaker": "Евгений Козлов"
+      },
+      "styleRefs": [
+        {
+          "frameId": "25:6981",
+          "frameName": "1",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:6981 best matches the cover role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:8357",
+          "frameName": "5",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:8357 best matches the cover role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:8501",
+          "frameName": "4584",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:8501 best matches the cover role without requiring blind inheritance."
+        }
+      ],
+      "assetRefs": [
+        {
+          "assetId": "cover-background-photo",
+          "assetType": "background",
+          "sourceFrameId": "25:6981",
+          "reason": "Executive photo cover backdrop"
+        },
+        {
+          "assetId": "cover-brand-mark",
+          "assetType": "logo",
+          "sourceFrameId": "25:6981",
+          "reason": "Bottom brand mark / footer lockup"
+        },
+        {
+          "assetId": "analytics-red-glow",
+          "assetType": "glow",
+          "sourceFrameId": "25:7247",
+          "reason": "Ambient red/orange stage glow"
+        }
+      ],
+      "elements": [
+        {
+          "id": "cover-bg",
+          "type": "asset-ref",
+          "assetId": "cover-background-photo",
+          "x": 0,
+          "y": 0,
+          "width": 1920,
+          "height": 1080,
+          "mode": "direct-safe",
+          "opacity": 1
+        },
+        {
+          "id": "cover-logo",
+          "type": "asset-ref",
+          "assetId": "cover-brand-mark",
+          "x": 656,
+          "y": 896,
+          "width": 607,
+          "height": 63,
+          "mode": "direct-safe",
+          "opacity": 1
+        },
+        {
+          "id": "cover-subtitle",
+          "type": "text",
+          "text": "12 месяцев надежности и сервиса",
+          "tokenId": "typography.cover.eyebrow.size",
+          "x": 650,
+          "y": 130,
+          "width": 621,
+          "height": 104,
+          "align": "CENTER",
+          "colorTokenId": "color.text.secondary"
+        },
+        {
+          "id": "cover-title",
+          "type": "text",
+          "text": "Код успеха: Годовой отчёт 2025",
+          "tokenId": "typography.hero.title.size",
+          "x": 212,
+          "y": 485,
+          "width": 1497,
+          "height": 110,
+          "align": "CENTER",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "cover-department",
+          "type": "text",
+          "text": "Департамент Эксплуатации и информационной поддержки",
+          "tokenId": "typography.card.title.size",
+          "x": 420,
+          "y": 640,
+          "width": 1080,
+          "height": 48,
+          "align": "CENTER",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "cover-speaker",
+          "type": "text",
+          "text": "Евгений Козлов",
+          "tokenId": "typography.cover.speaker.size",
+          "x": 799,
+          "y": 727,
+          "width": 323,
+          "height": 37,
+          "align": "CENTER",
+          "colorTokenId": "color.text.secondary"
+        }
+      ],
+      "forbiddenContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content",
+        "old speaker names",
+        "old cover title"
+      ],
+      "qaExpectations": [
+        "Use X5 Sans only.",
+        "Do not inherit irrelevant source text.",
+        "Preserve source-deck hierarchy and spacing logic.",
+        "Cover must feel native to source frame 25:6981."
+      ]
+    },
+    {
+      "name": "CURRENT / 02 / Year In Numbers",
+      "role": "numeric-overview",
+      "productionMode": "hybrid-source-composition",
+      "sourcePptxTitle": "2025 год .Взгляд в цифрах .",
+      "content": {
+        "title": "2025 год .Взгляд в цифрах .",
+        "macroZones": [
+          "Объемы",
+          "Сервис",
+          "Затраты"
+        ],
+        "metrics": {
+          "volumes": [
+            "+2.308 магазинов",
+            "14.187.724 м2"
+          ],
+          "service": [
+            "Сервис >98% при нормативе 95%",
+            "60.000 РЦ заявок",
+            "2.279.660 заявок магазинов"
+          ],
+          "costs": [
+            "283.800 руб. на магазин в месяц (+11%)",
+            "20.600 руб. материалы (-2%)",
+            "Электроэнергия РЦ / ТТ"
+          ]
+        },
+        "utility": [
+          "РЦ: 279.903.495 кВт / 1.705 млн руб.",
+          "ТТ: 3.830.662.623 кВт / 34.403 млн руб."
+        ]
+      },
+      "styleRefs": [
+        {
+          "frameId": "25:7044",
+          "frameName": "18",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:7044 best matches the numeric-overview role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:7544 best matches the numeric-overview role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10750",
+          "frameName": "4616",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:10750 best matches the numeric-overview role without requiring blind inheritance."
+        }
+      ],
+      "assetRefs": [
+        {
+          "assetId": "analytics-red-glow",
+          "assetType": "glow",
+          "sourceFrameId": "25:7247",
+          "reason": "Ambient red/orange stage glow"
+        },
+        {
+          "assetId": "analytics-right-chart-shell",
+          "assetType": "chart-shell",
+          "sourceFrameId": "25:7247",
+          "reason": "Secondary chart or callout panel shell"
+        },
+        {
+          "assetId": "analytics-left-chart-shell",
+          "assetType": "chart-shell",
+          "sourceFrameId": "25:7247",
+          "reason": "Primary left content panel shell"
+        },
+        {
+          "assetId": "analytics-line-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:7247",
+          "reason": "Accent analytic polyline family"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        }
+      ],
+      "elements": [
+        {
+          "id": "numbers-glow",
+          "type": "asset-ref",
+          "assetId": "analytics-red-glow",
+          "x": 90,
+          "y": 920,
+          "width": 1740,
+          "height": 620,
+          "mode": "style-reference",
+          "opacity": 0.85
+        },
+        {
+          "id": "numbers-title",
+          "type": "text",
+          "text": "2025 год .Взгляд в цифрах .",
+          "tokenId": "typography.slide.title.size",
+          "x": 60,
+          "y": 50,
+          "width": 1600,
+          "height": 80,
+          "align": "LEFT",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "numbers-volumes",
+          "type": "metric-card",
+          "title": "Объемы",
+          "value": "+2.308 / 14.187.724 м2",
+          "support": "Магазины и общая площадь",
+          "x": 60,
+          "y": 210,
+          "width": 560,
+          "height": 300,
+          "accent": "color.accent.red",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "numbers-service",
+          "type": "metric-card",
+          "title": "Сервис",
+          "value": "98%",
+          "support": "Норматив 95% + 60.000 / 2.279.660 заявок",
+          "x": 680,
+          "y": 210,
+          "width": 560,
+          "height": 300,
+          "accent": "color.accent.orange",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "numbers-costs",
+          "type": "metric-card",
+          "title": "Затраты",
+          "value": "283.800 руб.",
+          "support": "20.600 руб. материалы, энергия РЦ/ТТ",
+          "x": 1300,
+          "y": 210,
+          "width": 560,
+          "height": 300,
+          "accent": "color.accent.amber",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "numbers-utility-1",
+          "type": "text",
+          "text": "РЦ: 279.903.495 кВт / 1.705 млн руб.",
+          "tokenId": "typography.body.size",
+          "x": 60,
+          "y": 580,
+          "width": 860,
+          "height": 40,
+          "align": "LEFT",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "numbers-utility-2",
+          "type": "text",
+          "text": "ТТ: 3.830.662.623 кВт / 34.403 млн руб.",
+          "tokenId": "typography.body.size",
+          "x": 60,
+          "y": 630,
+          "width": 860,
+          "height": 40,
+          "align": "LEFT",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "numbers-foot",
+          "type": "text",
+          "text": "Годовой обзор должен остаться трёхзонным и самостоятельным без наследования старых легенд.",
+          "tokenId": "typography.footnote.size",
+          "x": 60,
+          "y": 972,
+          "width": 1080,
+          "height": 40,
+          "align": "LEFT",
+          "colorTokenId": "color.text.secondary"
+        }
+      ],
+      "forbiddenContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "qaExpectations": [
+        "Use X5 Sans only.",
+        "Do not inherit irrelevant source text.",
+        "Preserve source-deck hierarchy and spacing logic.",
+        "Three macro-zones must remain visually distinct."
+      ]
+    },
+    {
+      "name": "CURRENT / 03 / Achievements",
+      "role": "achievements",
+      "productionMode": "hybrid-source-composition",
+      "sourcePptxTitle": "Ключевые достижения 2025",
+      "content": {
+        "title": "Ключевые достижения 2025",
+        "subtitle": "Надёжность и Эффективность: стабильный сервис, оптимальные затраты",
+        "proofLine": "Бесперебойная работа систем/сервисов с учетом выполненной экономической эффективности",
+        "comparison": [
+          {
+            "focus": "2,39% затрат / 87.007 млрд руб.",
+            "result": "Рост тарифов 6% / эффективность 3,2 млрд руб."
+          },
+          {
+            "focus": "2,38% затрат / 84.655 млрд руб.",
+            "result": "Рост тарифов 14% / эффективность 3.906 млрд руб."
+          }
+        ],
+        "conclusions": [
+          "Оптимизировали затраты бюджета на 2.400 млн руб.",
+          "Лучше в % от выручки на 0,01 п.п.",
+          "Перевыполнили цель по эффективности на 706 млн руб."
+        ]
+      },
+      "styleRefs": [
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:7544 best matches the achievements role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10750",
+          "frameName": "4616",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:10750 best matches the achievements role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10966",
+          "frameName": "4620",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:10966 best matches the achievements role without requiring blind inheritance."
+        }
+      ],
+      "assetRefs": [
+        {
+          "assetId": "analytics-red-glow",
+          "assetType": "glow",
+          "sourceFrameId": "25:7247",
+          "reason": "Ambient red/orange stage glow"
+        },
+        {
+          "assetId": "analytics-line-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:7247",
+          "reason": "Accent analytic polyline family"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        },
+        {
+          "assetId": "result-grid-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7544",
+          "reason": "Matrix + stacked result card family"
+        },
+        {
+          "assetId": "architecture-board-shell",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10434",
+          "reason": "Multi-zone architecture board shell"
+        }
+      ],
+      "elements": [
+        {
+          "id": "achievements-shell",
+          "type": "asset-ref",
+          "assetId": "metric-card-shell-family",
+          "x": 60,
+          "y": 220,
+          "width": 1800,
+          "height": 740,
+          "mode": "style-reference",
+          "opacity": 1
+        },
+        {
+          "id": "achievements-title",
+          "type": "text",
+          "text": "Ключевые достижения 2025",
+          "tokenId": "typography.slide.title.size",
+          "x": 60,
+          "y": 50,
+          "width": 1500,
+          "height": 80,
+          "align": "LEFT",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "achievements-subtitle",
+          "type": "text",
+          "text": "Надёжность и Эффективность: стабильный сервис, оптимальные затраты",
+          "tokenId": "typography.body.size",
+          "x": 60,
+          "y": 118,
+          "width": 1680,
+          "height": 50,
+          "align": "LEFT",
+          "colorTokenId": "color.text.secondary"
+        },
+        {
+          "id": "achievements-left",
+          "type": "metric-card",
+          "title": "Фокус",
+          "value": "2,39% / 87.007 млрд",
+          "support": "Рост тарифов 6% / эффективность 3,2 млрд",
+          "x": 60,
+          "y": 230,
+          "width": 860,
+          "height": 300,
+          "accent": "color.accent.red",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "achievements-right",
+          "type": "metric-card",
+          "title": "Итог",
+          "value": "2,38% / 84.655 млрд",
+          "support": "Рост тарифов 14% / эффективность 3.906 млрд",
+          "x": 980,
+          "y": 230,
+          "width": 880,
+          "height": 300,
+          "accent": "color.accent.orange",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "achievements-conclusions",
+          "type": "pillar-grid",
+          "title": "Выводы",
+          "items": [
+            "Оптимизировали затраты бюджета на 2.400 млн руб.",
+            "Лучше в % от выручки на 0,01 п.п.",
+            "Перевыполнили цель по эффективности на 706 млн руб."
+          ],
+          "x": 60,
+          "y": 590,
+          "width": 1800,
+          "height": 260,
+          "columns": 3
+        }
+      ],
+      "forbiddenContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "qaExpectations": [
+        "Use X5 Sans only.",
+        "Do not inherit irrelevant source text.",
+        "Preserve source-deck hierarchy and spacing logic.",
+        "No old market chart data or legacy legends may survive on this slide."
+      ]
+    },
+    {
+      "name": "CURRENT / 04 / Execution Result",
+      "role": "efficiency-result",
+      "productionMode": "hybrid-source-composition",
+      "sourcePptxTitle": "Эффективность: Результат исполнения целей",
+      "content": {
+        "title": "Эффективность: Результат исполнения целей",
+        "summary": [
+          "Оптимизация и автоматизация процессов +3.867 млрд руб.",
+          "Проекты +0,39 млрд руб."
+        ],
+        "initiatives": [
+          "Переход на платформу WRS-2 в клининге",
+          "Чек-лист для КА на WRS",
+          "Dashboard Эксплуатации",
+          "Тестирование пяти роботов-уборщиков",
+          "Подключили 7.266 КМ и 5.081 ХП"
+        ],
+        "drivers": [
+          "Оптимизировали тарифы и стоимость обслуживания: 2.828 млн руб.",
+          "Заключили 1.409 прямых договоров (+17% к плану)",
+          "Пересобрали процесс заказа расходных материалов: -1.039 млн руб.",
+          "Оптимизировали потребление кВт/ч 2025 к 2024 на 4%"
+        ]
+      },
+      "styleRefs": [
+        {
+          "frameId": "25:10479",
+          "frameName": "4610",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:10479 best matches the efficiency-result role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10664",
+          "frameName": "4614",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:10664 best matches the efficiency-result role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10876",
+          "frameName": "4618",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:10876 best matches the efficiency-result role without requiring blind inheritance."
+        }
+      ],
+      "assetRefs": [
+        {
+          "assetId": "analytics-line-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:7247",
+          "reason": "Accent analytic polyline family"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        },
+        {
+          "assetId": "result-grid-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7544",
+          "reason": "Matrix + stacked result card family"
+        },
+        {
+          "assetId": "architecture-board-shell",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10434",
+          "reason": "Multi-zone architecture board shell"
+        },
+        {
+          "assetId": "process-rail-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:10876",
+          "reason": "Horizontal process / roadmap rail"
+        }
+      ],
+      "elements": [
+        {
+          "id": "efficiency-shell",
+          "type": "asset-ref",
+          "assetId": "architecture-board-shell",
+          "x": 60,
+          "y": 210,
+          "width": 1800,
+          "height": 760,
+          "mode": "style-reference",
+          "opacity": 1
+        },
+        {
+          "id": "efficiency-title",
+          "type": "text",
+          "text": "Эффективность: Результат исполнения целей",
+          "tokenId": "typography.slide.title.size",
+          "x": 60,
+          "y": 50,
+          "width": 1500,
+          "height": 80,
+          "align": "LEFT",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "efficiency-summary-1",
+          "type": "metric-card",
+          "title": "Оптимизация и автоматизация",
+          "value": "+3.867 млрд",
+          "support": "Основной контур экономического эффекта",
+          "x": 60,
+          "y": 220,
+          "width": 560,
+          "height": 220,
+          "accent": "color.accent.red",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "efficiency-summary-2",
+          "type": "metric-card",
+          "title": "Проекты",
+          "value": "+0,39 млрд",
+          "support": "Проектный вклад в результат",
+          "x": 650,
+          "y": 220,
+          "width": 420,
+          "height": 220,
+          "accent": "color.accent.orange",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "efficiency-initiatives",
+          "type": "bullet-list",
+          "title": "Инициативы",
+          "items": [
+            "Переход на платформу WRS-2 в клининге",
+            "Чек-лист для КА на WRS",
+            "Dashboard Эксплуатации",
+            "Тестирование пяти роботов-уборщиков",
+            "Подключили 7.266 КМ и 5.081 ХП"
+          ],
+          "x": 60,
+          "y": 490,
+          "width": 860,
+          "height": 360,
+          "columns": 1
+        },
+        {
+          "id": "efficiency-drivers",
+          "type": "bullet-list",
+          "title": "Операционные драйверы",
+          "items": [
+            "Оптимизировали тарифы и стоимость обслуживания: 2.828 млн руб.",
+            "Заключили 1.409 прямых договоров (+17% к плану)",
+            "Пересобрали процесс заказа расходных материалов: -1.039 млн руб.",
+            "Оптимизировали потребление кВт/ч 2025 к 2024 на 4%"
+          ],
+          "x": 980,
+          "y": 220,
+          "width": 880,
+          "height": 630,
+          "columns": 1
+        }
+      ],
+      "forbiddenContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "qaExpectations": [
+        "Use X5 Sans only.",
+        "Do not inherit irrelevant source text.",
+        "Preserve source-deck hierarchy and spacing logic.",
+        "The slide must read as one integrated execution board, not two unrelated cloned frames."
+      ]
+    },
+    {
+      "name": "CURRENT / 05 / Transformation",
+      "role": "transformation",
+      "productionMode": "creative-composition-from-primitives",
+      "sourcePptxTitle": "2026 год .Трансформация ______",
+      "content": {
+        "title": "2026 год .Трансформация ______",
+        "budget": "97.9 млрд руб.",
+        "challenge": "Выполнить 5 млрд эффективности и сократить затраты на 4 млрд для достижения цели компании.",
+        "methods": [
+          "Осознанный подход к операционным расходам",
+          "Экономим электроэнергию",
+          "Настраиваем графики уборки под себя",
+          "Разумно расходуем материалы для торговли и склада",
+          "Контролируем качество работы КА для минимизации будущих затрат"
+        ]
+      },
+      "styleRefs": [
+        {
+          "frameId": "25:8364",
+          "frameName": "13",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:8364 best matches the transformation role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:8501",
+          "frameName": "4584",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:8501 best matches the transformation role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:8560",
+          "frameName": "4585",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:8560 best matches the transformation role without requiring blind inheritance."
+        }
+      ],
+      "assetRefs": [
+        {
+          "assetId": "cover-background-photo",
+          "assetType": "background",
+          "sourceFrameId": "25:6981",
+          "reason": "Executive photo cover backdrop"
+        },
+        {
+          "assetId": "analytics-red-glow",
+          "assetType": "glow",
+          "sourceFrameId": "25:7247",
+          "reason": "Ambient red/orange stage glow"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        },
+        {
+          "assetId": "result-grid-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7544",
+          "reason": "Matrix + stacked result card family"
+        },
+        {
+          "assetId": "architecture-board-shell",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10434",
+          "reason": "Multi-zone architecture board shell"
+        }
+      ],
+      "elements": [
+        {
+          "id": "transformation-bg",
+          "type": "asset-ref",
+          "assetId": "analytics-red-glow",
+          "x": 100,
+          "y": 920,
+          "width": 1680,
+          "height": 600,
+          "mode": "style-reference",
+          "opacity": 0.7
+        },
+        {
+          "id": "transformation-title",
+          "type": "text",
+          "text": "2026 год .Трансформация ______",
+          "tokenId": "typography.slide.title.size",
+          "x": 60,
+          "y": 50,
+          "width": 1600,
+          "height": 80,
+          "align": "LEFT",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "transformation-budget",
+          "type": "metric-card",
+          "title": "Бюджет 2026",
+          "value": "97.9 млрд руб.",
+          "support": "Точка входа в год трансформации",
+          "x": 60,
+          "y": 210,
+          "width": 560,
+          "height": 260,
+          "accent": "color.accent.red",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "transformation-challenge",
+          "type": "text",
+          "text": "Выполнить 5 млрд эффективности и сократить затраты на 4 млрд для достижения цели компании.",
+          "tokenId": "typography.body.size",
+          "x": 700,
+          "y": 235,
+          "width": 1100,
+          "height": 120,
+          "align": "LEFT",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "transformation-methods",
+          "type": "bullet-list",
+          "title": "Как удерживаем баланс доходов и расходов",
+          "items": [
+            "Осознанный подход к операционным расходам",
+            "Экономим электроэнергию",
+            "Настраиваем графики уборки под себя",
+            "Разумно расходуем материалы для торговли и склада",
+            "Контролируем качество работы КА для минимизации будущих затрат"
+          ],
+          "x": 60,
+          "y": 540,
+          "width": 1500,
+          "height": 360,
+          "columns": 1
+        }
+      ],
+      "forbiddenContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "qaExpectations": [
+        "Use X5 Sans only.",
+        "Do not inherit irrelevant source text.",
+        "Preserve source-deck hierarchy and spacing logic.",
+        "Challenge framing must feel like an executive transition slide, not a generic bullet list."
+      ]
+    },
+    {
+      "name": "CURRENT / 06 / Roadmap",
+      "role": "roadmap",
+      "productionMode": "hybrid-source-composition",
+      "sourcePptxTitle": "2026 год Эффективность",
+      "content": {
+        "title": "2026 год Эффективность",
+        "actions": [
+          "Наращиваем долю прямых договоров до 64%",
+          "Внедряем систему энергоменеджмента",
+          "Раскатываем телеметрию КМ и ХП",
+          "Открываем новые возможности в работе с WRS",
+          "Дифференцируем сервис по локальным драйверам",
+          "Освобождаем пространство, перемещая неиспользуемое оборудование",
+          "Меняем устаревшие NCR на целевые кассы (8 тыс. шт.)",
+          "Пилот автоматизации приемки ИТ-работ",
+          "Проект по УМ: экономия 5% до конца года / 11.000 ТТ",
+          "Пилотирование нового оборудования для уборки магазинов"
+        ],
+        "q1Results": [
+          "План 452 млн руб.",
+          "Факт 1.017 млн руб.",
+          "Прогноз эффективности 3.727 млн руб."
+        ]
+      },
+      "styleRefs": [
+        {
+          "frameId": "25:10479",
+          "frameName": "4610",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:10479 best matches the roadmap role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10664",
+          "frameName": "4614",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:10664 best matches the roadmap role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10876",
+          "frameName": "4618",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:10876 best matches the roadmap role without requiring blind inheritance."
+        }
+      ],
+      "assetRefs": [
+        {
+          "assetId": "analytics-line-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:7247",
+          "reason": "Accent analytic polyline family"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        },
+        {
+          "assetId": "result-grid-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7544",
+          "reason": "Matrix + stacked result card family"
+        },
+        {
+          "assetId": "architecture-board-shell",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10434",
+          "reason": "Multi-zone architecture board shell"
+        },
+        {
+          "assetId": "process-rail-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:10876",
+          "reason": "Horizontal process / roadmap rail"
+        }
+      ],
+      "elements": [
+        {
+          "id": "roadmap-rail",
+          "type": "asset-ref",
+          "assetId": "process-rail-system",
+          "x": 60,
+          "y": 250,
+          "width": 1220,
+          "height": 620,
+          "mode": "style-reference",
+          "opacity": 1
+        },
+        {
+          "id": "roadmap-panel",
+          "type": "asset-ref",
+          "assetId": "analytics-right-chart-shell",
+          "x": 1310,
+          "y": 220,
+          "width": 550,
+          "height": 650,
+          "mode": "style-reference",
+          "opacity": 1
+        },
+        {
+          "id": "roadmap-title",
+          "type": "text",
+          "text": "2026 год Эффективность",
+          "tokenId": "typography.slide.title.size",
+          "x": 60,
+          "y": 50,
+          "width": 1500,
+          "height": 80,
+          "align": "LEFT",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "roadmap-actions",
+          "type": "bullet-list",
+          "title": "Портфель действий 2026",
+          "items": [
+            "Наращиваем долю прямых договоров до 64%",
+            "Внедряем систему энергоменеджмента",
+            "Раскатываем телеметрию КМ и ХП",
+            "Открываем новые возможности в работе с WRS",
+            "Дифференцируем сервис по локальным драйверам",
+            "Освобождаем пространство, перемещая неиспользуемое оборудование",
+            "Меняем устаревшие NCR на целевые кассы (8 тыс. шт.)",
+            "Пилот автоматизации приемки ИТ-работ",
+            "Проект по УМ: экономия 5% до конца года / 11.000 ТТ",
+            "Пилотирование нового оборудования для уборки магазинов"
+          ],
+          "x": 60,
+          "y": 220,
+          "width": 1180,
+          "height": 700,
+          "columns": 2
+        },
+        {
+          "id": "roadmap-q1",
+          "type": "metric-card",
+          "title": "Результаты 1Q 2026",
+          "value": "1.017 млн руб.",
+          "support": "План 452 млн руб. / прогноз 3.727 млн руб.",
+          "x": 1310,
+          "y": 280,
+          "width": 500,
+          "height": 300,
+          "accent": "color.accent.orange",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        }
+      ],
+      "forbiddenContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "qaExpectations": [
+        "Use X5 Sans only.",
+        "Do not inherit irrelevant source text.",
+        "Preserve source-deck hierarchy and spacing logic.",
+        "The Q1 tracker must read as proof of execution, not as inherited old analytics."
+      ]
+    },
+    {
+      "name": "CURRENT / 07 / Project Of Year",
+      "role": "project-of-year",
+      "productionMode": "hybrid-source-composition",
+      "sourcePptxTitle": "Проект года",
+      "content": {
+        "title": "Проект года",
+        "project": "Запущено производство воды СТМ Красная цена 5л.",
+        "capacities": [
+          "РЦ 5 Кузнецк — 40 515 бут/месяц",
+          "РЦ 5 Саратов — 96 824 бут/месяц",
+          "РЦ 5 Самара — 203 892 бут/месяц",
+          "РЦ ЗИМ — розлив max 1 800 000 бут/месяц"
+        ],
+        "productionTable": [
+          [
+            "Начало работ Цеха Апрель",
+            "22",
+            "14",
+            "1 680",
+            "38 500",
+            "1 680",
+            "44 197"
+          ],
+          [
+            "15",
+            "6 601",
+            "6 601"
+          ],
+          [
+            "16",
+            "6 300",
+            "6 500"
+          ],
+          [
+            "17",
+            "10 464",
+            "13 664"
+          ],
+          [
+            "18",
+            "13 455",
+            "15 752"
+          ]
+        ]
+      },
+      "styleRefs": [
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:7544 best matches the project-of-year role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:7009",
+          "frameName": "2",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:7009 best matches the project-of-year role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:7634",
+          "frameName": "14",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:7634 best matches the project-of-year role without requiring blind inheritance."
+        }
+      ],
+      "assetRefs": [
+        {
+          "assetId": "analytics-right-chart-shell",
+          "assetType": "chart-shell",
+          "sourceFrameId": "25:7247",
+          "reason": "Secondary chart or callout panel shell"
+        },
+        {
+          "assetId": "analytics-left-chart-shell",
+          "assetType": "chart-shell",
+          "sourceFrameId": "25:7247",
+          "reason": "Primary left content panel shell"
+        },
+        {
+          "assetId": "icons-library-index",
+          "assetType": "icon",
+          "sourceFrameId": "25:11279",
+          "reason": "Neutral icon source frame"
+        }
+      ],
+      "elements": [
+        {
+          "id": "project-shell",
+          "type": "asset-ref",
+          "assetId": "analytics-left-chart-shell",
+          "x": 60,
+          "y": 220,
+          "width": 1800,
+          "height": 740,
+          "mode": "style-reference",
+          "opacity": 1
+        },
+        {
+          "id": "project-title",
+          "type": "text",
+          "text": "Проект года",
+          "tokenId": "typography.slide.title.size",
+          "x": 60,
+          "y": 50,
+          "width": 1500,
+          "height": 80,
+          "align": "LEFT",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "project-subtitle",
+          "type": "text",
+          "text": "Запущено производство воды СТМ Красная цена 5л.",
+          "tokenId": "typography.body.size",
+          "x": 60,
+          "y": 120,
+          "width": 1400,
+          "height": 48,
+          "align": "LEFT",
+          "colorTokenId": "color.text.secondary"
+        },
+        {
+          "id": "project-kuznetsk",
+          "type": "metric-card",
+          "title": "РЦ 5 Кузнецк",
+          "value": "40 515 бут/мес.",
+          "support": "Локальная мощность",
+          "x": 60,
+          "y": 220,
+          "width": 400,
+          "height": 180,
+          "accent": "color.accent.red",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "project-saratov",
+          "type": "metric-card",
+          "title": "РЦ 5 Саратов",
+          "value": "96 824 бут/мес.",
+          "support": "Локальная мощность",
+          "x": 490,
+          "y": 220,
+          "width": 400,
+          "height": 180,
+          "accent": "color.accent.orange",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "project-samara",
+          "type": "metric-card",
+          "title": "РЦ 5 Самара",
+          "value": "203 892 бут/мес.",
+          "support": "Локальная мощность",
+          "x": 920,
+          "y": 220,
+          "width": 400,
+          "height": 180,
+          "accent": "color.accent.amber",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "project-zim",
+          "type": "metric-card",
+          "title": "РЦ ЗИМ",
+          "value": "1 800 000 бут/мес.",
+          "support": "Максимальная мощность розлива",
+          "x": 1350,
+          "y": 220,
+          "width": 510,
+          "height": 180,
+          "accent": "color.accent.red",
+          "titleTokenId": "typography.card.title.size",
+          "valueTokenId": "typography.metric.number.size"
+        },
+        {
+          "id": "project-table",
+          "type": "table",
+          "title": "План производства April-August",
+          "headers": [
+            "Месяц",
+            "Рабочих дней",
+            "Номер недели",
+            "План продаж кол-во (шт.)",
+            "Итого План",
+            "План розлива кол-во (шт.)",
+            "Итого Прогноз"
+          ],
+          "rows": [
+            [
+              "Начало работ Цеха Апрель",
+              "22",
+              "14",
+              "1 680",
+              "38 500",
+              "1 680",
+              "44 197"
+            ],
+            [
+              "15",
+              "6 601",
+              "6 601"
+            ],
+            [
+              "16",
+              "6 300",
+              "6 500"
+            ],
+            [
+              "17",
+              "10 464",
+              "13 664"
+            ],
+            [
+              "18",
+              "13 455",
+              "15 752"
+            ]
+          ],
+          "x": 60,
+          "y": 450,
+          "width": 1800,
+          "height": 430
+        }
+      ],
+      "forbiddenContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content",
+        "old market labels",
+        "irrelevant process copy"
+      ],
+      "qaExpectations": [
+        "Use X5 Sans only.",
+        "Do not inherit irrelevant source text.",
+        "Preserve source-deck hierarchy and spacing logic.",
+        "The production table must remain editable and free of any unrelated inherited notes."
+      ]
+    },
+    {
+      "name": "CURRENT / 08 / Strategy",
+      "role": "strategy",
+      "productionMode": "hybrid-source-composition",
+      "sourcePptxTitle": "Стратегия",
+      "content": {
+        "title": "Стратегия ДЭиИП",
+        "promise": "2026",
+        "principles": [
+          "Новые идеи и внедрение лучших практик",
+          "Партнерство",
+          "Техническое",
+          "превосходство",
+          "Лучшие",
+          "кадры",
+          "Лидерство",
+          "Оптимизация затрат",
+          "Устойчивый и качественный сервис",
+          "Фокус на результат",
+          "Органический рост"
+        ]
+      },
+      "styleRefs": [
+        {
+          "frameId": "25:8560",
+          "frameName": "4585",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:8560 best matches the strategy role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:9043",
+          "frameName": "4592",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:9043 best matches the strategy role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:9634",
+          "frameName": "23",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:9634 best matches the strategy role without requiring blind inheritance."
+        }
+      ],
+      "assetRefs": [
+        {
+          "assetId": "analytics-red-glow",
+          "assetType": "glow",
+          "sourceFrameId": "25:7247",
+          "reason": "Ambient red/orange stage glow"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        },
+        {
+          "assetId": "result-grid-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7544",
+          "reason": "Matrix + stacked result card family"
+        },
+        {
+          "assetId": "architecture-board-shell",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10434",
+          "reason": "Multi-zone architecture board shell"
+        },
+        {
+          "assetId": "three-pillar-card-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10717",
+          "reason": "Three-pillar statement cards"
+        }
+      ],
+      "elements": [
+        {
+          "id": "strategy-shell",
+          "type": "asset-ref",
+          "assetId": "three-pillar-card-family",
+          "x": 60,
+          "y": 250,
+          "width": 1800,
+          "height": 640,
+          "mode": "style-reference",
+          "opacity": 1
+        },
+        {
+          "id": "strategy-title",
+          "type": "text",
+          "text": "Стратегия ДЭиИП",
+          "tokenId": "typography.slide.title.size",
+          "x": 60,
+          "y": 50,
+          "width": 1500,
+          "height": 80,
+          "align": "LEFT",
+          "colorTokenId": "color.text.primary"
+        },
+        {
+          "id": "strategy-promise",
+          "type": "text",
+          "text": "2026",
+          "tokenId": "typography.body.size",
+          "x": 60,
+          "y": 120,
+          "width": 1400,
+          "height": 48,
+          "align": "LEFT",
+          "colorTokenId": "color.text.secondary"
+        },
+        {
+          "id": "strategy-principles",
+          "type": "pillar-grid",
+          "title": "Фокус 2026",
+          "items": [
+            "Новые идеи и внедрение лучших практик",
+            "Партнерство",
+            "Техническое",
+            "превосходство",
+            "Лучшие",
+            "кадры",
+            "Лидерство",
+            "Оптимизация затрат",
+            "Устойчивый и качественный сервис",
+            "Фокус на результат",
+            "Органический рост"
+          ],
+          "x": 60,
+          "y": 260,
+          "width": 1800,
+          "height": 560,
+          "columns": 4
+        }
+      ],
+      "forbiddenContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "qaExpectations": [
+        "Use X5 Sans only.",
+        "Do not inherit irrelevant source text.",
+        "Preserve source-deck hierarchy and spacing logic.",
+        "Principles should read as native strategy pillars, not generic cards."
+      ]
+    }
+  ]
+}

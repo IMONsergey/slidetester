@@ -2,7 +2,7 @@
 
 - Slide size: 1920×1080
 - Base: black / near-black
-- Typography: X5 Sans, fallback Inter
+- Typography: X5 Sans only for production output
 - Accent: red/orange glow and gradients
 - Layout: manual coordinate-based top-level composition
 - Cards: dark glass, rounded corners, subtle borders

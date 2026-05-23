@@ -1,0 +1,540 @@
+{
+  "generatedAt": "2026-05-23T10:36:31.884Z",
+  "sourceFileKey": "735drrzVTmf4AhQJwQe6vX",
+  "notes": [
+    "Exact tokens come from the inspected cover and analytics source frames.",
+    "Layout families without direct geometry are marked as inferred with lower confidence."
+  ],
+  "typography": [
+    {
+      "tokenId": "typography.family.primary",
+      "value": {
+        "family": "X5 Sans",
+        "styles": [
+          "Light",
+          "Regular",
+          "Medium",
+          "Bold"
+        ]
+      },
+      "sourceFrameIds": [
+        "25:6981",
+        "25:7247"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Primary family for all generated slides."
+    },
+    {
+      "tokenId": "typography.hero.title.size",
+      "value": 120,
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Use for annual-report hero covers only."
+    },
+    {
+      "tokenId": "typography.hero.title.lineHeight",
+      "value": 100,
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Cover hero title line height."
+    },
+    {
+      "tokenId": "typography.hero.title.letterSpacing",
+      "value": -4,
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Tight hero tracking used on executive covers."
+    },
+    {
+      "tokenId": "typography.cover.eyebrow.size",
+      "value": 43,
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Small upper-context cover line."
+    },
+    {
+      "tokenId": "typography.cover.speaker.size",
+      "value": 31,
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Speaker / author caption size."
+    },
+    {
+      "tokenId": "typography.slide.title.size",
+      "value": 46,
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Default left-aligned section title size."
+    },
+    {
+      "tokenId": "typography.slide.title.lineHeight",
+      "value": 55,
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Default section title line height."
+    },
+    {
+      "tokenId": "typography.card.title.size",
+      "value": 32,
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Card and panel title size."
+    },
+    {
+      "tokenId": "typography.metric.number.size",
+      "value": 27,
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Metric figure size for chart or KPI callouts."
+    },
+    {
+      "tokenId": "typography.body.size",
+      "value": 26,
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.66,
+      "usageNotes": "Inferred body size from analytics annotation labels."
+    },
+    {
+      "tokenId": "typography.footnote.size",
+      "value": 26,
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.61,
+      "usageNotes": "Use for muted notes and low-priority qualifiers."
+    }
+  ],
+  "grid": [
+    {
+      "tokenId": "grid.slide.size",
+      "value": {
+        "width": 1920,
+        "height": 1080
+      },
+      "sourceFrameIds": [
+        "25:6981",
+        "25:7247"
+      ],
+      "confidence": 1,
+      "usageNotes": "Canonical deck frame size."
+    },
+    {
+      "tokenId": "grid.cover.title.box",
+      "value": {
+        "x": 212,
+        "y": 485,
+        "width": 1497,
+        "height": 102
+      },
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Primary cover title placement."
+    },
+    {
+      "tokenId": "grid.cover.eyebrow.box",
+      "value": {
+        "x": 650,
+        "y": 130,
+        "width": 621,
+        "height": 104
+      },
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Cover eyebrow placement."
+    },
+    {
+      "tokenId": "grid.cover.speaker.box",
+      "value": {
+        "x": 799,
+        "y": 727,
+        "width": 323,
+        "height": 37
+      },
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Speaker line placement on cover slides."
+    },
+    {
+      "tokenId": "grid.analytics.title.box",
+      "value": {
+        "x": 60,
+        "y": 50,
+        "width": 1595,
+        "height": 55
+      },
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Main business-slide title area."
+    },
+    {
+      "tokenId": "grid.analytics.left.panel",
+      "value": {
+        "x": 60,
+        "y": 201,
+        "width": 1194,
+        "height": 735
+      },
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.97,
+      "usageNotes": "Large left content zone."
+    },
+    {
+      "tokenId": "grid.analytics.right.panel",
+      "value": {
+        "x": 1273,
+        "y": 201,
+        "width": 587,
+        "height": 735
+      },
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.97,
+      "usageNotes": "Secondary right content zone."
+    },
+    {
+      "tokenId": "grid.layout.three-card",
+      "value": {
+        "x": 60,
+        "y": 252,
+        "cardWidth": 560,
+        "cardHeight": 300,
+        "gap": 50
+      },
+      "sourceFrameIds": [
+        "25:7044"
+      ],
+      "confidence": 0.58,
+      "usageNotes": "Inferred from the metrics-summary family."
+    },
+    {
+      "tokenId": "grid.layout.four-card",
+      "value": {
+        "x": 60,
+        "y": 252,
+        "cardWidth": 412,
+        "cardHeight": 268,
+        "gap": 32
+      },
+      "sourceFrameIds": [
+        "25:11194",
+        "25:7544"
+      ],
+      "confidence": 0.53,
+      "usageNotes": "Inferred for dense result grids."
+    },
+    {
+      "tokenId": "grid.layout.five-card",
+      "value": {
+        "x": 60,
+        "y": 228,
+        "cardWidth": 336,
+        "cardHeight": 210,
+        "gap": 24
+      },
+      "sourceFrameIds": [
+        "25:9043",
+        "25:10717"
+      ],
+      "confidence": 0.47,
+      "usageNotes": "Inferred for principle or driver rails."
+    },
+    {
+      "tokenId": "grid.footer.zone",
+      "value": {
+        "x": 60,
+        "y": 972,
+        "width": 550,
+        "height": 48
+      },
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.44,
+      "usageNotes": "Reserved muted note zone."
+    },
+    {
+      "tokenId": "grid.logo.zone",
+      "value": {
+        "x": 656,
+        "y": 897,
+        "width": 607,
+        "height": 63
+      },
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.92,
+      "usageNotes": "Brand mark zone borrowed from the cover family."
+    }
+  ],
+  "colors": [
+    {
+      "tokenId": "color.background.cover",
+      "value": "#000000",
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 1,
+      "usageNotes": "Pure black cover background."
+    },
+    {
+      "tokenId": "color.background.analytics",
+      "value": "#0d0d0f",
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 1,
+      "usageNotes": "Primary near-black working background."
+    },
+    {
+      "tokenId": "color.text.primary",
+      "value": "#ffffff",
+      "sourceFrameIds": [
+        "25:6981",
+        "25:7247"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Main text color."
+    },
+    {
+      "tokenId": "color.text.secondary",
+      "value": "#bdbdbd",
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Muted text for speaker lines and annotations."
+    },
+    {
+      "tokenId": "color.accent.red",
+      "value": "#eb2417",
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.98,
+      "usageNotes": "Core X5 red accent from analytics lines."
+    },
+    {
+      "tokenId": "color.accent.orange",
+      "value": "#eb5c17",
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.96,
+      "usageNotes": "Supporting orange accent."
+    },
+    {
+      "tokenId": "color.accent.amber",
+      "value": "#f7a610",
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.93,
+      "usageNotes": "Warm highlight used in multicolor analytical strokes."
+    },
+    {
+      "tokenId": "color.card.fill.dark-glass",
+      "value": "rgba(255,255,255,0.055)",
+      "sourceFrameIds": [
+        "25:7044",
+        "25:7544"
+      ],
+      "confidence": 0.57,
+      "usageNotes": "Inferred dark-glass card fill from the deck family."
+    },
+    {
+      "tokenId": "color.card.border.soft",
+      "value": "rgba(255,255,255,0.12)",
+      "sourceFrameIds": [
+        "25:7044",
+        "25:7544"
+      ],
+      "confidence": 0.55,
+      "usageNotes": "Inferred thin card border for glass shells."
+    },
+    {
+      "tokenId": "color.gradient.red-horizon",
+      "value": {
+        "fill": "#d60d0d",
+        "opacity": 0.37
+      },
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.98,
+      "usageNotes": "Primary red/orange glow source."
+    }
+  ],
+  "shapes": [
+    {
+      "tokenId": "shape.card.radius.lg",
+      "value": 32,
+      "sourceFrameIds": [
+        "25:7044",
+        "25:11194"
+      ],
+      "confidence": 0.52,
+      "usageNotes": "Inferred large card radius used across metric slides."
+    },
+    {
+      "tokenId": "shape.card.radius.md",
+      "value": 24,
+      "sourceFrameIds": [
+        "25:7544",
+        "25:10434"
+      ],
+      "confidence": 0.49,
+      "usageNotes": "Inferred medium card radius for dense boards."
+    },
+    {
+      "tokenId": "shape.pill.radius",
+      "value": 999,
+      "sourceFrameIds": [
+        "25:10717"
+      ],
+      "confidence": 0.41,
+      "usageNotes": "Pill labels should stay fully rounded."
+    },
+    {
+      "tokenId": "shape.glow.red.ellipse",
+      "value": {
+        "width": 1726,
+        "height": 612,
+        "blurRadius": 233
+      },
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.98,
+      "usageNotes": "Reuse as a bottom-stage ambient glow."
+    },
+    {
+      "tokenId": "shape.line.system.analytics",
+      "value": {
+        "strokeWidth": 2,
+        "family": "accent polylines + neutral baselines"
+      },
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.86,
+      "usageNotes": "For comparison and process overlays."
+    },
+    {
+      "tokenId": "shape.chart.panel.shell",
+      "value": {
+        "left": {
+          "x": 60,
+          "y": 201,
+          "width": 1194,
+          "height": 735
+        },
+        "right": {
+          "x": 1273,
+          "y": 201,
+          "width": 587,
+          "height": 735
+        }
+      },
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.97,
+      "usageNotes": "Canonical dual-panel chart shell."
+    }
+  ],
+  "opacityLevels": [
+    {
+      "tokenId": "opacity.secondary-text",
+      "value": 0.74,
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Speaker and muted support text opacity."
+    },
+    {
+      "tokenId": "opacity.glow.red",
+      "value": 0.37,
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.98,
+      "usageNotes": "Ambient glow opacity."
+    },
+    {
+      "tokenId": "opacity.card.fill",
+      "value": 0.055,
+      "sourceFrameIds": [
+        "25:7044",
+        "25:7544"
+      ],
+      "confidence": 0.57,
+      "usageNotes": "Recommended dark-glass card fill opacity."
+    }
+  ],
+  "alignmentPatterns": [
+    {
+      "tokenId": "alignment.cover.centered-hero",
+      "value": {
+        "horizontal": "CENTER",
+        "vertical": "TOP"
+      },
+      "sourceFrameIds": [
+        "25:6981"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Cover family uses centered text."
+    },
+    {
+      "tokenId": "alignment.business.left-title",
+      "value": {},
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Business slides use left-aligned titles."
+    },
+    {
+      "tokenId": "alignment.metric.callout",
+      "value": {},
+      "sourceFrameIds": [
+        "25:7247"
+      ],
+      "confidence": 0.99,
+      "usageNotes": "Metrics remain top-aligned inside local cards."
+    }
+  ],
+  "auditedFramesReferenced": 75
+}

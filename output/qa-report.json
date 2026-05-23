@@ -1,0 +1,105 @@
+{
+  "generatedAt": "2026-05-23T10:36:31.893Z",
+  "deckName": "Эксплуатация и ИТ — Годовой отчёт 2025",
+  "slides": [
+    {
+      "slideName": "CURRENT / 01 / Cover",
+      "semanticCompleteness": 92,
+      "contentPurity": 100,
+      "styleTokenUsage": 100,
+      "assetReuseQuality": 90,
+      "layoutConfidence": 85,
+      "risks": [
+        "Editable MCP generation remains blocked by X5 Sans runtime availability."
+      ],
+      "manualReviewNeeded": false
+    },
+    {
+      "slideName": "CURRENT / 02 / Year In Numbers",
+      "semanticCompleteness": 92,
+      "contentPurity": 100,
+      "styleTokenUsage": 100,
+      "assetReuseQuality": 90,
+      "layoutConfidence": 88,
+      "risks": [
+        "Editable MCP generation remains blocked by X5 Sans runtime availability.",
+        "Source copy contains punctuation artifacts that should be normalized before final production."
+      ],
+      "manualReviewNeeded": false
+    },
+    {
+      "slideName": "CURRENT / 03 / Achievements",
+      "semanticCompleteness": 92,
+      "contentPurity": 100,
+      "styleTokenUsage": 100,
+      "assetReuseQuality": 90,
+      "layoutConfidence": 88,
+      "risks": [
+        "Editable MCP generation remains blocked by X5 Sans runtime availability."
+      ],
+      "manualReviewNeeded": false
+    },
+    {
+      "slideName": "CURRENT / 04 / Execution Result",
+      "semanticCompleteness": 92,
+      "contentPurity": 100,
+      "styleTokenUsage": 100,
+      "assetReuseQuality": 90,
+      "layoutConfidence": 88,
+      "risks": [
+        "Editable MCP generation remains blocked by X5 Sans runtime availability.",
+        "Source copy contains punctuation artifacts that should be normalized before final production."
+      ],
+      "manualReviewNeeded": false
+    },
+    {
+      "slideName": "CURRENT / 05 / Transformation",
+      "semanticCompleteness": 84,
+      "contentPurity": 100,
+      "styleTokenUsage": 100,
+      "assetReuseQuality": 90,
+      "layoutConfidence": 78,
+      "risks": [
+        "Editable MCP generation remains blocked by X5 Sans runtime availability.",
+        "Source copy contains punctuation artifacts that should be normalized before final production."
+      ],
+      "manualReviewNeeded": false
+    },
+    {
+      "slideName": "CURRENT / 06 / Roadmap",
+      "semanticCompleteness": 84,
+      "contentPurity": 100,
+      "styleTokenUsage": 100,
+      "assetReuseQuality": 90,
+      "layoutConfidence": 88,
+      "risks": [
+        "Editable MCP generation remains blocked by X5 Sans runtime availability."
+      ],
+      "manualReviewNeeded": false
+    },
+    {
+      "slideName": "CURRENT / 07 / Project Of Year",
+      "semanticCompleteness": 92,
+      "contentPurity": 100,
+      "styleTokenUsage": 100,
+      "assetReuseQuality": 90,
+      "layoutConfidence": 88,
+      "risks": [
+        "Editable MCP generation remains blocked by X5 Sans runtime availability."
+      ],
+      "manualReviewNeeded": false
+    },
+    {
+      "slideName": "CURRENT / 08 / Strategy",
+      "semanticCompleteness": 84,
+      "contentPurity": 100,
+      "styleTokenUsage": 100,
+      "assetReuseQuality": 90,
+      "layoutConfidence": 88,
+      "risks": [
+        "Editable MCP generation remains blocked by X5 Sans runtime availability."
+      ],
+      "manualReviewNeeded": false
+    }
+  ]
+}

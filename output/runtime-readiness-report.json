@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-05-23T10:36:31.891Z",
+  "mcpRunner": {
+    "canAccessFigma": true,
+    "canWriteFigma": true,
+    "x5SansAvailable": false,
+    "blockingIssues": [
+      "MCP runtime currently cannot load X5 Sans, so final editable Figma generation must remain blocked.",
+      "Fallback fonts are forbidden."
+    ]
+  },
+  "localPluginRunner": {
+    "availableAsFallback": true,
+    "primaryWorkflow": false
+  },
+  "previewRunner": {
+    "runnerType": "preview-runner",
+    "displayName": "Screenshot QA preview runner",
+    "purpose": "Validate generated-frame screenshots against production-spec expectations."
+  },
+  "recommendedNextAction": "Keep MCP as the primary path, wait for X5 Sans support there, and only use the local plugin as an explicit fallback if editable output is urgently required.",
+  "canGenerateFinalEditableFigmaNow": false
+}

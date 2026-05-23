@@ -1,0 +1,1334 @@
+{
+  "generatedAt": "2026-05-23T10:36:31.889Z",
+  "deckName": "Эксплуатация и ИТ — Годовой отчёт 2025",
+  "sourceFile": "input/current-draft.pptx",
+  "slideCount": 8,
+  "expectedSlideCount": 10,
+  "slideCountMismatch": {
+    "expected": 10,
+    "actual": 8,
+    "delta": -2,
+    "note": "The real PPTX merges several prompt-described topics into fewer slides."
+  },
+  "slides": [
+    {
+      "slideIndex": 1,
+      "sourceTitle": "Код успеха: Годовой отчёт 2025",
+      "semanticRole": "cover",
+      "communicationGoal": "Open the annual report with a native X5 executive hero slide.",
+      "contentArchitecture": "Hero title, thematic subtitle, department line, speaker line.",
+      "requiredBlocks": [
+        "hero-title",
+        "subtitle",
+        "department-line",
+        "speaker-line"
+      ],
+      "optionalBlocks": [
+        "brand-mark"
+      ],
+      "forbiddenInheritedContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content",
+        "old speaker names",
+        "old cover title"
+      ],
+      "recommendedProductionMode": "clean-clone-remove-content-rebuild",
+      "preferredLayoutFamilies": [
+        "cover",
+        "image-led"
+      ],
+      "candidateSourceFrames": [
+        {
+          "frameId": "25:6981",
+          "frameName": "1",
+          "slideType": "cover",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "image masks",
+            "glows",
+            "title block",
+            "typography"
+          ],
+          "reason": "Strong cover family; safest for direct-clone cover work."
+        },
+        {
+          "frameId": "25:8357",
+          "frameName": "5",
+          "slideType": "unknown",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "image masks",
+            "glows",
+            "title block"
+          ],
+          "reason": "Statement slide family."
+        },
+        {
+          "frameId": "25:8501",
+          "frameName": "4584",
+          "slideType": "unknown",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "glows",
+            "title block"
+          ],
+          "reason": "Divider-only use."
+        },
+        {
+          "frameId": "25:8619",
+          "frameName": "4586",
+          "slideType": "cover",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "image masks",
+            "glows",
+            "title block",
+            "typography"
+          ],
+          "reason": "Strong cover family; safest for direct-clone cover work."
+        },
+        {
+          "frameId": "25:9843",
+          "frameName": "4602",
+          "slideType": "unknown",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "glows",
+            "title block"
+          ],
+          "reason": "Divider-only use."
+        }
+      ],
+      "selectedStyleReferences": [
+        {
+          "frameId": "25:6981",
+          "frameName": "1",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:6981 best matches the cover role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:8357",
+          "frameName": "5",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:8357 best matches the cover role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:8501",
+          "frameName": "4584",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:8501 best matches the cover role without requiring blind inheritance."
+        }
+      ],
+      "selectedAssetReferences": [
+        {
+          "assetId": "cover-background-photo",
+          "assetType": "background",
+          "sourceFrameId": "25:6981",
+          "reason": "Executive photo cover backdrop"
+        },
+        {
+          "assetId": "cover-brand-mark",
+          "assetType": "logo",
+          "sourceFrameId": "25:6981",
+          "reason": "Bottom brand mark / footer lockup"
+        },
+        {
+          "assetId": "analytics-red-glow",
+          "assetType": "glow",
+          "sourceFrameId": "25:7247",
+          "reason": "Ambient red/orange stage glow"
+        }
+      ],
+      "dataIntegrityNotes": [
+        "Speaker line should not compete with the main content hierarchy."
+      ],
+      "copyEditingNeeded": false,
+      "generationPriority": "high"
+    },
+    {
+      "slideIndex": 2,
+      "sourceTitle": "2025 год .Взгляд в цифрах .",
+      "semanticRole": "numeric-overview",
+      "communicationGoal": "Summarize the operating year with three macro-zones and supporting KPIs.",
+      "contentArchitecture": "Three-zone KPI board: volumes, service, costs, plus utility and request footers.",
+      "requiredBlocks": [
+        "section-title",
+        "three-zone-kpis",
+        "utility-metrics",
+        "request-metrics"
+      ],
+      "optionalBlocks": [
+        "footnote"
+      ],
+      "forbiddenInheritedContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "recommendedProductionMode": "hybrid-source-composition",
+      "preferredLayoutFamilies": [
+        "numeric-overview",
+        "metric-summary",
+        "dense-analytics"
+      ],
+      "candidateSourceFrames": [
+        {
+          "frameId": "25:7044",
+          "frameName": "18",
+          "slideType": "metric-summary",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "glows",
+            "title block",
+            "metric style"
+          ],
+          "reason": "Best native family for clean-clone metric summary rebuilds."
+        },
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "slideType": "table",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Good structural backup when multi-card narrative is needed."
+        },
+        {
+          "frameId": "25:10750",
+          "frameName": "4616",
+          "slideType": "achievements",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "glows",
+            "title block"
+          ],
+          "reason": "Visually strong but semantically HR-specific."
+        },
+        {
+          "frameId": "25:10966",
+          "frameName": "4620",
+          "slideType": "achievements",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "glows",
+            "title block"
+          ],
+          "reason": "Visually strong but semantically HR-specific."
+        },
+        {
+          "frameId": "25:10988",
+          "frameName": "4621",
+          "slideType": "achievements",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "glows",
+            "title block"
+          ],
+          "reason": "Visually strong but semantically HR-specific."
+        }
+      ],
+      "selectedStyleReferences": [
+        {
+          "frameId": "25:7044",
+          "frameName": "18",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:7044 best matches the numeric-overview role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:7544 best matches the numeric-overview role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10750",
+          "frameName": "4616",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:10750 best matches the numeric-overview role without requiring blind inheritance."
+        }
+      ],
+      "selectedAssetReferences": [
+        {
+          "assetId": "analytics-red-glow",
+          "assetType": "glow",
+          "sourceFrameId": "25:7247",
+          "reason": "Ambient red/orange stage glow"
+        },
+        {
+          "assetId": "analytics-right-chart-shell",
+          "assetType": "chart-shell",
+          "sourceFrameId": "25:7247",
+          "reason": "Secondary chart or callout panel shell"
+        },
+        {
+          "assetId": "analytics-left-chart-shell",
+          "assetType": "chart-shell",
+          "sourceFrameId": "25:7247",
+          "reason": "Primary left content panel shell"
+        },
+        {
+          "assetId": "analytics-line-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:7247",
+          "reason": "Accent analytic polyline family"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        }
+      ],
+      "dataIntegrityNotes": [
+        "Speaker line should not compete with the main content hierarchy."
+      ],
+      "copyEditingNeeded": true,
+      "generationPriority": "high"
+    },
+    {
+      "slideIndex": 3,
+      "sourceTitle": "Ключевые достижения 2025",
+      "semanticRole": "achievements",
+      "communicationGoal": "Show 2025 achievements as a proof of reliable service plus overdelivered efficiency.",
+      "contentArchitecture": "Comparison focus/result rail with three conclusion callouts.",
+      "requiredBlocks": [
+        "section-title",
+        "comparison-cards",
+        "conclusion-strip"
+      ],
+      "optionalBlocks": [
+        "context-subtitle"
+      ],
+      "forbiddenInheritedContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "recommendedProductionMode": "hybrid-source-composition",
+      "preferredLayoutFamilies": [
+        "achievements",
+        "metric-summary",
+        "comparison"
+      ],
+      "candidateSourceFrames": [
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "slideType": "table",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Good structural backup when multi-card narrative is needed."
+        },
+        {
+          "frameId": "25:10750",
+          "frameName": "4616",
+          "slideType": "achievements",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "glows",
+            "title block"
+          ],
+          "reason": "Visually strong but semantically HR-specific."
+        },
+        {
+          "frameId": "25:10966",
+          "frameName": "4620",
+          "slideType": "achievements",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "glows",
+            "title block"
+          ],
+          "reason": "Visually strong but semantically HR-specific."
+        },
+        {
+          "frameId": "25:10988",
+          "frameName": "4621",
+          "slideType": "achievements",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "glows",
+            "title block"
+          ],
+          "reason": "Visually strong but semantically HR-specific."
+        },
+        {
+          "frameId": "25:7044",
+          "frameName": "18",
+          "slideType": "metric-summary",
+          "score": 66,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "glows",
+            "title block",
+            "metric style"
+          ],
+          "reason": "Best native family for clean-clone metric summary rebuilds."
+        }
+      ],
+      "selectedStyleReferences": [
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:7544 best matches the achievements role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10750",
+          "frameName": "4616",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:10750 best matches the achievements role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10966",
+          "frameName": "4620",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:10966 best matches the achievements role without requiring blind inheritance."
+        }
+      ],
+      "selectedAssetReferences": [
+        {
+          "assetId": "analytics-red-glow",
+          "assetType": "glow",
+          "sourceFrameId": "25:7247",
+          "reason": "Ambient red/orange stage glow"
+        },
+        {
+          "assetId": "analytics-line-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:7247",
+          "reason": "Accent analytic polyline family"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        },
+        {
+          "assetId": "result-grid-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7544",
+          "reason": "Matrix + stacked result card family"
+        },
+        {
+          "assetId": "architecture-board-shell",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10434",
+          "reason": "Multi-zone architecture board shell"
+        }
+      ],
+      "dataIntegrityNotes": [],
+      "copyEditingNeeded": false,
+      "generationPriority": "high"
+    },
+    {
+      "slideIndex": 4,
+      "sourceTitle": "Эффективность: Результат исполнения целей",
+      "semanticRole": "efficiency-result",
+      "communicationGoal": "Explain what generated efficiency through initiatives, automation, and operational drivers.",
+      "contentArchitecture": "Two top summary cards plus structured initiative and driver columns.",
+      "requiredBlocks": [
+        "section-title",
+        "summary-cards",
+        "initiative-column",
+        "driver-column"
+      ],
+      "optionalBlocks": [
+        "project-chip-row"
+      ],
+      "forbiddenInheritedContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "recommendedProductionMode": "hybrid-source-composition",
+      "preferredLayoutFamilies": [
+        "process",
+        "achievements",
+        "metric-summary"
+      ],
+      "candidateSourceFrames": [
+        {
+          "frameId": "25:10479",
+          "frameName": "4610",
+          "slideType": "process",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Solid family for solution architecture slides."
+        },
+        {
+          "frameId": "25:10664",
+          "frameName": "4614",
+          "slideType": "unknown",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Best current family for roadmap or staged transformation."
+        },
+        {
+          "frameId": "25:10876",
+          "frameName": "4618",
+          "slideType": "process",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "icons",
+            "title block"
+          ],
+          "reason": "Use for operating-model or journey-based slides."
+        },
+        {
+          "frameId": "25:11061",
+          "frameName": "4622",
+          "slideType": "unknown",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Best current family for roadmap or staged transformation."
+        },
+        {
+          "frameId": "25:10434",
+          "frameName": "4609",
+          "slideType": "process",
+          "score": 63,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Solid family for solution architecture slides."
+        }
+      ],
+      "selectedStyleReferences": [
+        {
+          "frameId": "25:10479",
+          "frameName": "4610",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:10479 best matches the efficiency-result role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10664",
+          "frameName": "4614",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:10664 best matches the efficiency-result role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10876",
+          "frameName": "4618",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:10876 best matches the efficiency-result role without requiring blind inheritance."
+        }
+      ],
+      "selectedAssetReferences": [
+        {
+          "assetId": "analytics-line-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:7247",
+          "reason": "Accent analytic polyline family"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        },
+        {
+          "assetId": "result-grid-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7544",
+          "reason": "Matrix + stacked result card family"
+        },
+        {
+          "assetId": "architecture-board-shell",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10434",
+          "reason": "Multi-zone architecture board shell"
+        },
+        {
+          "assetId": "process-rail-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:10876",
+          "reason": "Horizontal process / roadmap rail"
+        }
+      ],
+      "dataIntegrityNotes": [
+        "The real PPTX merges the prompt slide 4 and slide 5 topics into one execution slide.",
+        "Speaker line should not compete with the main content hierarchy."
+      ],
+      "copyEditingNeeded": true,
+      "generationPriority": "high"
+    },
+    {
+      "slideIndex": 5,
+      "sourceTitle": "2026 год .Трансформация ______",
+      "semanticRole": "transformation",
+      "communicationGoal": "Frame 2026 as a budget challenge with clear operational methods.",
+      "contentArchitecture": "Budget hero callout with challenge statement and a five-point method list.",
+      "requiredBlocks": [
+        "section-title",
+        "budget-callout",
+        "challenge-statement",
+        "method-list"
+      ],
+      "optionalBlocks": [
+        "speaker-tag"
+      ],
+      "forbiddenInheritedContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "recommendedProductionMode": "creative-composition-from-primitives",
+      "preferredLayoutFamilies": [
+        "section-divider",
+        "strategy",
+        "image-led"
+      ],
+      "candidateSourceFrames": [
+        {
+          "frameId": "25:8364",
+          "frameName": "13",
+          "slideType": "strategy",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "image masks",
+            "glows",
+            "title block"
+          ],
+          "reason": "Strong card family, but not a pure metrics summary."
+        },
+        {
+          "frameId": "25:8501",
+          "frameName": "4584",
+          "slideType": "unknown",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "glows",
+            "title block"
+          ],
+          "reason": "Divider-only use."
+        },
+        {
+          "frameId": "25:8560",
+          "frameName": "4585",
+          "slideType": "strategy",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "image masks",
+            "glows",
+            "title block"
+          ],
+          "reason": "Strong card family, but not a pure metrics summary."
+        },
+        {
+          "frameId": "25:9843",
+          "frameName": "4602",
+          "slideType": "unknown",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "glows",
+            "title block"
+          ],
+          "reason": "Divider-only use."
+        },
+        {
+          "frameId": "25:6981",
+          "frameName": "1",
+          "slideType": "cover",
+          "score": 66,
+          "reusableVisualParts": [
+            "background",
+            "image masks",
+            "glows",
+            "title block",
+            "typography"
+          ],
+          "reason": "Strong cover family; safest for direct-clone cover work."
+        }
+      ],
+      "selectedStyleReferences": [
+        {
+          "frameId": "25:8364",
+          "frameName": "13",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:8364 best matches the transformation role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:8501",
+          "frameName": "4584",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:8501 best matches the transformation role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:8560",
+          "frameName": "4585",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:8560 best matches the transformation role without requiring blind inheritance."
+        }
+      ],
+      "selectedAssetReferences": [
+        {
+          "assetId": "cover-background-photo",
+          "assetType": "background",
+          "sourceFrameId": "25:6981",
+          "reason": "Executive photo cover backdrop"
+        },
+        {
+          "assetId": "analytics-red-glow",
+          "assetType": "glow",
+          "sourceFrameId": "25:7247",
+          "reason": "Ambient red/orange stage glow"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        },
+        {
+          "assetId": "result-grid-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7544",
+          "reason": "Matrix + stacked result card family"
+        },
+        {
+          "assetId": "architecture-board-shell",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10434",
+          "reason": "Multi-zone architecture board shell"
+        }
+      ],
+      "dataIntegrityNotes": [
+        "Speaker line should not compete with the main content hierarchy.",
+        "The PPTX title includes placeholder underscores and needs copy cleanup before visual production."
+      ],
+      "copyEditingNeeded": true,
+      "generationPriority": "medium"
+    },
+    {
+      "slideIndex": 6,
+      "sourceTitle": "2026 год Эффективность",
+      "semanticRole": "roadmap",
+      "communicationGoal": "Show the 2026 action portfolio and anchor it with Q1 execution results.",
+      "contentArchitecture": "Action roadmap grid with right-side performance tracker.",
+      "requiredBlocks": [
+        "section-title",
+        "action-portfolio",
+        "q1-result-card"
+      ],
+      "optionalBlocks": [
+        "capacity-callout"
+      ],
+      "forbiddenInheritedContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "recommendedProductionMode": "hybrid-source-composition",
+      "preferredLayoutFamilies": [
+        "roadmap",
+        "process",
+        "comparison"
+      ],
+      "candidateSourceFrames": [
+        {
+          "frameId": "25:10479",
+          "frameName": "4610",
+          "slideType": "process",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Solid family for solution architecture slides."
+        },
+        {
+          "frameId": "25:10664",
+          "frameName": "4614",
+          "slideType": "unknown",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Best current family for roadmap or staged transformation."
+        },
+        {
+          "frameId": "25:10876",
+          "frameName": "4618",
+          "slideType": "process",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "icons",
+            "title block"
+          ],
+          "reason": "Use for operating-model or journey-based slides."
+        },
+        {
+          "frameId": "25:11061",
+          "frameName": "4622",
+          "slideType": "unknown",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Best current family for roadmap or staged transformation."
+        },
+        {
+          "frameId": "25:10434",
+          "frameName": "4609",
+          "slideType": "process",
+          "score": 63,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Solid family for solution architecture slides."
+        }
+      ],
+      "selectedStyleReferences": [
+        {
+          "frameId": "25:10479",
+          "frameName": "4610",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:10479 best matches the roadmap role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10664",
+          "frameName": "4614",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:10664 best matches the roadmap role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:10876",
+          "frameName": "4618",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:10876 best matches the roadmap role without requiring blind inheritance."
+        }
+      ],
+      "selectedAssetReferences": [
+        {
+          "assetId": "analytics-line-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:7247",
+          "reason": "Accent analytic polyline family"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        },
+        {
+          "assetId": "result-grid-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7544",
+          "reason": "Matrix + stacked result card family"
+        },
+        {
+          "assetId": "architecture-board-shell",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10434",
+          "reason": "Multi-zone architecture board shell"
+        },
+        {
+          "assetId": "process-rail-system",
+          "assetType": "line-system",
+          "sourceFrameId": "25:10876",
+          "reason": "Horizontal process / roadmap rail"
+        }
+      ],
+      "dataIntegrityNotes": [
+        "The real PPTX merges the prompt slide 7 and slide 8 topics into one roadmap + Q1 results slide.",
+        "Speaker line should not compete with the main content hierarchy."
+      ],
+      "copyEditingNeeded": false,
+      "generationPriority": "high"
+    },
+    {
+      "slideIndex": 7,
+      "sourceTitle": "Проект года",
+      "semanticRole": "project-of-year",
+      "communicationGoal": "Present the water production project as the flagship operating initiative with a live plan table.",
+      "contentArchitecture": "Project summary rail, site capacities, and dense monthly production table.",
+      "requiredBlocks": [
+        "section-title",
+        "project-summary",
+        "capacity-grid",
+        "production-table"
+      ],
+      "optionalBlocks": [
+        "site-highlight"
+      ],
+      "forbiddenInheritedContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content",
+        "old market labels",
+        "irrelevant process copy"
+      ],
+      "recommendedProductionMode": "hybrid-source-composition",
+      "preferredLayoutFamilies": [
+        "table",
+        "dense-analytics",
+        "image-led"
+      ],
+      "candidateSourceFrames": [
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "slideType": "table",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block",
+            "glows"
+          ],
+          "reason": "Good structural backup when multi-card narrative is needed."
+        },
+        {
+          "frameId": "25:7009",
+          "frameName": "2",
+          "slideType": "dense-analytics",
+          "score": 68,
+          "reusableVisualParts": [
+            "background",
+            "chart style",
+            "title block"
+          ],
+          "reason": "Needs heavy cleanup before reuse."
+        },
+        {
+          "frameId": "25:7634",
+          "frameName": "14",
+          "slideType": "dense-analytics",
+          "score": 68,
+          "reusableVisualParts": [
+            "background",
+            "chart style",
+            "title block"
+          ],
+          "reason": "Needs heavy cleanup before reuse."
+        },
+        {
+          "frameId": "25:10509",
+          "frameName": "4611",
+          "slideType": "dense-analytics",
+          "score": 68,
+          "reusableVisualParts": [
+            "background",
+            "chart style",
+            "title block"
+          ],
+          "reason": "Needs heavy cleanup before reuse."
+        },
+        {
+          "frameId": "25:11224",
+          "frameName": "4626",
+          "slideType": "dense-analytics",
+          "score": 68,
+          "reusableVisualParts": [
+            "background",
+            "chart style",
+            "title block"
+          ],
+          "reason": "Needs heavy cleanup before reuse."
+        }
+      ],
+      "selectedStyleReferences": [
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:7544 best matches the project-of-year role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:7009",
+          "frameName": "2",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:7009 best matches the project-of-year role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:7634",
+          "frameName": "14",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:7634 best matches the project-of-year role without requiring blind inheritance."
+        }
+      ],
+      "selectedAssetReferences": [
+        {
+          "assetId": "analytics-right-chart-shell",
+          "assetType": "chart-shell",
+          "sourceFrameId": "25:7247",
+          "reason": "Secondary chart or callout panel shell"
+        },
+        {
+          "assetId": "analytics-left-chart-shell",
+          "assetType": "chart-shell",
+          "sourceFrameId": "25:7247",
+          "reason": "Primary left content panel shell"
+        },
+        {
+          "assetId": "icons-library-index",
+          "assetType": "icon",
+          "sourceFrameId": "25:11279",
+          "reason": "Neutral icon source frame"
+        }
+      ],
+      "dataIntegrityNotes": [
+        "The production table must remain editable and preserve only project data from the current PPTX."
+      ],
+      "copyEditingNeeded": false,
+      "generationPriority": "high"
+    },
+    {
+      "slideIndex": 8,
+      "sourceTitle": "Стратегия",
+      "semanticRole": "strategy",
+      "communicationGoal": "Close on the 2026 strategy principles as a branded pillar statement.",
+      "contentArchitecture": "Strategy title, promise line, and seven principle cards or pillars.",
+      "requiredBlocks": [
+        "section-title",
+        "promise-line",
+        "principle-grid"
+      ],
+      "optionalBlocks": [
+        "brand-footer"
+      ],
+      "forbiddenInheritedContent": [
+        "old chart data",
+        "old legend",
+        "old years",
+        "old source note",
+        "old competitor names",
+        "old department/topic labels",
+        "any inherited text not present in current PPTX content"
+      ],
+      "recommendedProductionMode": "hybrid-source-composition",
+      "preferredLayoutFamilies": [
+        "strategy",
+        "achievements"
+      ],
+      "candidateSourceFrames": [
+        {
+          "frameId": "25:8560",
+          "frameName": "4585",
+          "slideType": "strategy",
+          "score": 78,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "image masks",
+            "glows",
+            "title block"
+          ],
+          "reason": "Strong card family, but not a pure metrics summary."
+        },
+        {
+          "frameId": "25:9043",
+          "frameName": "4592",
+          "slideType": "strategy",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "image masks",
+            "glows",
+            "title block"
+          ],
+          "reason": "Strong card family, but not a pure metrics summary."
+        },
+        {
+          "frameId": "25:9634",
+          "frameName": "23",
+          "slideType": "unknown",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "title block"
+          ],
+          "reason": "General pillar family."
+        },
+        {
+          "frameId": "25:10988",
+          "frameName": "4621",
+          "slideType": "achievements",
+          "score": 75,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "glows",
+            "title block"
+          ],
+          "reason": "Visually strong but semantically HR-specific."
+        },
+        {
+          "frameId": "25:8364",
+          "frameName": "13",
+          "slideType": "strategy",
+          "score": 66,
+          "reusableVisualParts": [
+            "background",
+            "cards",
+            "image masks",
+            "glows",
+            "title block"
+          ],
+          "reason": "Strong card family, but not a pure metrics summary."
+        }
+      ],
+      "selectedStyleReferences": [
+        {
+          "frameId": "25:8560",
+          "frameName": "4585",
+          "priority": 1,
+          "borrowed": [
+            "title system",
+            "grid logic",
+            "background family"
+          ],
+          "rationale": "Reference 25:8560 best matches the strategy role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:9043",
+          "frameName": "4592",
+          "priority": 2,
+          "borrowed": [
+            "card shell family",
+            "metric hierarchy"
+          ],
+          "rationale": "Reference 25:9043 best matches the strategy role without requiring blind inheritance."
+        },
+        {
+          "frameId": "25:9634",
+          "frameName": "23",
+          "priority": 3,
+          "borrowed": [
+            "supporting asset language",
+            "microcopy density"
+          ],
+          "rationale": "Reference 25:9634 best matches the strategy role without requiring blind inheritance."
+        }
+      ],
+      "selectedAssetReferences": [
+        {
+          "assetId": "analytics-red-glow",
+          "assetType": "glow",
+          "sourceFrameId": "25:7247",
+          "reason": "Ambient red/orange stage glow"
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7044",
+          "reason": "Large KPI card shell family"
+        },
+        {
+          "assetId": "result-grid-shell-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:7544",
+          "reason": "Matrix + stacked result card family"
+        },
+        {
+          "assetId": "architecture-board-shell",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10434",
+          "reason": "Multi-zone architecture board shell"
+        },
+        {
+          "assetId": "three-pillar-card-family",
+          "assetType": "card-shell",
+          "sourceFrameId": "25:10717",
+          "reason": "Three-pillar statement cards"
+        }
+      ],
+      "dataIntegrityNotes": [],
+      "copyEditingNeeded": false,
+      "generationPriority": "high"
+    }
+  ]
+}

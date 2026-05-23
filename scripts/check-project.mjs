@@ -1,6 +1,6 @@
 import { existsSync, readFileSync } from 'node:fs';
 
-const required = [
+const requiredFiles = [
   'MASTER_CODEX_PROMPT.md',
   'DESIGN_FIDELITY_ADDENDUM.md',
   'AGENTS.md',
@@ -10,315 +10,164 @@ const required = [
   'docs/01-design-system.md',
   'docs/02-slide-patterns.md',
   'docs/03-production-rules.md',
-  'docs/04-figma-mcp-audit-plan.md',
-  'docs/05-qa-rubric.md',
-  'docs/06-pilot-v1-postmortem.md',
-  'docs/07-pilot-v2-method.md',
-  'docs/08-deck-atlas-method.md',
-  'docs/09-business-effect-v3-method.md',
-  'schemas/slides.schema.json',
-  'schemas/pattern-library.schema.json',
-  'schemas/pilot-reference-map.schema.json',
-  'src/pptx/parse-pptx.mjs',
-  'src/classify-slides.mjs',
-  'src/audit/build-pattern-library.mjs',
+  'docs/10-slide-design-engine.md',
+  'docs/11-runner-architecture.md',
+  'docs/12-style-token-system.md',
+  'docs/13-asset-bank-method.md',
+  'docs/14-layout-composer-method.md',
+  'docs/15-no-manual-workflow.md',
+  'docs/16-current-pptx-pipeline.md',
+  'docs/17-production-spec-contract.md',
+  'docs/18-runner-readiness-and-fonts.md',
+  'docs/19-current-draft-slide-plan-review.md',
+  'src/pipeline/run-current-pipeline.mjs',
+  'src/pptx/parse-current-pptx.mjs',
+  'src/planner/build-current-slide-plan.mjs',
+  'src/planner/classify-slide-role.mjs',
+  'src/planner/extract-slide-content-architecture.mjs',
   'src/audit/build-deck-atlas-script.mjs',
-  'src/audit/build-draft-source-matching.mjs',
-  'src/audit/build-figma-index-script.mjs',
-  'src/audit/build-source-frame-geometry-script.mjs',
-  'src/audit/parse-audit-archive.mjs',
-  'src/figma/build-local-plugin.mjs',
-  'src/figma/figma-helpers.mjs',
-  'src/figma/print-create-pilot-script.mjs',
-  'src/figma/print-create-pilot-v2-script.mjs',
-  'src/figma/print-create-business-effect-v3-script.mjs',
-  'src/templates/01-cover.mjs',
-  'src/templates/02-problem-map.mjs',
-  'src/templates/03-target-state.mjs',
-  'src/templates/04-solution-engine.mjs',
-  'src/templates/05-metrics-effect.mjs',
-  'src/templates/06-roadmap.mjs'
+  'src/audit/build-style-tokens-script.mjs',
+  'src/audit/build-asset-bank-script.mjs',
+  'src/composer/build-production-spec.mjs',
+  'src/composer/compose-cover.mjs',
+  'src/composer/compose-numeric-overview.mjs',
+  'src/composer/compose-achievements.mjs',
+  'src/composer/compose-efficiency-result.mjs',
+  'src/composer/compose-transformation.mjs',
+  'src/composer/compose-roadmap.mjs',
+  'src/composer/compose-project-of-year.mjs',
+  'src/composer/compose-strategy.mjs',
+  'src/runners/runner-types.mjs',
+  'src/runners/check-runtime-readiness.mjs',
+  'src/runners/mcp-runner-spec.mjs',
+  'src/runners/local-plugin-runner-spec.mjs',
+  'src/runners/production-spec-runner.mjs',
+  'src/runners/preview-runner.mjs',
+  'src/qa/build-qa-report.mjs',
+  'src/qa/validate-content-purity.mjs',
+  'src/qa/validate-style-token-usage.mjs'
+];
+
+const outputFiles = [
+  'output/current-draft-raw.json',
+  'output/current-slide-plan.json',
+  'output/deck-atlas.json',
+  'output/style-tokens.json',
+  'output/asset-bank.json',
+  'output/production-spec.json',
+  'output/runtime-readiness-report.json',
+  'output/qa-report.json',
+  'output/figma-mcp-script.generated.js'
 ];
 
 let ok = true;
-for (const file of required) {
+
+function fail(message) {
+  console.error(message);
+  ok = false;
+}
+
+for (const file of requiredFiles) {
   if (!existsSync(file)) {
-    console.error(`Missing required file: ${file}`);
-    ok = false;
+    fail(`Missing required file: ${file}`);
   }
 }
 
-const forbidden = ['figp_', '_authToken', 'PRIVATE KEY', '.npmrc'];
+for (const file of outputFiles) {
+  if (!existsSync(file)) {
+    fail(`Missing generated artifact: ${file}`);
+  }
+}
 
-const priorityFiles = ['README.md', 'AGENTS.md', 'docs/00-project-context.md', 'docs/03-production-rules.md'];
-for (const file of priorityFiles) {
+for (const file of ['README.md', 'AGENTS.md', 'docs/00-project-context.md']) {
   const body = readFileSync(file, 'utf8');
   if (!body.includes('DESIGN_FIDELITY_ADDENDUM')) {
-    console.error(`Priority rule is not explicitly referenced in ${file}`);
-    ok = false;
+    fail(`Priority rule is not explicitly referenced in ${file}`);
   }
 }
 
-const derivedChecks = [
-  {
-    file: 'output/deck-atlas-script.generated.js',
-    requiredAfter: 'atlas:deck'
-  },
-  {
-    file: 'output/deck-atlas.json',
-    requiredAfter: 'atlas:deck'
-  },
-  {
-    file: 'output/draft-to-source-matching.json',
-    requiredAfter: 'match:draft-source'
-  },
-  {
-    file: 'output/figma-create-business-effect-v3.generated.js',
-    requiredAfter: 'figma:business-effect-v3-script'
-  },
-  {
-    file: 'output/slides.json',
-    requiredAfter: 'classify'
-  },
-  {
-    file: 'docs/08-deck-atlas-method.md',
-    requiredAfter: 'authoring'
-  },
-  {
-    file: 'docs/09-business-effect-v3-method.md',
-    requiredAfter: 'authoring'
-  },
-  {
-    file: 'output/pattern-library.json',
-    requiredAfter: 'patterns'
-  },
-  {
-    file: 'output/pilot-reference-map.json',
-    requiredAfter: 'patterns'
-  },
-  {
-    file: 'output/figma-create-pilot.generated.js',
-    requiredAfter: 'figma:pilot-script'
-  },
-  {
-    file: 'output/source-frame-geometry-script.generated.js',
-    requiredAfter: 'build-source-frame-geometry-script'
-  },
-  {
-    file: 'output/pilot-v2-reference-map.json',
-    requiredAfter: 'print-create-pilot-v2-script'
-  },
-  {
-    file: 'output/figma-create-pilot-v2.generated.js',
-    requiredAfter: 'print-create-pilot-v2-script'
-  },
-  {
-    file: 'figma-plugin/manifest.json',
-    requiredAfter: 'build:figma-plugin'
-  },
-  {
-    file: 'figma-plugin/code.js',
-    requiredAfter: 'build:figma-plugin'
-  },
-  {
-    file: 'figma-plugin/README.md',
-    requiredAfter: 'build:figma-plugin'
-  }
-];
+const packageJson = JSON.parse(readFileSync('package.json', 'utf8'));
+if (!packageJson.scripts || packageJson.scripts['pipeline:current'] !== 'node src/pipeline/run-current-pipeline.mjs') {
+  fail('package.json is missing the pipeline:current script.');
+}
 
-let pending = 0;
-for (const item of derivedChecks) {
-  if (!existsSync(item.file)) {
-    console.log(`Pending derived artifact: ${item.file} (expected after ${item.requiredAfter})`);
-    pending += 1;
+const raw = JSON.parse(readFileSync('output/current-draft-raw.json', 'utf8'));
+if (raw.sourceFile !== 'input/current-draft.pptx') {
+  fail('current-draft raw output must point to input/current-draft.pptx.');
+}
+if (!Array.isArray(raw.slides) || raw.slides.length < 1) {
+  fail('current-draft raw output must contain parsed slides.');
+}
+
+const plan = JSON.parse(readFileSync('output/current-slide-plan.json', 'utf8'));
+if (!Array.isArray(plan.slides) || plan.slides.length !== raw.slides.length) {
+  fail('current slide plan must exist for every parsed slide.');
+}
+
+const atlas = JSON.parse(readFileSync('output/deck-atlas.json', 'utf8'));
+if (!Array.isArray(atlas.frames) || atlas.frames.length < 70) {
+  fail('deck-atlas.json must classify the original slide deck.');
+}
+if (atlas.frames.some((frame) => /pilot|generated/i.test(String(frame.frameName || '')))) {
+  fail('deck-atlas.json must exclude PILOT/generated frames.');
+}
+if (atlas.frames.some((frame) => frame.frameId === '25:11279')) {
+  fail('deck-atlas.json must exclude the Icons frame as a slide.');
+}
+
+const styleTokens = JSON.parse(readFileSync('output/style-tokens.json', 'utf8'));
+if (!Array.isArray(styleTokens.typography) || !styleTokens.typography.some((token) => token.tokenId === 'typography.family.primary')) {
+  fail('style-tokens.json must include primary typography tokens.');
+}
+
+const assetBank = JSON.parse(readFileSync('output/asset-bank.json', 'utf8'));
+if (!Array.isArray(assetBank.assets) || assetBank.assets.length < 10) {
+  fail('asset-bank.json must include a substantial reusable asset bank.');
+}
+
+const productionSpec = JSON.parse(readFileSync('output/production-spec.json', 'utf8'));
+if (!productionSpec.deck || productionSpec.deck.name !== 'Эксплуатация и ИТ — Годовой отчёт 2025') {
+  fail('production-spec.json must contain the current PPTX deck name.');
+}
+if (!Array.isArray(productionSpec.slides) || productionSpec.slides.length !== raw.slides.length) {
+  fail('production-spec.json must contain every current PPTX slide.');
+}
+
+const readiness = JSON.parse(readFileSync('output/runtime-readiness-report.json', 'utf8'));
+if (!readiness.mcpRunner || readiness.mcpRunner.x5SansAvailable !== false) {
+  fail('runtime-readiness-report.json must report MCP as blocked by X5 Sans.');
+}
+if (!readiness.localPluginRunner || readiness.localPluginRunner.primaryWorkflow !== false) {
+  fail('local plugin runner must not be primary.');
+}
+
+const qa = JSON.parse(readFileSync('output/qa-report.json', 'utf8'));
+if (!Array.isArray(qa.slides) || qa.slides.length !== raw.slides.length) {
+  fail('qa-report.json must contain one entry per current slide.');
+}
+
+const generatedScript = readFileSync('output/figma-mcp-script.generated.js', 'utf8');
+if (!generatedScript.includes("REQUIRED_FONT_FAMILY = 'X5 Sans'")) {
+  fail('Generated Figma script must enforce X5 Sans.');
+}
+if (!generatedScript.includes('X5 Sans is required but not available in this Figma environment.')) {
+  fail('Generated Figma script must throw the strict X5 Sans blocker.');
+}
+for (const token of ['Inter', 'figp_', '_authToken', 'PRIVATE KEY', '??', '?.']) {
+  if (generatedScript.includes(token)) {
+    fail(`Forbidden token found in generated Figma script: ${token}`);
   }
 }
 
-const generatedScript = 'output/figma-create-pilot.generated.js';
-if (existsSync(generatedScript)) {
-  const body = readFileSync(generatedScript, 'utf8');
-  const frameNames = [
-    'PILOT / 01 / Task Manager / Cover',
-    'PILOT / 02 / Task Manager / Problem',
-    'PILOT / 03 / Task Manager / Target State',
-    'PILOT / 04 / Task Manager / Solution Engine',
-    'PILOT / 05 / Task Manager / Business Effect',
-    'PILOT / 06 / Task Manager / Roadmap'
-  ];
-
-  for (const frameName of frameNames) {
-    if (!body.includes(frameName)) {
-      console.error(`Generated Figma script is missing frame name: ${frameName}`);
-      ok = false;
-    }
-  }
-
-  for (const token of forbidden) {
-    if (body.includes(token)) {
-      console.error(`Forbidden token pattern found in ${generatedScript}: ${token}`);
-      ok = false;
-    }
-  }
-}
-
-const generatedV2Script = 'output/figma-create-pilot-v2.generated.js';
-if (existsSync(generatedV2Script)) {
-  const body = readFileSync(generatedV2Script, 'utf8');
-  const requiredV2FrameNames = [
-    'PILOT V2 / 01 / Task Manager / Cover',
-    'PILOT V2 / 05 / Task Manager / Business Effect'
-  ];
-
-  for (const frameName of requiredV2FrameNames) {
-    if (!body.includes(frameName)) {
-      console.error(`Generated V2 Figma script is missing frame name: ${frameName}`);
-      ok = false;
-    }
-  }
-
-  if (!body.includes('X5 Sans is required but not available.')) {
-    console.error('Generated V2 Figma script does not enforce strict X5 Sans availability.');
-    ok = false;
-  }
-
-  const v2Forbidden = ['Inter', 'figp_', '_authToken', 'PRIVATE KEY'];
-  for (const token of v2Forbidden) {
-    if (body.includes(token)) {
-      console.error(`Forbidden token pattern found in ${generatedV2Script}: ${token}`);
-      ok = false;
-    }
-  }
-
-  const unsupportedSyntax = ['??', '?.'];
-  for (const token of unsupportedSyntax) {
-    if (body.includes(token)) {
-      console.error(`Unsupported Figma plugin syntax found in ${generatedV2Script}: ${token}`);
-      ok = false;
-    }
-  }
-
-  if (body.includes('remove()') || body.includes('figma.currentPage.children =')) {
-    console.error('Generated V2 Figma script appears to delete or replace source frames.');
-    ok = false;
-  }
-
-  if (body.includes("25:11279") && body.includes('clone()') && body.includes('Icons')) {
-    console.error('Generated V2 Figma script appears to target the Icons frame.');
-    ok = false;
-  }
-}
-
-const deckAtlas = 'output/deck-atlas.json';
-if (existsSync(deckAtlas)) {
-  const body = JSON.parse(readFileSync(deckAtlas, 'utf8'));
-  if (!Array.isArray(body.frames) || body.frames.length < 70) {
-    console.error('Deck atlas must contain classifications for all original source frames.');
-    ok = false;
-  }
-  const rejected7247 = body.frames.find((frame) => frame.frameId === '25:7247');
-  if (!rejected7247 || rejected7247.semanticRole !== 'market-comparison') {
-    console.error('Deck atlas must classify 25:7247 as market-comparison.');
-    ok = false;
-  }
-}
-
-const matchingPath = 'output/draft-to-source-matching.json';
-if (existsSync(matchingPath)) {
-  const body = JSON.parse(readFileSync(matchingPath, 'utf8'));
-  if (!Array.isArray(body.draftSlides) || body.draftSlides.length < 6) {
-    console.error('Draft-to-source matching must include every draft slide.');
-    ok = false;
-  }
-  const businessEffect = Array.isArray(body.draftSlides)
-    ? body.draftSlides.find((slide) => slide.draftRole === 'business-effect')
-    : null;
-  if (!businessEffect) {
-    console.error('Draft-to-source matching is missing the business-effect slide.');
-    ok = false;
-  } else {
-    if (businessEffect.selectedProductionMode !== 'clean-clone-remove-content-rebuild') {
-      console.error('Business-effect slide must use clean-clone-remove-content-rebuild.');
-      ok = false;
-    }
-    const candidate7247 = Array.isArray(businessEffect.candidateFrames)
-      ? businessEffect.candidateFrames.find((candidate) => candidate.frameId === '25:7247')
-      : null;
-    if (!candidate7247 || candidate7247.decision !== 'rejected') {
-      console.error('Business-effect matching must explicitly reject 25:7247.');
-      ok = false;
-    }
-  }
-}
-
-const generatedV3Script = 'output/figma-create-business-effect-v3.generated.js';
-if (existsSync(generatedV3Script)) {
-  const body = readFileSync(generatedV3Script, 'utf8');
-  const requiredTokens = [
-    'PILOT V3 / 05 / Task Manager / Business Effect',
-    '25:7044',
-    '25:7247',
-    'clean-clone-remove-content-rebuild',
-    'X5 Sans is required but not available.'
-  ];
-  for (const token of requiredTokens) {
-    if (!body.includes(token)) {
-      console.error(`Generated Business Effect V3 script is missing required token: ${token}`);
-      ok = false;
-    }
-  }
-  for (const token of ['Inter', 'figp_', '_authToken', 'PRIVATE KEY', '??', '?.']) {
-    if (body.includes(token)) {
-      console.error(`Forbidden token pattern found in ${generatedV3Script}: ${token}`);
-      ok = false;
-    }
-  }
-  if (!body.includes("rejectedDirectCloneFrameId: '25:7247'")) {
-    console.error('Generated Business Effect V3 script must report the rejected 25:7247 direct clone.');
-    ok = false;
-  }
-}
-
-const localPluginFiles = ['figma-plugin/manifest.json', 'figma-plugin/code.js', 'figma-plugin/README.md'];
-for (const file of localPluginFiles) {
-  if (existsSync(file)) {
-    const body = readFileSync(file, 'utf8');
-    for (const token of forbidden) {
-      if (body.includes(token)) {
-        console.error(`Forbidden token pattern found in ${file}: ${token}`);
-        ok = false;
-      }
-    }
-  }
-}
-
-const localPluginCode = 'figma-plugin/code.js';
-if (existsSync(localPluginCode)) {
-  const body = readFileSync(localPluginCode, 'utf8');
-  if (!body.includes('X5 Sans is required but not available in this Figma environment.')) {
-    console.error('Local Figma plugin code does not contain the required X5 Sans environment error.');
-    ok = false;
-  }
-  if (body.includes('Inter')) {
-    console.error('Local Figma plugin code must not contain Inter fallback logic.');
-    ok = false;
-  }
-  if (!body.includes('PILOT V3 / 05 / Task Manager / Business Effect')) {
-    console.error('Local Figma plugin code is missing the required V3 target frame name.');
-    ok = false;
-  }
-  if (!body.includes('25:7044')) {
-    console.error('Local Figma plugin code must duplicate source frame 25:7044.');
-    ok = false;
-  }
-  if (body.includes('Inter')) {
-    console.error('Local Figma plugin code must not contain Inter fallback logic.');
-    ok = false;
-  }
-  for (const token of ['??', '?.']) {
-    if (body.includes(token)) {
-      console.error(`Unsupported Figma plugin syntax found in ${localPluginCode}: ${token}`);
-      ok = false;
-    }
+const specSerialized = JSON.stringify(
+  productionSpec.slides.map((slide) => ({
+    content: slide.content,
+    elements: slide.elements
+  }))
+).toLowerCase();
+for (const token of ['competitor', 'конкурент', 'old chart data', 'old legend']) {
+  if (specSerialized.includes(token)) {
+    fail(`production-spec.json contains forbidden inherited content token: ${token}`);
   }
 }
 
@@ -326,8 +175,4 @@ if (!ok) {
   process.exit(1);
 }
 
-console.log(
-  pending === 0
-    ? 'Slidetester project check passed with all derived artifacts present.'
-    : `Slidetester scaffold check passed. Pending derived artifacts: ${pending}.`
-);
+console.log('check-project: OK');
