@@ -160,6 +160,14 @@ if (existsSync(generatedV2Script)) {
     }
   }
 
+  const unsupportedSyntax = ['??', '?.'];
+  for (const token of unsupportedSyntax) {
+    if (body.includes(token)) {
+      console.error(`Unsupported Figma plugin syntax found in ${generatedV2Script}: ${token}`);
+      ok = false;
+    }
+  }
+
   if (body.includes('remove()') || body.includes('figma.currentPage.children =')) {
     console.error('Generated V2 Figma script appears to delete or replace source frames.');
     ok = false;
@@ -198,6 +206,12 @@ if (existsSync(localPluginCode)) {
   if (!body.includes('PILOT V2 / 01 / Task Manager / Cover') || !body.includes('PILOT V2 / 05 / Task Manager / Business Effect')) {
     console.error('Local Figma plugin code is missing required target frame names.');
     ok = false;
+  }
+  for (const token of ['??', '?.']) {
+    if (body.includes(token)) {
+      console.error(`Unsupported Figma plugin syntax found in ${localPluginCode}: ${token}`);
+      ok = false;
+    }
   }
 }
 

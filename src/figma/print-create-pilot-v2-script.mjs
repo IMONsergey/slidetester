@@ -5,8 +5,24 @@ const GEOMETRY_INPUT = 'output/source-frame-geometry.json';
 const OUTPUT_SCRIPT = 'output/figma-create-pilot-v2.generated.js';
 const OUTPUT_REFERENCE_MAP = 'output/pilot-v2-reference-map.json';
 
+function definedArray(value) {
+  return Array.isArray(value) ? value : [];
+}
+
+function numberOr(value, fallback) {
+  return typeof value === 'number' ? value : fallback;
+}
+
+function stringOr(value, fallback) {
+  return typeof value === 'string' ? value : fallback;
+}
+
 function loadGeometryMap(payload) {
-  return new Map((payload.frames ?? []).filter((frame) => frame?.status !== 'missing').map((frame) => [frame.id, frame]));
+  return new Map(
+    definedArray(payload.frames)
+      .filter((frame) => !(frame && frame.status === 'missing'))
+      .map((frame) => [frame.id, frame])
+  );
 }
 
 function getFrameOrThrow(map, id) {
@@ -18,22 +34,23 @@ function getFrameOrThrow(map, id) {
 }
 
 function topBy(array, selector) {
-  return [...array].sort((left, right) => selector(right) - selector(left))[0] ?? null;
+  const sorted = [...array].sort((left, right) => selector(right) - selector(left));
+  return sorted.length > 0 ? sorted[0] : null;
 }
 
 function findCoverRoles(frame) {
-  const textNodes = frame.textNodes ?? [];
+  const textNodes = definedArray(frame.textNodes);
   const heroTitle = topBy(
-    textNodes.filter((node) => node.inferredRole === 'heroTitle' || (node.fontSize ?? 0) >= 80),
-    (node) => node.fontSize ?? 0
+    textNodes.filter((node) => node.inferredRole === 'heroTitle' || numberOr(node.fontSize, 0) >= 80),
+    (node) => numberOr(node.fontSize, 0)
   );
   const eyebrow = topBy(
     textNodes.filter((node) => node.y <= frame.height * 0.25),
-    (node) => -(node.y ?? 0)
+    (node) => -numberOr(node.y, 0)
   );
   const footer = topBy(
     textNodes.filter((node) => node.y >= frame.height * 0.6),
-    (node) => node.y ?? 0
+    (node) => numberOr(node.y, 0)
   );
 
   return {
@@ -44,32 +61,32 @@ function findCoverRoles(frame) {
 }
 
 function isNumericCandidate(text) {
-  return /^[+\-−]?\d[\d\s.,–-]*%?$/.test((text ?? '').trim());
+  return /^[+\-−]?\d[\d\s.,–-]*%?$/.test(stringOr(text, '').trim());
 }
 
 function findMetricRoles(frame) {
-  const textNodes = frame.textNodes ?? [];
+  const textNodes = definedArray(frame.textNodes);
   const slideTitle = topBy(
-    textNodes.filter((node) => (node.fontSize ?? 0) >= 34 && (node.y ?? 0) <= 140),
-    (node) => node.fontSize ?? 0
+    textNodes.filter((node) => numberOr(node.fontSize, 0) >= 34 && numberOr(node.y, 0) <= 140),
+    (node) => numberOr(node.fontSize, 0)
   );
   const panelTitles = [...textNodes]
-    .filter((node) => (node.fontSize ?? 0) >= 28 && (node.fontSize ?? 0) <= 38 && (node.y ?? 0) <= 220)
-    .sort((left, right) => (left.x ?? 0) - (right.x ?? 0));
+    .filter((node) => numberOr(node.fontSize, 0) >= 28 && numberOr(node.fontSize, 0) <= 38 && numberOr(node.y, 0) <= 220)
+    .sort((left, right) => numberOr(left.x, 0) - numberOr(right.x, 0));
   const numericValues = [...textNodes]
-    .filter((node) => isNumericCandidate(node.characters) && (node.fontSize ?? 0) >= 24)
+    .filter((node) => isNumericCandidate(node.characters) && numberOr(node.fontSize, 0) >= 24)
     .sort((left, right) => {
-      if ((right.fontSize ?? 0) !== (left.fontSize ?? 0)) {
-        return (right.fontSize ?? 0) - (left.fontSize ?? 0);
+      if (numberOr(right.fontSize, 0) !== numberOr(left.fontSize, 0)) {
+        return numberOr(right.fontSize, 0) - numberOr(left.fontSize, 0);
       }
-      return (left.y ?? 0) - (right.y ?? 0);
+      return numberOr(left.y, 0) - numberOr(right.y, 0);
     });
 
   const distinctValues = [];
   for (const candidate of numericValues) {
     const tooClose = distinctValues.some((chosen) =>
-      Math.abs((chosen.x ?? 0) - (candidate.x ?? 0)) < 110 &&
-      Math.abs((chosen.y ?? 0) - (candidate.y ?? 0)) < 44
+      Math.abs(numberOr(chosen.x, 0) - numberOr(candidate.x, 0)) < 110 &&
+      Math.abs(numberOr(chosen.y, 0) - numberOr(candidate.y, 0)) < 44
     );
     if (!tooClose) {
       distinctValues.push(candidate);
@@ -78,14 +95,14 @@ function findMetricRoles(frame) {
   }
 
   const footnote = [...textNodes]
-    .filter((node) => (node.y ?? 0) >= frame.height * 0.82 || (node.opacity ?? 1) < 0.9)
-    .sort((left, right) => (right.y ?? 0) - (left.y ?? 0))[0] ?? null;
+    .filter((node) => numberOr(node.y, 0) >= frame.height * 0.82 || numberOr(node.opacity, 1) < 0.9)
+    .sort((left, right) => numberOr(right.y, 0) - numberOr(left.y, 0));
 
   return {
     slideTitle,
     panelTitles: panelTitles.slice(0, 2),
     numericValues: distinctValues,
-    footnote
+    footnote: footnote.length > 0 ? footnote[0] : null
   };
 }
 
@@ -117,7 +134,7 @@ function buildPilotReferenceMap(coverFrame, metricsFrame, coverRoles, metricRole
             role: 'subtitle'
           }
         ],
-        imageNodesReused: (coverFrame.imageNodes ?? []).map((node) => ({ id: node.id, name: node.name, path: node.path })),
+        imageNodesReused: definedArray(coverFrame.imageNodes).map((node) => ({ id: node.id, name: node.name, path: node.path })),
         imageNodesReplaced: [],
         geometryPolicy: 'preserve source frame geometry',
         stylePolicy: 'preserve X5 Sans typography exactly',
@@ -150,7 +167,7 @@ function buildPilotReferenceMap(coverFrame, metricsFrame, coverRoles, metricRole
             role: 'chartLabel'
           }
         ],
-        imageNodesReused: (metricsFrame.imageNodes ?? []).map((node) => ({ id: node.id, name: node.name, path: node.path })),
+        imageNodesReused: definedArray(metricsFrame.imageNodes).map((node) => ({ id: node.id, name: node.name, path: node.path })),
         imageNodesReplaced: [],
         geometryPolicy: 'preserve source frame geometry; adapt only inside existing content zones',
         stylePolicy: 'preserve X5 Sans typography exactly',
@@ -188,6 +205,10 @@ if (x5Fonts.length === 0) {
 }
 
 const loadedFonts = new Set();
+
+function numberOr(value, fallback) {
+  return typeof value === 'number' ? value : fallback;
+}
 
 async function ensureFont(fontName) {
   if (!fontName || typeof fontName !== 'object' || fontName.family !== 'X5 Sans') {
@@ -234,13 +255,13 @@ function findTextNodeBySignature(frame, replacement) {
 
   const scored = candidates.map((node) => {
     const distance =
-      Math.abs((node.x ?? 0) - replacement.geometry.x) +
-      Math.abs((node.y ?? 0) - replacement.geometry.y) +
-      Math.abs((node.width ?? 0) - replacement.geometry.width) +
-      Math.abs((node.height ?? 0) - replacement.geometry.height);
+      Math.abs(numberOr(node.x, 0) - replacement.geometry.x) +
+      Math.abs(numberOr(node.y, 0) - replacement.geometry.y) +
+      Math.abs(numberOr(node.width, 0) - replacement.geometry.width) +
+      Math.abs(numberOr(node.height, 0) - replacement.geometry.height);
 
     const fontPenalty = typeof node.fontSize === 'number'
-      ? Math.abs(node.fontSize - (replacement.fontSize ?? node.fontSize))
+      ? Math.abs(node.fontSize - numberOr(replacement.fontSize, node.fontSize))
       : 50;
 
     return {
@@ -249,7 +270,7 @@ function findTextNodeBySignature(frame, replacement) {
     };
   }).sort((left, right) => left.score - right.score);
 
-  return scored[0]?.node ?? null;
+  return scored.length > 0 ? scored[0].node : null;
 }
 
 async function replaceTextNode(frame, replacement, report) {
@@ -333,8 +354,8 @@ return {
 }
 
 function enrichReferenceMap(referenceMap, coverFrame, metricsFrame) {
-  const coverNodeById = new Map((coverFrame.textNodes ?? []).map((node) => [node.id, node]));
-  const metricNodeById = new Map((metricsFrame.textNodes ?? []).map((node) => [node.id, node]));
+  const coverNodeById = new Map(definedArray(coverFrame.textNodes).map((node) => [node.id, node]));
+  const metricNodeById = new Map(definedArray(metricsFrame.textNodes).map((node) => [node.id, node]));
 
   const coverSlide = referenceMap.pilotSlides[0];
   const metricSlide = referenceMap.pilotSlides[1];
@@ -375,7 +396,7 @@ function enrichReferenceMap(referenceMap, coverFrame, metricsFrame) {
     if (entry.role === 'panelTitle2') newText = panelTitles[1];
     if (entry.role.startsWith('metricValue')) {
       const index = Number(entry.role.replace('metricValue', '')) - 1;
-      newText = metricValues[index] ?? node.characters;
+      newText = typeof metricValues[index] === 'string' ? metricValues[index] : node.characters;
     }
     if (entry.role === 'footnote') newText = footnote;
 
