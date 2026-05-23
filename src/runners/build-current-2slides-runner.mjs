@@ -487,12 +487,9 @@ function buildYearInNumbers(page, originX, slideModel, index) {
 async function main() {
   var page = findPage();
   await figma.setCurrentPageAsync(page);
-
-  if (!runtimeReadiness.mcpRunner.x5SansAvailable) {
-    throw new Error(REQUIRED_FONT_ERROR);
-  }
-
+  var fontRuntimeReady = false;
   await ensureRequiredFonts();
+  fontRuntimeReady = true;
   var originX = nextColumnX(page);
   var report = [];
 
@@ -519,7 +516,7 @@ async function main() {
     deckName: visualModel.deck.name,
     generatedSlides: report,
     mcpReady: true,
-    blockedByFontRuntime: false
+    blockedByFontRuntime: !fontRuntimeReady
   };
 }
 
