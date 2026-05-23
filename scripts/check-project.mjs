@@ -12,6 +12,8 @@ const required = [
   'docs/03-production-rules.md',
   'docs/04-figma-mcp-audit-plan.md',
   'docs/05-qa-rubric.md',
+  'docs/06-pilot-v1-postmortem.md',
+  'docs/07-pilot-v2-method.md',
   'schemas/slides.schema.json',
   'schemas/pattern-library.schema.json',
   'schemas/pilot-reference-map.schema.json',
@@ -19,9 +21,11 @@ const required = [
   'src/classify-slides.mjs',
   'src/audit/build-pattern-library.mjs',
   'src/audit/build-figma-index-script.mjs',
+  'src/audit/build-source-frame-geometry-script.mjs',
   'src/audit/parse-audit-archive.mjs',
   'src/figma/figma-helpers.mjs',
   'src/figma/print-create-pilot-script.mjs',
+  'src/figma/print-create-pilot-v2-script.mjs',
   'src/templates/01-cover.mjs',
   'src/templates/02-problem-map.mjs',
   'src/templates/03-target-state.mjs',
@@ -65,6 +69,18 @@ const derivedChecks = [
   {
     file: 'output/figma-create-pilot.generated.js',
     requiredAfter: 'figma:pilot-script'
+  },
+  {
+    file: 'output/source-frame-geometry-script.generated.js',
+    requiredAfter: 'build-source-frame-geometry-script'
+  },
+  {
+    file: 'output/pilot-v2-reference-map.json',
+    requiredAfter: 'print-create-pilot-v2-script'
+  },
+  {
+    file: 'output/figma-create-pilot-v2.generated.js',
+    requiredAfter: 'print-create-pilot-v2-script'
   }
 ];
 
@@ -100,6 +116,45 @@ if (existsSync(generatedScript)) {
       console.error(`Forbidden token pattern found in ${generatedScript}: ${token}`);
       ok = false;
     }
+  }
+}
+
+const generatedV2Script = 'output/figma-create-pilot-v2.generated.js';
+if (existsSync(generatedV2Script)) {
+  const body = readFileSync(generatedV2Script, 'utf8');
+  const requiredV2FrameNames = [
+    'PILOT V2 / 01 / Task Manager / Cover',
+    'PILOT V2 / 05 / Task Manager / Business Effect'
+  ];
+
+  for (const frameName of requiredV2FrameNames) {
+    if (!body.includes(frameName)) {
+      console.error(`Generated V2 Figma script is missing frame name: ${frameName}`);
+      ok = false;
+    }
+  }
+
+  if (!body.includes('X5 Sans is required but not available.')) {
+    console.error('Generated V2 Figma script does not enforce strict X5 Sans availability.');
+    ok = false;
+  }
+
+  const v2Forbidden = ['Inter', 'figp_', '_authToken', 'PRIVATE KEY'];
+  for (const token of v2Forbidden) {
+    if (body.includes(token)) {
+      console.error(`Forbidden token pattern found in ${generatedV2Script}: ${token}`);
+      ok = false;
+    }
+  }
+
+  if (body.includes('remove()') || body.includes('figma.currentPage.children =')) {
+    console.error('Generated V2 Figma script appears to delete or replace source frames.');
+    ok = false;
+  }
+
+  if (body.includes("25:11279") && body.includes('clone()') && body.includes('Icons')) {
+    console.error('Generated V2 Figma script appears to target the Icons frame.');
+    ok = false;
   }
 }
 

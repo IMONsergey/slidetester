@@ -1,0 +1,1250 @@
+{
+  "generatedAt": "2026-05-23T09:30:00.000Z",
+  "fileKey": "735drrzVTmf4AhQJwQe6vX",
+  "page": {
+    "id": "0:1",
+    "name": "Page 1"
+  },
+  "inspectedFrameIds": [
+    "25:6981",
+    "25:7247"
+  ],
+  "frames": [
+    {
+      "id": "25:6981",
+      "name": "1",
+      "x": 0,
+      "y": 0,
+      "width": 1920,
+      "height": 1080,
+      "fills": [
+        {
+          "type": "SOLID",
+          "opacity": 1,
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 1
+          },
+          "scaleMode": null,
+          "imageHash": null
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "clipsContent": true,
+      "layoutMode": "NONE",
+      "childrenCount": 5,
+      "roughVisualSignature": {
+        "textNodeCount": 3,
+        "visibleNodeCount": 2,
+        "imageNodeCount": 1,
+        "dominantTextSizes": [
+          120,
+          43,
+          31
+        ],
+        "cardLikeNodeCount": 0,
+        "glowNodeCount": 0
+      },
+      "textNodes": [
+        {
+          "id": "25:7006",
+          "path": "",
+          "name": "Стратегия ТС5",
+          "characters": "Стратегия ТС5",
+          "x": 212,
+          "y": 485,
+          "width": 1497,
+          "height": 102,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Medium"
+          },
+          "fontSize": 120,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 100
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -4
+          },
+          "paragraphSpacing": 0,
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "NONE",
+          "fills": [
+            {
+              "type": "GRADIENT_LINEAR",
+              "opacity": 1,
+              "color": null,
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "opacity": 1,
+          "effects": [
+            {
+              "type": "BACKGROUND_BLUR",
+              "radius": 44,
+              "spread": null,
+              "blendMode": null
+            },
+            {
+              "type": "DROP_SHADOW",
+              "radius": 184,
+              "spread": 0,
+              "blendMode": "NORMAL"
+            }
+          ],
+          "visible": true,
+          "parentId": "25:6981",
+          "parentName": "1",
+          "inferredRole": "heroTitle"
+        },
+        {
+          "id": "25:7007",
+          "path": "",
+          "name": "Владислав Курбатов",
+          "characters": "Владислав Курбатов",
+          "x": 799,
+          "y": 727,
+          "width": 323,
+          "height": 37,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Regular"
+          },
+          "fontSize": 31,
+          "lineHeight": {
+            "unit": "AUTO",
+            "value": null
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 0
+          },
+          "paragraphSpacing": 0,
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.74,
+                "g": 0.74,
+                "b": 0.74,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "opacity": 1,
+          "effects": [],
+          "visible": true,
+          "parentId": "25:6981",
+          "parentName": "1",
+          "inferredRole": "unknown"
+        },
+        {
+          "id": "25:7008",
+          "path": "",
+          "name": "Новые вызовы — время возможностей",
+          "characters": "Новые вызовы — \nвремя возможностей",
+          "x": 650,
+          "y": 130,
+          "width": 621,
+          "height": 104,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Light"
+          },
+          "fontSize": 43,
+          "lineHeight": {
+            "unit": "AUTO",
+            "value": null
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": 10
+          },
+          "paragraphSpacing": 0,
+          "textAlignHorizontal": "CENTER",
+          "textAlignVertical": "TOP",
+          "textAutoResize": "WIDTH_AND_HEIGHT",
+          "fills": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.74,
+                "g": 0.74,
+                "b": 0.74,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "opacity": 1,
+          "effects": [],
+          "visible": true,
+          "parentId": "25:6981",
+          "parentName": "1",
+          "inferredRole": "eyebrow"
+        }
+      ],
+      "visibleNodes": [
+        {
+          "id": "25:6982",
+          "path": "0",
+          "name": "5ka_KV_060326 1",
+          "type": "RECTANGLE",
+          "x": -173,
+          "y": -118,
+          "width": 2265,
+          "height": 1275,
+          "cornerRadius": 0,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "opacity": 1,
+              "color": null,
+              "scaleMode": "FILL",
+              "imageHash": "1fc4ac85498e41fc1ffa2d1d30ec3314105bddf9"
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 0,
+          "inferredRole": "background"
+        },
+        {
+          "id": "25:6983",
+          "path": "1",
+          "name": "KV",
+          "type": "GROUP",
+          "x": 656.1,
+          "y": 896.73,
+          "width": 606.9,
+          "height": 62.54,
+          "cornerRadius": null,
+          "fills": [],
+          "strokes": [],
+          "strokeWeight": null,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 1,
+          "inferredRole": "decoration"
+        }
+      ],
+      "imageNodes": [
+        {
+          "id": "25:6982",
+          "path": "0",
+          "name": "5ka_KV_060326 1",
+          "x": -173,
+          "y": -118,
+          "width": 2265,
+          "height": 1275,
+          "fills": [
+            {
+              "type": "IMAGE",
+              "opacity": 1,
+              "color": null,
+              "scaleMode": "FILL",
+              "imageHash": "1fc4ac85498e41fc1ffa2d1d30ec3314105bddf9"
+            }
+          ],
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "maskInfo": {
+            "isMask": false,
+            "parentIsMask": false
+          },
+          "visible": true,
+          "inferredRole": "imageContainer"
+        }
+      ]
+    },
+    {
+      "id": "25:7247",
+      "name": "6",
+      "x": 0,
+      "y": 6345,
+      "width": 1920,
+      "height": 1080,
+      "fills": [
+        {
+          "type": "SOLID",
+          "opacity": 1,
+          "color": {
+            "r": 0.05,
+            "g": 0.05,
+            "b": 0.06,
+            "a": 1
+          },
+          "scaleMode": null,
+          "imageHash": null
+        }
+      ],
+      "strokes": [],
+      "strokeWeight": 1,
+      "effects": [],
+      "opacity": 1,
+      "blendMode": "PASS_THROUGH",
+      "clipsContent": true,
+      "layoutMode": "NONE",
+      "childrenCount": 115,
+      "roughVisualSignature": {
+        "selectedTextNodeCount": 22,
+        "visibleNodeCount": 12,
+        "dominantTextSizes": [
+          46,
+          32,
+          27,
+          26
+        ],
+        "cardLikeNodeCount": 3
+      },
+      "textNodes": [
+        {
+          "id": "25:7249",
+          "name": "Мы сохранили лидерство на рынке и приросли по доле больше других",
+          "characters": "Мы сохранили лидерство на рынке и приросли по доле больше других",
+          "x": 60,
+          "y": 50,
+          "width": 1595,
+          "height": 55,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Medium"
+          },
+          "fontSize": 46,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 55
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "slideTitle"
+        },
+        {
+          "id": "25:7250",
+          "name": "Сохраняем лидерство рынка",
+          "characters": "Сохраняем лидерство рынка",
+          "x": 60,
+          "y": 135,
+          "width": 459,
+          "height": 55,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 32,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 55
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "cardTitle"
+        },
+        {
+          "id": "25:7251",
+          "name": "Растем быстрее рынка",
+          "characters": "Растем быстрее рынка",
+          "x": 1273,
+          "y": 135,
+          "width": 363,
+          "height": 55,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 32,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 55
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "cardTitle"
+        },
+        {
+          "id": "25:7261",
+          "name": "21.2%",
+          "characters": "21.2%",
+          "x": 1644.09,
+          "y": 467.97,
+          "width": 74,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 27,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7262",
+          "name": "19.5%",
+          "characters": "19.5%",
+          "x": 1753.53,
+          "y": 509.95,
+          "width": 76,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 27,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7264",
+          "name": "18.4%",
+          "characters": "18.4%",
+          "x": 1412.78,
+          "y": 520.3,
+          "width": 77,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 27,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7265",
+          "name": "17.1%",
+          "characters": "17.1%",
+          "x": 1520.51,
+          "y": 554.99,
+          "width": 65,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 27,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7256",
+          "name": "12.5%",
+          "characters": "12.5%",
+          "x": 1298.85,
+          "y": 629.38,
+          "width": 74,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 27,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7260",
+          "name": "14.7%",
+          "characters": "14.7%",
+          "x": 1656.09,
+          "y": 667.86,
+          "width": 74,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 27,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7258",
+          "name": "13.4%",
+          "characters": "13.4%",
+          "x": 1404,
+          "y": 702,
+          "width": 76,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 27,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7263",
+          "name": "12.1%",
+          "characters": "12.1%",
+          "x": 1756.85,
+          "y": 722.19,
+          "width": 68,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 27,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7257",
+          "name": "11.9%",
+          "characters": "11.9%",
+          "x": 1302.51,
+          "y": 739.42,
+          "width": 70,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 27,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7259",
+          "name": "9.5%",
+          "characters": "9.5%",
+          "x": 1533.99,
+          "y": 779.94,
+          "width": 65,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 27,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7447",
+          "name": "12.9",
+          "characters": "12.9",
+          "x": 1145,
+          "y": 377,
+          "width": 51,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 26,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7451",
+          "name": "13.3",
+          "characters": "13.3",
+          "x": 893,
+          "y": 379,
+          "width": 50,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 26,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7452",
+          "name": "13.3",
+          "characters": "13.3",
+          "x": 763,
+          "y": 379,
+          "width": 50,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 26,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7409",
+          "name": "12.7",
+          "characters": "12.7",
+          "x": 640,
+          "y": 392,
+          "width": 48,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 26,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7450",
+          "name": "12.8",
+          "characters": "12.8",
+          "x": 1023,
+          "y": 394,
+          "width": 51,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 26,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7408",
+          "name": "12.2",
+          "characters": "12.2",
+          "x": 510,
+          "y": 423,
+          "width": 50,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 26,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7407",
+          "name": "11.6",
+          "characters": "11.6",
+          "x": 385,
+          "y": 441,
+          "width": 45,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 26,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7406",
+          "name": "10.8",
+          "characters": "10.8",
+          "x": 252,
+          "y": 453,
+          "width": 53,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 26,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        },
+        {
+          "id": "25:7405",
+          "name": "10.3",
+          "characters": "10.3",
+          "x": 124,
+          "y": 460,
+          "width": 51,
+          "height": 27,
+          "fontName": {
+            "family": "X5 Sans",
+            "style": "Bold"
+          },
+          "fontSize": 26,
+          "lineHeight": {
+            "unit": "PIXELS",
+            "value": 27
+          },
+          "letterSpacing": {
+            "unit": "PERCENT",
+            "value": -3
+          },
+          "opacity": 1,
+          "inferredRole": "metricValue"
+        }
+      ],
+      "visibleNodes": [
+        {
+          "id": "25:7248",
+          "path": "0",
+          "name": "Ellipse 1661",
+          "type": "ELLIPSE",
+          "x": 97,
+          "y": 936,
+          "width": 1726,
+          "height": 612,
+          "cornerRadius": 0,
+          "fills": [
+            {
+              "type": "SOLID",
+              "opacity": 0.37,
+              "color": {
+                "r": 0.84,
+                "g": 0.05,
+                "b": 0.05,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokes": [],
+          "strokeWeight": 1,
+          "opacity": 0.3,
+          "blendMode": "PASS_THROUGH",
+          "effects": [
+            {
+              "type": "LAYER_BLUR",
+              "radius": 233,
+              "spread": null,
+              "blendMode": null
+            }
+          ],
+          "visible": true,
+          "childCount": 0,
+          "inferredRole": "chartPanel"
+        },
+        {
+          "id": "25:7253",
+          "path": "1",
+          "name": "Group 15",
+          "type": "GROUP",
+          "x": 1273,
+          "y": 201,
+          "width": 587,
+          "height": 735,
+          "cornerRadius": null,
+          "fills": [],
+          "strokes": [],
+          "strokeWeight": null,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 31,
+          "inferredRole": "chartPanel"
+        },
+        {
+          "id": "25:7298",
+          "path": "2",
+          "name": "Group 16",
+          "type": "GROUP",
+          "x": 60,
+          "y": 201,
+          "width": 1194,
+          "height": 735,
+          "cornerRadius": null,
+          "fills": [],
+          "strokes": [],
+          "strokeWeight": null,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 14,
+          "inferredRole": "chartPanel"
+        },
+        {
+          "id": "25:7344",
+          "path": "3",
+          "name": "Vector",
+          "type": "VECTOR",
+          "x": 149,
+          "y": 440,
+          "width": 1026,
+          "height": 71,
+          "cornerRadius": 0,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.92,
+                "g": 0.14,
+                "b": 0.09,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokeWeight": 7,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 0,
+          "inferredRole": "decoration"
+        },
+        {
+          "id": "25:7345",
+          "path": "4",
+          "name": "Vector",
+          "type": "VECTOR",
+          "x": 149,
+          "y": 548.93,
+          "width": 1029,
+          "height": 28,
+          "cornerRadius": 0,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.92,
+                "g": 0.36,
+                "b": 0.09,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokeWeight": 7,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 0,
+          "inferredRole": "decoration"
+        },
+        {
+          "id": "25:7346",
+          "path": "5",
+          "name": "Vector",
+          "type": "VECTOR",
+          "x": 149,
+          "y": 619.93,
+          "width": 1029,
+          "height": 50,
+          "cornerRadius": 0,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.97,
+                "g": 0.65,
+                "b": 0.06,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokeWeight": 7,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 0,
+          "inferredRole": "decoration"
+        },
+        {
+          "id": "25:7347",
+          "path": "6",
+          "name": "Vector",
+          "type": "VECTOR",
+          "x": 149,
+          "y": 775.93,
+          "width": 1029,
+          "height": 32,
+          "cornerRadius": 0,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.31,
+                "g": 0.65,
+                "b": 0.85,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokeWeight": 7,
+          "opacity": 0.7,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 0,
+          "inferredRole": "decoration"
+        },
+        {
+          "id": "25:7348",
+          "path": "7",
+          "name": "Group 2136138179",
+          "type": "GROUP",
+          "x": 140,
+          "y": 768,
+          "width": 1043,
+          "height": 44,
+          "cornerRadius": null,
+          "fills": [],
+          "strokes": [],
+          "strokeWeight": null,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 9,
+          "inferredRole": "decoration"
+        },
+        {
+          "id": "25:7358",
+          "path": "8",
+          "name": "Vector",
+          "type": "VECTOR",
+          "x": 149,
+          "y": 771,
+          "width": 1029,
+          "height": 44.93,
+          "cornerRadius": 0,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.7,
+                "g": 0.7,
+                "b": 0.7,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokeWeight": 7,
+          "opacity": 0.7,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 0,
+          "inferredRole": "decoration"
+        },
+        {
+          "id": "25:7359",
+          "path": "9",
+          "name": "Vector",
+          "type": "VECTOR",
+          "x": 149,
+          "y": 710.93,
+          "width": 1029,
+          "height": 6,
+          "cornerRadius": 0,
+          "fills": [],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.55,
+                "g": 0.14,
+                "b": 0.79,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokeWeight": 7,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 0,
+          "inferredRole": "decoration"
+        },
+        {
+          "id": "25:7360",
+          "path": "10",
+          "name": "Ellipse 2923",
+          "type": "ELLIPSE",
+          "x": 140,
+          "y": 499,
+          "width": 20,
+          "height": 20,
+          "cornerRadius": 0,
+          "fills": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.06,
+                "g": 0.07,
+                "b": 0.07,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.92,
+                "g": 0.14,
+                "b": 0.09,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokeWeight": 4,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 0,
+          "inferredRole": "decoration"
+        },
+        {
+          "id": "25:7361",
+          "path": "11",
+          "name": "Ellipse 2931",
+          "type": "ELLIPSE",
+          "x": 140,
+          "y": 567,
+          "width": 20,
+          "height": 20,
+          "cornerRadius": 0,
+          "fills": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.06,
+                "g": 0.07,
+                "b": 0.07,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokes": [
+            {
+              "type": "SOLID",
+              "opacity": 1,
+              "color": {
+                "r": 0.92,
+                "g": 0.36,
+                "b": 0.09,
+                "a": 1
+              },
+              "scaleMode": null,
+              "imageHash": null
+            }
+          ],
+          "strokeWeight": 4,
+          "opacity": 1,
+          "blendMode": "PASS_THROUGH",
+          "effects": [],
+          "visible": true,
+          "childCount": 0,
+          "inferredRole": "decoration"
+        }
+      ],
+      "imageNodes": []
+    }
+  ]
+}

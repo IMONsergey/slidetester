@@ -1,0 +1,232 @@
+{
+  "generatedAt": "2026-05-23T08:42:34.860Z",
+  "pilotSlides": [
+    {
+      "targetFrameName": "PILOT V2 / 01 / Task Manager / Cover",
+      "sourceFrameId": "25:6981",
+      "sourceFrameName": "1",
+      "productionMode": "duplicate-source-frame-and-replace-text",
+      "requiredFont": "X5 Sans",
+      "assetsReused": [
+        "background",
+        "glow",
+        "typography",
+        "layout",
+        "visual motifs"
+      ],
+      "textNodesReplaced": [
+        {
+          "role": "heroTitle",
+          "sourceNodeId": "25:7006"
+        },
+        {
+          "role": "eyebrow",
+          "sourceNodeId": "25:7008"
+        },
+        {
+          "role": "footer",
+          "sourceNodeId": "25:7007"
+        }
+      ],
+      "textNodesLeftUntouched": [
+        {
+          "reason": "No safe native subtitle slot found in the source cover frame without changing source composition.",
+          "role": "subtitle"
+        }
+      ],
+      "imageNodesReused": [
+        {
+          "id": "25:6982",
+          "name": "5ka_KV_060326 1",
+          "path": "0"
+        }
+      ],
+      "imageNodesReplaced": [],
+      "geometryPolicy": "preserve source frame geometry",
+      "stylePolicy": "preserve X5 Sans typography exactly",
+      "originalFrameModified": false,
+      "status": "ready_for_generation",
+      "replacements": [
+        {
+          "role": "heroTitle",
+          "sourceNodeId": "25:7006",
+          "geometry": {
+            "x": 212,
+            "y": 485,
+            "width": 1497,
+            "height": 102
+          },
+          "sourceText": "Стратегия ТС5",
+          "fontSize": 120,
+          "newText": "Таск-менеджер\\nсотрудника магазина"
+        },
+        {
+          "role": "eyebrow",
+          "sourceNodeId": "25:7008",
+          "geometry": {
+            "x": 650,
+            "y": 130,
+            "width": 621,
+            "height": 104
+          },
+          "sourceText": "Новые вызовы — \nвремя возможностей",
+          "fontSize": 43,
+          "newText": "ПЯТЁРОЧКА / ОПЕРАЦИОННАЯ ЭФФЕКТИВНОСТЬ"
+        },
+        {
+          "role": "footer",
+          "sourceNodeId": "25:7007",
+          "geometry": {
+            "x": 799,
+            "y": 727,
+            "width": 323,
+            "height": 37
+          },
+          "sourceText": "Владислав Курбатов",
+          "fontSize": 31,
+          "newText": "Максим Вареник"
+        }
+      ],
+      "warnings": [
+        "No safe native subtitle slot was identified in the source cover frame; subtitle is intentionally not injected in v2 first pass."
+      ]
+    },
+    {
+      "targetFrameName": "PILOT V2 / 05 / Task Manager / Business Effect",
+      "sourceFrameId": "25:7247",
+      "sourceFrameName": "6",
+      "productionMode": "duplicate-source-frame-and-replace-text-and-panel-content",
+      "requiredFont": "X5 Sans",
+      "assetsReused": [
+        "background",
+        "chart panels",
+        "card geometry",
+        "typography",
+        "glows",
+        "footnote structure"
+      ],
+      "textNodesReplaced": [
+        {
+          "role": "slideTitle",
+          "sourceNodeId": "25:7249"
+        },
+        {
+          "role": "panelTitle1",
+          "sourceNodeId": "25:7250"
+        },
+        {
+          "role": "panelTitle2",
+          "sourceNodeId": "25:7251"
+        },
+        {
+          "role": "metricValue1",
+          "sourceNodeId": "25:7261"
+        },
+        {
+          "role": "metricValue2",
+          "sourceNodeId": "25:7264"
+        },
+        {
+          "role": "metricValue3",
+          "sourceNodeId": "25:7256"
+        }
+      ],
+      "textNodesLeftUntouched": [
+        {
+          "reason": "Dense chart labels remain untouched unless they can be mapped safely during screenshot review.",
+          "role": "chartLabel"
+        }
+      ],
+      "imageNodesReused": [],
+      "imageNodesReplaced": [],
+      "geometryPolicy": "preserve source frame geometry; adapt only inside existing content zones",
+      "stylePolicy": "preserve X5 Sans typography exactly",
+      "originalFrameModified": false,
+      "status": "ready_for_generation",
+      "replacements": [
+        {
+          "role": "slideTitle",
+          "sourceNodeId": "25:7249",
+          "geometry": {
+            "x": 60,
+            "y": 50,
+            "width": 1595,
+            "height": 55
+          },
+          "sourceText": "Мы сохранили лидерство на рынке и приросли по доле больше других",
+          "fontSize": 46,
+          "newText": "Предполагаемый эффект"
+        },
+        {
+          "role": "panelTitle1",
+          "sourceNodeId": "25:7250",
+          "geometry": {
+            "x": 60,
+            "y": 135,
+            "width": 459,
+            "height": 55
+          },
+          "sourceText": "Сохраняем лидерство рынка",
+          "fontSize": 32,
+          "newText": "Производительность труда"
+        },
+        {
+          "role": "panelTitle2",
+          "sourceNodeId": "25:7251",
+          "geometry": {
+            "x": 1273,
+            "y": 135,
+            "width": 363,
+            "height": 55
+          },
+          "sourceText": "Растем быстрее рынка",
+          "fontSize": 32,
+          "newText": "ФОТ магазина от расходов"
+        },
+        {
+          "role": "metricValue1",
+          "sourceNodeId": "25:7261",
+          "geometry": {
+            "x": 1644.09,
+            "y": 467.97,
+            "width": 74,
+            "height": 27
+          },
+          "sourceText": "21.2%",
+          "fontSize": 27,
+          "newText": "+10–15%"
+        },
+        {
+          "role": "metricValue2",
+          "sourceNodeId": "25:7264",
+          "geometry": {
+            "x": 1412.78,
+            "y": 520.3,
+            "width": 77,
+            "height": 27
+          },
+          "sourceText": "18.4%",
+          "fontSize": 27,
+          "newText": "-10%"
+        },
+        {
+          "role": "metricValue3",
+          "sourceNodeId": "25:7256",
+          "geometry": {
+            "x": 1298.85,
+            "y": 629.38,
+            "width": 74,
+            "height": 27
+          },
+          "sourceText": "12.5%",
+          "fontSize": 27,
+          "newText": "-0.4%"
+        }
+      ],
+      "warnings": [
+        "Dense chart labels remain largely untouched until screenshot review confirms safe semantic remapping.",
+        "Metric labels and notes may still require manual designer copy adaptation inside preserved source panels."
+      ]
+    }
+  ]
+}
