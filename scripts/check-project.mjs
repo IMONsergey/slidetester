@@ -22,6 +22,7 @@ const requiredFiles = [
   'docs/19-current-draft-slide-plan-review.md',
   'docs/20-current-2slides-composer.md',
   'docs/21-font-fallback-preview-runner.md',
+  'docs/22-ultra-compact-mcp-preview.md',
   'src/pipeline/run-current-pipeline.mjs',
   'src/pptx/parse-current-pptx.mjs',
   'src/planner/build-current-slide-plan.mjs',
@@ -47,6 +48,7 @@ const requiredFiles = [
   'src/runners/preview-runner.mjs',
   'src/runners/build-current-2slides-runner.mjs',
   'src/runners/build-current-2slides-font-fallback-runner.mjs',
+  'src/runners/build-current-2slides-ultra-compact-runner.mjs',
   'src/qa/build-qa-report.mjs',
   'src/qa/validate-content-purity.mjs',
   'src/qa/validate-style-token-usage.mjs'
@@ -64,7 +66,8 @@ const outputFiles = [
   'output/figma-mcp-script.generated.js',
   'output/figma-current-2slides.generated.js',
   'output/current-2slides-qa-report.json',
-  'output/figma-current-2slides-font-fallback.generated.js'
+  'output/figma-current-2slides-font-fallback.generated.js',
+  'output/figma-current-2slides-ultra-compact.generated.js'
 ];
 
 let ok = true;
@@ -99,6 +102,9 @@ if (!packageJson.scripts || packageJson.scripts['pipeline:current'] !== 'node sr
 }
 if (!packageJson.scripts || packageJson.scripts['figma:current-2slides-font-fallback'] !== 'node src/runners/build-current-2slides-font-fallback-runner.mjs') {
   fail('package.json is missing the figma:current-2slides-font-fallback script.');
+}
+if (!packageJson.scripts || packageJson.scripts['figma:current-2slides-ultra-compact'] !== 'node src/runners/build-current-2slides-ultra-compact-runner.mjs') {
+  fail('package.json is missing the figma:current-2slides-ultra-compact script.');
 }
 
 const raw = JSON.parse(readFileSync('output/current-draft-raw.json', 'utf8'));
@@ -191,6 +197,35 @@ if (fallbackScript.includes('remove()') || fallbackScript.includes('figma.curren
 }
 if (fallbackScript.includes("25:11279")) {
   fail('Fallback script must not touch the Icons frame.');
+}
+const ultraCompactScript = readFileSync('output/figma-current-2slides-ultra-compact.generated.js', 'utf8');
+if (!ultraCompactScript.includes('TEXT_TO_X5 /')) {
+  fail('Ultra-compact script must mark all text layers with TEXT_TO_X5.');
+}
+if (!ultraCompactScript.includes('CURRENT / VISUAL / 01 / Cover / FONT-FALLBACK')) {
+  fail('Ultra-compact script is missing the compact fallback cover frame.');
+}
+if (!ultraCompactScript.includes('CURRENT / VISUAL / 02 / Year In Numbers / FONT-FALLBACK')) {
+  fail('Ultra-compact script is missing the compact fallback year-in-numbers frame.');
+}
+if (ultraCompactScript.includes('CURRENT / VISUAL / 03 /')) {
+  fail('Ultra-compact script must create only two slides.');
+}
+for (const token of ['??', '?.', 'createComponent', 'clone()', 'fetch(', 'import ', 'visualModel = {']) {
+  if (ultraCompactScript.includes(token)) {
+    fail(`Forbidden construct found in ultra-compact script: ${token}`);
+  }
+}
+for (const token of ['createFrame', 'createText', 'createRectangle', 'createEllipse']) {
+  if (!ultraCompactScript.includes(token)) {
+    fail(`Ultra-compact script must use primitive ${token}.`);
+  }
+}
+if (ultraCompactScript.includes('createImage') || ultraCompactScript.includes('effects') || ultraCompactScript.includes('blur') || ultraCompactScript.includes('shadow')) {
+  fail('Ultra-compact script must not use image/effects/blur/shadow logic.');
+}
+if (ultraCompactScript.includes('remove()') || ultraCompactScript.includes('figma.currentPage.children =')) {
+  fail('Ultra-compact script appears to modify or replace original frames.');
 }
 if (!generatedScript.includes('X5 Sans is required but not available in this Figma environment.')) {
   fail('Generated Figma script must throw the strict X5 Sans blocker.');

@@ -7,6 +7,7 @@
     "check": "node scripts/check-project.mjs",
     "pipeline:current": "node src/pipeline/run-current-pipeline.mjs",
     "figma:current-2slides-font-fallback": "node src/runners/build-current-2slides-font-fallback-runner.mjs",
+    "figma:current-2slides-ultra-compact": "node src/runners/build-current-2slides-ultra-compact-runner.mjs",
     "audit:figma-script": "node src/audit/build-figma-index-script.mjs",
     "atlas:deck": "node src/audit/build-deck-atlas-script.mjs",
     "match:draft-source": "node src/audit/build-draft-source-matching.mjs",
