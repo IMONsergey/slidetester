@@ -14,12 +14,16 @@ const required = [
   'docs/05-qa-rubric.md',
   'docs/06-pilot-v1-postmortem.md',
   'docs/07-pilot-v2-method.md',
+  'docs/08-deck-atlas-method.md',
+  'docs/09-business-effect-v3-method.md',
   'schemas/slides.schema.json',
   'schemas/pattern-library.schema.json',
   'schemas/pilot-reference-map.schema.json',
   'src/pptx/parse-pptx.mjs',
   'src/classify-slides.mjs',
   'src/audit/build-pattern-library.mjs',
+  'src/audit/build-deck-atlas-script.mjs',
+  'src/audit/build-draft-source-matching.mjs',
   'src/audit/build-figma-index-script.mjs',
   'src/audit/build-source-frame-geometry-script.mjs',
   'src/audit/parse-audit-archive.mjs',
@@ -27,6 +31,7 @@ const required = [
   'src/figma/figma-helpers.mjs',
   'src/figma/print-create-pilot-script.mjs',
   'src/figma/print-create-pilot-v2-script.mjs',
+  'src/figma/print-create-business-effect-v3-script.mjs',
   'src/templates/01-cover.mjs',
   'src/templates/02-problem-map.mjs',
   'src/templates/03-target-state.mjs',
@@ -56,8 +61,32 @@ for (const file of priorityFiles) {
 
 const derivedChecks = [
   {
+    file: 'output/deck-atlas-script.generated.js',
+    requiredAfter: 'atlas:deck'
+  },
+  {
+    file: 'output/deck-atlas.json',
+    requiredAfter: 'atlas:deck'
+  },
+  {
+    file: 'output/draft-to-source-matching.json',
+    requiredAfter: 'match:draft-source'
+  },
+  {
+    file: 'output/figma-create-business-effect-v3.generated.js',
+    requiredAfter: 'figma:business-effect-v3-script'
+  },
+  {
     file: 'output/slides.json',
     requiredAfter: 'classify'
+  },
+  {
+    file: 'docs/08-deck-atlas-method.md',
+    requiredAfter: 'authoring'
+  },
+  {
+    file: 'docs/09-business-effect-v3-method.md',
+    requiredAfter: 'authoring'
   },
   {
     file: 'output/pattern-library.json',
@@ -179,6 +208,76 @@ if (existsSync(generatedV2Script)) {
   }
 }
 
+const deckAtlas = 'output/deck-atlas.json';
+if (existsSync(deckAtlas)) {
+  const body = JSON.parse(readFileSync(deckAtlas, 'utf8'));
+  if (!Array.isArray(body.frames) || body.frames.length < 70) {
+    console.error('Deck atlas must contain classifications for all original source frames.');
+    ok = false;
+  }
+  const rejected7247 = body.frames.find((frame) => frame.frameId === '25:7247');
+  if (!rejected7247 || rejected7247.semanticRole !== 'market-comparison') {
+    console.error('Deck atlas must classify 25:7247 as market-comparison.');
+    ok = false;
+  }
+}
+
+const matchingPath = 'output/draft-to-source-matching.json';
+if (existsSync(matchingPath)) {
+  const body = JSON.parse(readFileSync(matchingPath, 'utf8'));
+  if (!Array.isArray(body.draftSlides) || body.draftSlides.length < 6) {
+    console.error('Draft-to-source matching must include every draft slide.');
+    ok = false;
+  }
+  const businessEffect = Array.isArray(body.draftSlides)
+    ? body.draftSlides.find((slide) => slide.draftRole === 'business-effect')
+    : null;
+  if (!businessEffect) {
+    console.error('Draft-to-source matching is missing the business-effect slide.');
+    ok = false;
+  } else {
+    if (businessEffect.selectedProductionMode !== 'clean-clone-remove-content-rebuild') {
+      console.error('Business-effect slide must use clean-clone-remove-content-rebuild.');
+      ok = false;
+    }
+    const candidate7247 = Array.isArray(businessEffect.candidateFrames)
+      ? businessEffect.candidateFrames.find((candidate) => candidate.frameId === '25:7247')
+      : null;
+    if (!candidate7247 || candidate7247.decision !== 'rejected') {
+      console.error('Business-effect matching must explicitly reject 25:7247.');
+      ok = false;
+    }
+  }
+}
+
+const generatedV3Script = 'output/figma-create-business-effect-v3.generated.js';
+if (existsSync(generatedV3Script)) {
+  const body = readFileSync(generatedV3Script, 'utf8');
+  const requiredTokens = [
+    'PILOT V3 / 05 / Task Manager / Business Effect',
+    '25:7044',
+    '25:7247',
+    'clean-clone-remove-content-rebuild',
+    'X5 Sans is required but not available.'
+  ];
+  for (const token of requiredTokens) {
+    if (!body.includes(token)) {
+      console.error(`Generated Business Effect V3 script is missing required token: ${token}`);
+      ok = false;
+    }
+  }
+  for (const token of ['Inter', 'figp_', '_authToken', 'PRIVATE KEY', '??', '?.']) {
+    if (body.includes(token)) {
+      console.error(`Forbidden token pattern found in ${generatedV3Script}: ${token}`);
+      ok = false;
+    }
+  }
+  if (!body.includes("rejectedDirectCloneFrameId: '25:7247'")) {
+    console.error('Generated Business Effect V3 script must report the rejected 25:7247 direct clone.');
+    ok = false;
+  }
+}
+
 const localPluginFiles = ['figma-plugin/manifest.json', 'figma-plugin/code.js', 'figma-plugin/README.md'];
 for (const file of localPluginFiles) {
   if (existsSync(file)) {
@@ -203,8 +302,16 @@ if (existsSync(localPluginCode)) {
     console.error('Local Figma plugin code must not contain Inter fallback logic.');
     ok = false;
   }
-  if (!body.includes('PILOT V2 / 01 / Task Manager / Cover') || !body.includes('PILOT V2 / 05 / Task Manager / Business Effect')) {
-    console.error('Local Figma plugin code is missing required target frame names.');
+  if (!body.includes('PILOT V3 / 05 / Task Manager / Business Effect')) {
+    console.error('Local Figma plugin code is missing the required V3 target frame name.');
+    ok = false;
+  }
+  if (!body.includes('25:7044')) {
+    console.error('Local Figma plugin code must duplicate source frame 25:7044.');
+    ok = false;
+  }
+  if (body.includes('Inter')) {
+    console.error('Local Figma plugin code must not contain Inter fallback logic.');
     ok = false;
   }
   for (const token of ['??', '?.']) {

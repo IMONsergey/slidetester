@@ -6,10 +6,13 @@
   "scripts": {
     "check": "node scripts/check-project.mjs",
     "audit:figma-script": "node src/audit/build-figma-index-script.mjs",
+    "atlas:deck": "node src/audit/build-deck-atlas-script.mjs",
+    "match:draft-source": "node src/audit/build-draft-source-matching.mjs",
     "parse:pptx": "node src/pptx/parse-pptx.mjs",
     "classify": "node src/classify-slides.mjs",
     "patterns": "node src/audit/build-pattern-library.mjs",
     "figma:pilot-script": "node src/figma/print-create-pilot-script.mjs",
+    "figma:business-effect-v3-script": "node src/figma/print-create-business-effect-v3-script.mjs",
     "build:figma-plugin": "node src/figma/build-local-plugin.mjs"
   },
   "dependencies": {

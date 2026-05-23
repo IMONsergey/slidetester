@@ -1,0 +1,2504 @@
+{
+  "generatedAt": "2026-05-23T10:06:13.389Z",
+  "fileKey": "735drrzVTmf4AhQJwQe6vX",
+  "page": {
+    "id": "0:1",
+    "name": "Page 1"
+  },
+  "frameCount": 75,
+  "frames": [
+    {
+      "frameId": "25:6981",
+      "frameName": "1",
+      "screenshotNeeded": true,
+      "slideType": "cover",
+      "semanticRole": "hero-cover",
+      "contentArchitecture": "hero title over full-bleed image",
+      "visualStructure": "full-bleed photo cover with centered or left title",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": false,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "image masks",
+        "glows",
+        "title block",
+        "typography"
+      ],
+      "dangerousToKeep": [
+        "old speaker names",
+        "old cover title"
+      ],
+      "suitableForDraftRoles": [
+        "cover",
+        "section-divider"
+      ],
+      "notes": "Strong cover family; safest for direct-clone cover work."
+    },
+    {
+      "frameId": "25:7009",
+      "frameName": "2",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "low",
+      "hasCharts": true,
+      "hasCards": false,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": true,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:7044",
+      "frameName": "18",
+      "screenshotNeeded": true,
+      "slideType": "metrics-summary",
+      "semanticRole": "kpi-summary",
+      "contentArchitecture": "three large independent KPI cards",
+      "visualStructure": "three floating metric cards on open dark stage",
+      "densityLevel": "low",
+      "hasCharts": true,
+      "hasCards": false,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "glows",
+        "title block",
+        "metric style"
+      ],
+      "dangerousToKeep": [
+        "old metric values",
+        "old card labels",
+        "old source note",
+        "decorative arrow if semantically irrelevant"
+      ],
+      "suitableForDraftRoles": [
+        "business-effect",
+        "metrics-summary"
+      ],
+      "notes": "Best native family for clean-clone metric summary rebuilds."
+    },
+    {
+      "frameId": "25:7078",
+      "frameName": "3",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "high",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": false,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:7166",
+      "frameName": "4",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": false,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:7247",
+      "frameName": "6",
+      "screenshotNeeded": true,
+      "slideType": "market-share-analytics",
+      "semanticRole": "market-comparison",
+      "contentArchitecture": "dual chart comparison with legends and time series",
+      "visualStructure": "left multi-line chart plus right spotlight chart",
+      "densityLevel": "high",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": false,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "title block",
+        "glows",
+        "chart style"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old legend",
+        "old market labels",
+        "old years",
+        "old source notes"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Reject as direct clone for business effect: wrong semantic architecture."
+    },
+    {
+      "frameId": "25:7461",
+      "frameName": "7",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:7544",
+      "frameName": "12",
+      "screenshotNeeded": true,
+      "slideType": "performance-review",
+      "semanticRole": "results-vs-plan",
+      "contentArchitecture": "table summary plus thematic issue cards",
+      "visualStructure": "left matrix with right stacked insight cards",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "title block",
+        "glows"
+      ],
+      "dangerousToKeep": [
+        "old budget table",
+        "old issue labels",
+        "old source note"
+      ],
+      "suitableForDraftRoles": [
+        "business-effect",
+        "problem"
+      ],
+      "notes": "Good structural backup when multi-card narrative is needed."
+    },
+    {
+      "frameId": "25:7634",
+      "frameName": "14",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "low",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:7679",
+      "frameName": "15",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:7745",
+      "frameName": "16",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": false,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:8018",
+      "frameName": "17",
+      "screenshotNeeded": true,
+      "slideType": "goals-matrix",
+      "semanticRole": "goals-and-targets",
+      "contentArchitecture": "hero image plus two-column target matrix",
+      "visualStructure": "photo-led frame with stacked KPI cells on right",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "image masks",
+        "glows",
+        "metric style"
+      ],
+      "dangerousToKeep": [
+        "old goal table",
+        "old budget figures",
+        "old product photo"
+      ],
+      "suitableForDraftRoles": [
+        "business-effect",
+        "metrics-summary"
+      ],
+      "notes": "Useful secondary reference for KPI styling, but photo semantics are strong."
+    },
+    {
+      "frameId": "25:8070",
+      "frameName": "8",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:8101",
+      "frameName": "9",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:8197",
+      "frameName": "10",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": false,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:8277",
+      "frameName": "11",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:8357",
+      "frameName": "5",
+      "screenshotNeeded": true,
+      "slideType": "statement-slide",
+      "semanticRole": "section-divider",
+      "contentArchitecture": "big statement over abstract image",
+      "visualStructure": "single-message composition",
+      "densityLevel": "low",
+      "hasCharts": true,
+      "hasCards": false,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "image masks",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old statement text"
+      ],
+      "suitableForDraftRoles": [
+        "section-divider"
+      ],
+      "notes": "Statement slide family."
+    },
+    {
+      "frameId": "25:8364",
+      "frameName": "13",
+      "screenshotNeeded": true,
+      "slideType": "focus-pillars",
+      "semanticRole": "priorities",
+      "contentArchitecture": "3-5 focus cards over hero visual",
+      "visualStructure": "photo-led slide with bottom card rail",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "image masks",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old focus labels",
+        "old people photo if semantically conflicting"
+      ],
+      "suitableForDraftRoles": [
+        "problem",
+        "target-state",
+        "three-pillars"
+      ],
+      "notes": "Strong card family, but not a pure metrics summary."
+    },
+    {
+      "frameId": "25:8391",
+      "frameName": "20",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": false,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:8411",
+      "frameName": "19",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": false,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:8477",
+      "frameName": "4583",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": true,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:8501",
+      "frameName": "4584",
+      "screenshotNeeded": true,
+      "slideType": "section-divider",
+      "semanticRole": "section-divider",
+      "contentArchitecture": "oversized chapter marker",
+      "visualStructure": "minimal dark divider with huge numerals",
+      "densityLevel": "low",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old section labels"
+      ],
+      "suitableForDraftRoles": [
+        "section-divider"
+      ],
+      "notes": "Divider-only use."
+    },
+    {
+      "frameId": "25:8560",
+      "frameName": "4585",
+      "screenshotNeeded": true,
+      "slideType": "focus-pillars",
+      "semanticRole": "priorities",
+      "contentArchitecture": "3-5 focus cards over hero visual",
+      "visualStructure": "photo-led slide with bottom card rail",
+      "densityLevel": "low",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": true,
+      "hasComparison": true,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "image masks",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old focus labels",
+        "old people photo if semantically conflicting"
+      ],
+      "suitableForDraftRoles": [
+        "problem",
+        "target-state",
+        "three-pillars"
+      ],
+      "notes": "Strong card family, but not a pure metrics summary."
+    },
+    {
+      "frameId": "25:8619",
+      "frameName": "4586",
+      "screenshotNeeded": true,
+      "slideType": "cover",
+      "semanticRole": "hero-cover",
+      "contentArchitecture": "hero title over full-bleed image",
+      "visualStructure": "full-bleed photo cover with centered or left title",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": false,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "image masks",
+        "glows",
+        "title block",
+        "typography"
+      ],
+      "dangerousToKeep": [
+        "old speaker names",
+        "old cover title"
+      ],
+      "suitableForDraftRoles": [
+        "cover",
+        "section-divider"
+      ],
+      "notes": "Strong cover family; safest for direct-clone cover work."
+    },
+    {
+      "frameId": "25:8644",
+      "frameName": "4587",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:8687",
+      "frameName": "4588",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:8744",
+      "frameName": "4589",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:8782",
+      "frameName": "4590",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:8823",
+      "frameName": "4591",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "high",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": false,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:9043",
+      "frameName": "4592",
+      "screenshotNeeded": true,
+      "slideType": "focus-pillars",
+      "semanticRole": "priorities",
+      "contentArchitecture": "3-5 focus cards over hero visual",
+      "visualStructure": "photo-led slide with bottom card rail",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": true,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "image masks",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old focus labels",
+        "old people photo if semantically conflicting"
+      ],
+      "suitableForDraftRoles": [
+        "problem",
+        "target-state",
+        "three-pillars"
+      ],
+      "notes": "Strong card family, but not a pure metrics summary."
+    },
+    {
+      "frameId": "25:9065",
+      "frameName": "4593",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": true,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:9151",
+      "frameName": "4594",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": false,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:9225",
+      "frameName": "4595",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": false,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:9298",
+      "frameName": "4596",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:9337",
+      "frameName": "4597",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:9372",
+      "frameName": "4598",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "high",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:9485",
+      "frameName": "4599",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:9511",
+      "frameName": "4600",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:9538",
+      "frameName": "4601",
+      "screenshotNeeded": true,
+      "slideType": "metrics-dashboard",
+      "semanticRole": "dashboard",
+      "contentArchitecture": "multi-metric grid with comparison columns",
+      "visualStructure": "dense dashboard with rows and year columns",
+      "densityLevel": "high",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "metric style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old metric rows",
+        "old year columns",
+        "old benchmark labels"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Semantically metric-heavy but too dense for simple three-card effect slide."
+    },
+    {
+      "frameId": "25:9603",
+      "frameName": "31",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": true,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:9634",
+      "frameName": "23",
+      "screenshotNeeded": true,
+      "slideType": "pillar-slide",
+      "semanticRole": "priorities",
+      "contentArchitecture": "multi-pillar card layout",
+      "visualStructure": "cards or lanes with numbered priorities",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": true,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old priority labels"
+      ],
+      "suitableForDraftRoles": [
+        "problem",
+        "target-state",
+        "three-pillars"
+      ],
+      "notes": "General pillar family."
+    },
+    {
+      "frameId": "25:9703",
+      "frameName": "22",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:9748",
+      "frameName": "21",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:9782",
+      "frameName": "30",
+      "screenshotNeeded": true,
+      "slideType": "improvement-potential",
+      "semanticRole": "factor-waterfall",
+      "contentArchitecture": "factor list plus cumulative impact bars",
+      "visualStructure": "left factor stack with right waterfall/progression",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": false,
+      "hasTimeline": false,
+      "hasProcessFlow": true,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "title block",
+        "glows",
+        "chart style"
+      ],
+      "dangerousToKeep": [
+        "old factor labels",
+        "old impact bars",
+        "old cumulative numbers"
+      ],
+      "suitableForDraftRoles": [
+        "problem"
+      ],
+      "notes": "Too causal/process-oriented for simple KPI summary."
+    },
+    {
+      "frameId": "25:9843",
+      "frameName": "4602",
+      "screenshotNeeded": true,
+      "slideType": "section-divider",
+      "semanticRole": "section-divider",
+      "contentArchitecture": "oversized chapter marker",
+      "visualStructure": "minimal dark divider with huge numerals",
+      "densityLevel": "low",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old section labels"
+      ],
+      "suitableForDraftRoles": [
+        "section-divider"
+      ],
+      "notes": "Divider-only use."
+    },
+    {
+      "frameId": "25:9926",
+      "frameName": "4603",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": true,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:9963",
+      "frameName": "24",
+      "screenshotNeeded": true,
+      "slideType": "cover",
+      "semanticRole": "hero-cover",
+      "contentArchitecture": "hero title over full-bleed image",
+      "visualStructure": "full-bleed photo cover with centered or left title",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": false,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "image masks",
+        "glows",
+        "title block",
+        "typography"
+      ],
+      "dangerousToKeep": [
+        "old speaker names",
+        "old cover title"
+      ],
+      "suitableForDraftRoles": [
+        "cover",
+        "section-divider"
+      ],
+      "notes": "Strong cover family; safest for direct-clone cover work."
+    },
+    {
+      "frameId": "25:9990",
+      "frameName": "25",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:10027",
+      "frameName": "27",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:10071",
+      "frameName": "28",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:10116",
+      "frameName": "29",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:10150",
+      "frameName": "26",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:10222",
+      "frameName": "4604",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": true,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:10262",
+      "frameName": "4605",
+      "screenshotNeeded": true,
+      "slideType": "narrative-slide",
+      "semanticRole": "narrative",
+      "contentArchitecture": "mixed narrative board",
+      "visualStructure": "dark deck narrative composition",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": true,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old narrative copy"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Requires slide-specific screenshot review."
+    },
+    {
+      "frameId": "25:10302",
+      "frameName": "4606",
+      "screenshotNeeded": true,
+      "slideType": "cover",
+      "semanticRole": "hero-cover",
+      "contentArchitecture": "hero title over full-bleed image",
+      "visualStructure": "full-bleed photo cover with centered or left title",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": false,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "image masks",
+        "glows",
+        "title block",
+        "typography"
+      ],
+      "dangerousToKeep": [
+        "old speaker names",
+        "old cover title"
+      ],
+      "suitableForDraftRoles": [
+        "cover",
+        "section-divider"
+      ],
+      "notes": "Strong cover family; safest for direct-clone cover work."
+    },
+    {
+      "frameId": "25:10328",
+      "frameName": "4607",
+      "screenshotNeeded": true,
+      "slideType": "cover",
+      "semanticRole": "hero-cover",
+      "contentArchitecture": "hero title over full-bleed image",
+      "visualStructure": "full-bleed photo cover with centered or left title",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": false,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "image masks",
+        "glows",
+        "title block",
+        "typography"
+      ],
+      "dangerousToKeep": [
+        "old speaker names",
+        "old cover title"
+      ],
+      "suitableForDraftRoles": [
+        "cover",
+        "section-divider"
+      ],
+      "notes": "Strong cover family; safest for direct-clone cover work."
+    },
+    {
+      "frameId": "25:10355",
+      "frameName": "4608",
+      "screenshotNeeded": true,
+      "slideType": "metrics-dashboard",
+      "semanticRole": "dashboard",
+      "contentArchitecture": "multi-metric grid with comparison columns",
+      "visualStructure": "dense dashboard with rows and year columns",
+      "densityLevel": "high",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": false,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "metric style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old metric rows",
+        "old year columns",
+        "old benchmark labels"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Semantically metric-heavy but too dense for simple three-card effect slide."
+    },
+    {
+      "frameId": "25:10434",
+      "frameName": "4609",
+      "screenshotNeeded": true,
+      "slideType": "architecture-breakdown",
+      "semanticRole": "system-breakdown",
+      "contentArchitecture": "numbered concept blocks with explanations",
+      "visualStructure": "multi-zone architecture board",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "title block",
+        "glows"
+      ],
+      "dangerousToKeep": [
+        "old concept labels",
+        "old explanatory paragraphs"
+      ],
+      "suitableForDraftRoles": [
+        "solution-engine",
+        "operating-model"
+      ],
+      "notes": "Solid family for solution architecture slides."
+    },
+    {
+      "frameId": "25:10479",
+      "frameName": "4610",
+      "screenshotNeeded": true,
+      "slideType": "architecture-breakdown",
+      "semanticRole": "system-breakdown",
+      "contentArchitecture": "numbered concept blocks with explanations",
+      "visualStructure": "multi-zone architecture board",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": true,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "title block",
+        "glows"
+      ],
+      "dangerousToKeep": [
+        "old concept labels",
+        "old explanatory paragraphs"
+      ],
+      "suitableForDraftRoles": [
+        "solution-engine",
+        "operating-model"
+      ],
+      "notes": "Solid family for solution architecture slides."
+    },
+    {
+      "frameId": "25:10509",
+      "frameName": "4611",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "low",
+      "hasCharts": true,
+      "hasCards": false,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": true,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    },
+    {
+      "frameId": "25:10530",
+      "frameName": "4612",
+      "screenshotNeeded": true,
+      "slideType": "culture-slide",
+      "semanticRole": "culture",
+      "contentArchitecture": "principles plus initiative callouts",
+      "visualStructure": "editorial collage with metric callouts",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "image masks",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old culture slogans",
+        "old initiatives"
+      ],
+      "suitableForDraftRoles": [],
+      "notes": "Narrative/culture family, not relevant for business effect."
+    },
+    {
+      "frameId": "25:10598",
+      "frameName": "4613",
+      "screenshotNeeded": true,
+      "slideType": "three-pillars",
+      "semanticRole": "three-pillars",
+      "contentArchitecture": "three strategic pillars with short descriptors",
+      "visualStructure": "three-column pillar statement with supporting imagery",
+      "densityLevel": "high",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "icons",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old pillar names",
+        "old imagery"
+      ],
+      "suitableForDraftRoles": [
+        "target-state",
+        "three-pillars"
+      ],
+      "notes": "Good semantic match for target-state style slides."
+    },
+    {
+      "frameId": "25:10664",
+      "frameName": "4614",
+      "screenshotNeeded": true,
+      "slideType": "roadmap-evolution",
+      "semanticRole": "roadmap",
+      "contentArchitecture": "evolution path across maturity stages",
+      "visualStructure": "left-to-right stage comparison",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": true,
+      "hasPillars": true,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "title block",
+        "glows"
+      ],
+      "dangerousToKeep": [
+        "old stage labels",
+        "old maturity copy"
+      ],
+      "suitableForDraftRoles": [
+        "roadmap",
+        "operating-model"
+      ],
+      "notes": "Best current family for roadmap or staged transformation."
+    },
+    {
+      "frameId": "25:10717",
+      "frameName": "4615",
+      "screenshotNeeded": true,
+      "slideType": "three-pillars",
+      "semanticRole": "three-pillars",
+      "contentArchitecture": "three strategic pillars with short descriptors",
+      "visualStructure": "three-column pillar statement with supporting imagery",
+      "densityLevel": "low",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "icons",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old pillar names",
+        "old imagery"
+      ],
+      "suitableForDraftRoles": [
+        "target-state",
+        "three-pillars"
+      ],
+      "notes": "Good semantic match for target-state style slides."
+    },
+    {
+      "frameId": "25:10750",
+      "frameName": "4616",
+      "screenshotNeeded": true,
+      "slideType": "results-priorities",
+      "semanticRole": "priorities",
+      "contentArchitecture": "priority cards with result callouts",
+      "visualStructure": "dark card grid with highlighted metrics",
+      "densityLevel": "high",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old hr priorities",
+        "old metrics",
+        "old notes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary",
+        "three-pillars"
+      ],
+      "notes": "Visually strong but semantically HR-specific."
+    },
+    {
+      "frameId": "25:10841",
+      "frameName": "4617",
+      "screenshotNeeded": true,
+      "slideType": "three-pillars",
+      "semanticRole": "three-pillars",
+      "contentArchitecture": "three strategic pillars with short descriptors",
+      "visualStructure": "three-column pillar statement with supporting imagery",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": true,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "icons",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old pillar names",
+        "old imagery"
+      ],
+      "suitableForDraftRoles": [
+        "target-state",
+        "three-pillars"
+      ],
+      "notes": "Good semantic match for target-state style slides."
+    },
+    {
+      "frameId": "25:10876",
+      "frameName": "4618",
+      "screenshotNeeded": true,
+      "slideType": "operating-model",
+      "semanticRole": "end-to-end-process",
+      "contentArchitecture": "process map across employee lifecycle",
+      "visualStructure": "dense horizontal operating-system map",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": false,
+      "hasTimeline": false,
+      "hasProcessFlow": true,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "icons",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old lifecycle nodes",
+        "old process labels"
+      ],
+      "suitableForDraftRoles": [
+        "solution-engine",
+        "operating-model"
+      ],
+      "notes": "Use for operating-model or journey-based slides."
+    },
+    {
+      "frameId": "25:10932",
+      "frameName": "4619",
+      "screenshotNeeded": true,
+      "slideType": "feature-system",
+      "semanticRole": "feature-breakdown",
+      "contentArchitecture": "platform features grouped by theme",
+      "visualStructure": "modular card matrix",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "icons",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old feature labels"
+      ],
+      "suitableForDraftRoles": [
+        "solution-engine"
+      ],
+      "notes": "Useful for feature or capability slides."
+    },
+    {
+      "frameId": "25:10966",
+      "frameName": "4620",
+      "screenshotNeeded": true,
+      "slideType": "results-priorities",
+      "semanticRole": "priorities",
+      "contentArchitecture": "priority cards with result callouts",
+      "visualStructure": "dark card grid with highlighted metrics",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": true,
+      "hasHeroTitle": true,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old hr priorities",
+        "old metrics",
+        "old notes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary",
+        "three-pillars"
+      ],
+      "notes": "Visually strong but semantically HR-specific."
+    },
+    {
+      "frameId": "25:10988",
+      "frameName": "4621",
+      "screenshotNeeded": true,
+      "slideType": "results-priorities",
+      "semanticRole": "priorities",
+      "contentArchitecture": "priority cards with result callouts",
+      "visualStructure": "dark card grid with highlighted metrics",
+      "densityLevel": "high",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": true,
+      "hasPillars": true,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old hr priorities",
+        "old metrics",
+        "old notes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary",
+        "three-pillars"
+      ],
+      "notes": "Visually strong but semantically HR-specific."
+    },
+    {
+      "frameId": "25:11061",
+      "frameName": "4622",
+      "screenshotNeeded": true,
+      "slideType": "roadmap-evolution",
+      "semanticRole": "roadmap",
+      "contentArchitecture": "evolution path across maturity stages",
+      "visualStructure": "left-to-right stage comparison",
+      "densityLevel": "medium",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": true,
+      "hasProcessFlow": true,
+      "hasPillars": true,
+      "hasComparison": true,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "title block",
+        "glows"
+      ],
+      "dangerousToKeep": [
+        "old stage labels",
+        "old maturity copy"
+      ],
+      "suitableForDraftRoles": [
+        "roadmap",
+        "operating-model"
+      ],
+      "notes": "Best current family for roadmap or staged transformation."
+    },
+    {
+      "frameId": "25:11100",
+      "frameName": "4623",
+      "screenshotNeeded": true,
+      "slideType": "competency-model",
+      "semanticRole": "operating-model",
+      "contentArchitecture": "competency wheel and principles",
+      "visualStructure": "diagram plus competency blocks",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "icons",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old competencies"
+      ],
+      "suitableForDraftRoles": [
+        "operating-model"
+      ],
+      "notes": "Can support leadership/operating-model slides."
+    },
+    {
+      "frameId": "25:11137",
+      "frameName": "4624",
+      "screenshotNeeded": true,
+      "slideType": "cover",
+      "semanticRole": "hero-cover",
+      "contentArchitecture": "hero title over full-bleed image",
+      "visualStructure": "full-bleed photo cover with centered or left title",
+      "densityLevel": "medium",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "image masks",
+        "glows",
+        "title block",
+        "typography"
+      ],
+      "dangerousToKeep": [
+        "old speaker names",
+        "old cover title"
+      ],
+      "suitableForDraftRoles": [
+        "cover",
+        "section-divider"
+      ],
+      "notes": "Strong cover family; safest for direct-clone cover work."
+    },
+    {
+      "frameId": "25:11194",
+      "frameName": "4625",
+      "screenshotNeeded": true,
+      "slideType": "results-priorities",
+      "semanticRole": "priorities",
+      "contentArchitecture": "priority cards with result callouts",
+      "visualStructure": "dark card grid with highlighted metrics",
+      "densityLevel": "low",
+      "hasCharts": false,
+      "hasCards": true,
+      "hasLargeNumbers": false,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": true,
+      "reusableAssets": [
+        "background",
+        "cards",
+        "glows",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old hr priorities",
+        "old metrics",
+        "old notes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary",
+        "three-pillars"
+      ],
+      "notes": "Visually strong but semantically HR-specific."
+    },
+    {
+      "frameId": "25:11224",
+      "frameName": "4626",
+      "screenshotNeeded": true,
+      "slideType": "analytics-slide",
+      "semanticRole": "analytics",
+      "contentArchitecture": "chart-led analytical summary",
+      "visualStructure": "dark executive chart composition",
+      "densityLevel": "low",
+      "hasCharts": true,
+      "hasCards": true,
+      "hasLargeNumbers": true,
+      "hasImages": true,
+      "hasTimeline": false,
+      "hasProcessFlow": false,
+      "hasPillars": false,
+      "hasComparison": false,
+      "hasHeroTitle": false,
+      "reusableAsBase": false,
+      "reusableAssets": [
+        "background",
+        "chart style",
+        "title block"
+      ],
+      "dangerousToKeep": [
+        "old chart data",
+        "old labels",
+        "old footnotes"
+      ],
+      "suitableForDraftRoles": [
+        "metrics-summary"
+      ],
+      "notes": "Needs heavy cleanup before reuse."
+    }
+  ]
+}

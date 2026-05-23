@@ -1,0 +1,419 @@
+{
+  "generatedAt": "2026-05-23T10:07:23.399Z",
+  "fileKey": "735drrzVTmf4AhQJwQe6vX",
+  "page": {
+    "id": "0:1",
+    "name": "Page 1"
+  },
+  "draftSlides": [
+    {
+      "draftSlide": 1,
+      "draftRole": "cover",
+      "contentArchitecture": "hero title over full-bleed image",
+      "requiredBlocks": [
+        "eyebrow",
+        "heroTitle",
+        "footer"
+      ],
+      "forbiddenSourceContent": [
+        "old speaker names",
+        "old cover title"
+      ],
+      "candidateFrames": [
+        {
+          "frameId": "25:6981",
+          "frameName": "1",
+          "semanticFit": 96,
+          "visualFit": 90,
+          "contentArchitectureFit": 96,
+          "risks": [
+            "old speaker names",
+            "old cover title"
+          ],
+          "decision": "selected",
+          "reason": "Selected as the strongest current cover semantic match from the deck atlas."
+        },
+        {
+          "frameId": "25:8619",
+          "frameName": "4586",
+          "semanticFit": 82,
+          "visualFit": 78,
+          "contentArchitectureFit": 80,
+          "risks": [
+            "old speaker names",
+            "old cover title"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because its architecture is weaker for cover than the selected reference family."
+        },
+        {
+          "frameId": "25:10302",
+          "frameName": "4606",
+          "semanticFit": 82,
+          "visualFit": 78,
+          "contentArchitectureFit": 80,
+          "risks": [
+            "old speaker names",
+            "old cover title"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because its architecture is weaker for cover than the selected reference family."
+        }
+      ],
+      "selectedProductionMode": "direct-clone-replace-text"
+    },
+    {
+      "draftSlide": 2,
+      "draftRole": "problem",
+      "contentArchitecture": "problem statement plus multiple friction blocks",
+      "requiredBlocks": [
+        "title",
+        "problemStatement",
+        "frictionBlock1",
+        "frictionBlock2",
+        "frictionBlock3"
+      ],
+      "forbiddenSourceContent": [
+        "old market chart",
+        "old growth claims",
+        "old CVP labels"
+      ],
+      "candidateFrames": [
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "semanticFit": 96,
+          "visualFit": 90,
+          "contentArchitectureFit": 96,
+          "risks": [
+            "old budget table",
+            "old issue labels",
+            "old source note"
+          ],
+          "decision": "selected",
+          "reason": "Selected as the strongest current problem semantic match from the deck atlas."
+        },
+        {
+          "frameId": "25:9043",
+          "frameName": "4592",
+          "semanticFit": 82,
+          "visualFit": 78,
+          "contentArchitectureFit": 80,
+          "risks": [
+            "old focus labels",
+            "old people photo if semantically conflicting"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because its architecture is weaker for problem than the selected reference family."
+        },
+        {
+          "frameId": "25:9782",
+          "frameName": "30",
+          "semanticFit": 28,
+          "visualFit": 61,
+          "contentArchitectureFit": 18,
+          "risks": [
+            "old factor labels",
+            "old impact bars",
+            "old cumulative numbers"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because its architecture is weaker for problem than the selected reference family."
+        }
+      ],
+      "selectedProductionMode": "clean-clone-remove-content-rebuild"
+    },
+    {
+      "draftSlide": 3,
+      "draftRole": "target-state",
+      "contentArchitecture": "three outcome pillars",
+      "requiredBlocks": [
+        "title",
+        "pillar1",
+        "pillar2",
+        "pillar3"
+      ],
+      "forbiddenSourceContent": [
+        "old HR wording",
+        "old image semantics"
+      ],
+      "candidateFrames": [
+        {
+          "frameId": "25:10717",
+          "frameName": "4615",
+          "semanticFit": 96,
+          "visualFit": 90,
+          "contentArchitectureFit": 96,
+          "risks": [
+            "old pillar names",
+            "old imagery"
+          ],
+          "decision": "selected",
+          "reason": "Selected as the strongest current target-state semantic match from the deck atlas."
+        },
+        {
+          "frameId": "25:9043",
+          "frameName": "4592",
+          "semanticFit": 82,
+          "visualFit": 78,
+          "contentArchitectureFit": 80,
+          "risks": [
+            "old focus labels",
+            "old people photo if semantically conflicting"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because its architecture is weaker for target-state than the selected reference family."
+        },
+        {
+          "frameId": "25:10598",
+          "frameName": "4613",
+          "semanticFit": 82,
+          "visualFit": 78,
+          "contentArchitectureFit": 80,
+          "risks": [
+            "old pillar names",
+            "old imagery"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because its architecture is weaker for target-state than the selected reference family."
+        }
+      ],
+      "selectedProductionMode": "direct-clone-replace-text"
+    },
+    {
+      "draftSlide": 4,
+      "draftRole": "solution-engine",
+      "contentArchitecture": "operating model with mechanism blocks",
+      "requiredBlocks": [
+        "title",
+        "mechanism1",
+        "mechanism2",
+        "mechanism3",
+        "mechanism4"
+      ],
+      "forbiddenSourceContent": [
+        "old HR concepts",
+        "old role-model copy"
+      ],
+      "candidateFrames": [
+        {
+          "frameId": "25:10434",
+          "frameName": "4609",
+          "semanticFit": 96,
+          "visualFit": 90,
+          "contentArchitectureFit": 96,
+          "risks": [
+            "old concept labels",
+            "old explanatory paragraphs"
+          ],
+          "decision": "selected",
+          "reason": "Selected as the strongest current solution-engine semantic match from the deck atlas."
+        },
+        {
+          "frameId": "25:10876",
+          "frameName": "4618",
+          "semanticFit": 82,
+          "visualFit": 78,
+          "contentArchitectureFit": 80,
+          "risks": [
+            "old lifecycle nodes",
+            "old process labels"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because its architecture is weaker for solution-engine than the selected reference family."
+        },
+        {
+          "frameId": "25:10479",
+          "frameName": "4610",
+          "semanticFit": 82,
+          "visualFit": 78,
+          "contentArchitectureFit": 80,
+          "risks": [
+            "old concept labels",
+            "old explanatory paragraphs"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because its architecture is weaker for solution-engine than the selected reference family."
+        }
+      ],
+      "selectedProductionMode": "hybrid-source-composition"
+    },
+    {
+      "draftSlide": 5,
+      "draftRole": "business-effect",
+      "contentArchitecture": "three independent KPI cards",
+      "requiredBlocks": [
+        "title",
+        "metricCard1",
+        "metricCard2",
+        "metricCard3"
+      ],
+      "forbiddenSourceContent": [
+        "market chart",
+        "competitor legend",
+        "old years",
+        "old source note"
+      ],
+      "candidateFrames": [
+        {
+          "frameId": "25:7044",
+          "frameName": "18",
+          "semanticFit": 96,
+          "visualFit": 90,
+          "contentArchitectureFit": 96,
+          "risks": [
+            "old metric values",
+            "old card labels",
+            "old source note",
+            "decorative arrow if semantically irrelevant"
+          ],
+          "decision": "selected",
+          "reason": "Selected because the source already uses three independent KPI cards on a dark open stage, which matches the draft architecture after content cleanup."
+        },
+        {
+          "frameId": "25:7544",
+          "frameName": "12",
+          "semanticFit": 82,
+          "visualFit": 78,
+          "contentArchitectureFit": 80,
+          "risks": [
+            "old budget table",
+            "old issue labels",
+            "old source note"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected as primary but kept as backup because the card language is useful, yet the left table and issue taxonomy still push the slide toward results-vs-plan narrative."
+        },
+        {
+          "frameId": "25:8018",
+          "frameName": "17",
+          "semanticFit": 82,
+          "visualFit": 78,
+          "contentArchitectureFit": 80,
+          "risks": [
+            "old goal table",
+            "old budget figures",
+            "old product photo"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected as primary because the strong product photo and goals matrix create a goals-and-targets slide, not a clean business-effect summary."
+        },
+        {
+          "frameId": "25:9538",
+          "frameName": "4601",
+          "semanticFit": 36,
+          "visualFit": 68,
+          "contentArchitectureFit": 24,
+          "risks": [
+            "old metric rows",
+            "old year columns",
+            "old benchmark labels"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because the dashboard is too dense and year-driven for a simple three-metric executive summary."
+        },
+        {
+          "frameId": "25:9043",
+          "frameName": "4592",
+          "semanticFit": 42,
+          "visualFit": 78,
+          "contentArchitectureFit": 40,
+          "risks": [
+            "old focus labels",
+            "old people photo if semantically conflicting"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because the composition is a five-focus-direction priorities slide rather than a KPI outcome slide."
+        },
+        {
+          "frameId": "25:9782",
+          "frameName": "30",
+          "semanticFit": 28,
+          "visualFit": 61,
+          "contentArchitectureFit": 18,
+          "risks": [
+            "old factor labels",
+            "old impact bars",
+            "old cumulative numbers"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because the architecture is a factor waterfall and causal process explanation, not an outcome summary."
+        },
+        {
+          "frameId": "25:7247",
+          "frameName": "6",
+          "semanticFit": 8,
+          "visualFit": 63,
+          "contentArchitectureFit": 4,
+          "risks": [
+            "old chart data",
+            "old legend",
+            "old market labels",
+            "old years",
+            "old source notes"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because it is a market-comparison slide with legacy chart lines, legend, years, and source notes that conflict with a self-contained KPI summary."
+        }
+      ],
+      "selectedProductionMode": "clean-clone-remove-content-rebuild"
+    },
+    {
+      "draftSlide": 6,
+      "draftRole": "roadmap",
+      "contentArchitecture": "staged roadmap / evolution path",
+      "requiredBlocks": [
+        "title",
+        "stage1",
+        "stage2",
+        "stage3"
+      ],
+      "forbiddenSourceContent": [
+        "old HR maturity labels",
+        "old office-specific copy"
+      ],
+      "candidateFrames": [
+        {
+          "frameId": "25:10664",
+          "frameName": "4614",
+          "semanticFit": 96,
+          "visualFit": 90,
+          "contentArchitectureFit": 96,
+          "risks": [
+            "old stage labels",
+            "old maturity copy"
+          ],
+          "decision": "selected",
+          "reason": "Selected as the strongest current roadmap semantic match from the deck atlas."
+        },
+        {
+          "frameId": "25:11061",
+          "frameName": "4622",
+          "semanticFit": 82,
+          "visualFit": 78,
+          "contentArchitectureFit": 80,
+          "risks": [
+            "old stage labels",
+            "old maturity copy"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because its architecture is weaker for roadmap than the selected reference family."
+        },
+        {
+          "frameId": "25:10876",
+          "frameName": "4618",
+          "semanticFit": 42,
+          "visualFit": 78,
+          "contentArchitectureFit": 40,
+          "risks": [
+            "old lifecycle nodes",
+            "old process labels"
+          ],
+          "decision": "rejected",
+          "reason": "Rejected because its architecture is weaker for roadmap than the selected reference family."
+        }
+      ],
+      "selectedProductionMode": "direct-clone-replace-text"
+    }
+  ]
+}
