@@ -1,0 +1,137 @@
+{
+  "generatedAt": "2026-05-23T10:45:17.339Z",
+  "deckName": "Эксплуатация и ИТ — Годовой отчёт 2025",
+  "scriptPath": "output/figma-current-2slides.generated.js",
+  "mcpReady": true,
+  "x5SansBlocksExecution": true,
+  "slides": [
+    {
+      "slideName": "CURRENT / VISUAL / 01 / Cover",
+      "contentFitRisk": "medium",
+      "visualFidelityRisk": "medium",
+      "layoutComplexityRisk": "low",
+      "sourceAssetRisk": "medium",
+      "fontRuntimeRisk": "blocker",
+      "screenshotReviewRequired": true,
+      "sourceFramesUsed": [
+        {
+          "frameId": "25:6981",
+          "role": "Primary cover family",
+          "borrowed": [
+            "photo background",
+            "hero title geometry",
+            "eyebrow placement",
+            "speaker line placement",
+            "bottom brand mark"
+          ]
+        },
+        {
+          "frameId": "25:7247",
+          "role": "Glow accent family",
+          "borrowed": [
+            "optional lower ambient glow restraint"
+          ]
+        }
+      ],
+      "sourceAssetsUsed": [
+        {
+          "assetId": "cover-background-photo",
+          "usage": "Clone only the neutral background image node from the cover source frame."
+        },
+        {
+          "assetId": "cover-brand-mark",
+          "usage": "Clone the bottom brand lockup."
+        }
+      ],
+      "sourceTokensUsed": [
+        "typography.family.primary",
+        "typography.hero.title.size",
+        "typography.hero.title.lineHeight",
+        "typography.hero.title.letterSpacing",
+        "typography.cover.eyebrow.size",
+        "typography.cover.speaker.size",
+        "grid.cover.title.box",
+        "grid.cover.eyebrow.box",
+        "grid.cover.speaker.box",
+        "color.text.primary",
+        "color.text.secondary"
+      ],
+      "reviewNotes": [
+        "Background image is reused from the source cover family and must be checked for semantic neutrality.",
+        "Hero title is intentionally split into two lines to avoid overload.",
+        "Department and speaker are secondary lines and must not compete with the hero."
+      ]
+    },
+    {
+      "slideName": "CURRENT / VISUAL / 02 / Year In Numbers",
+      "contentFitRisk": "medium",
+      "visualFidelityRisk": "medium",
+      "layoutComplexityRisk": "medium",
+      "sourceAssetRisk": "low",
+      "fontRuntimeRisk": "blocker",
+      "screenshotReviewRequired": true,
+      "sourceFramesUsed": [
+        {
+          "frameId": "25:7044",
+          "role": "Primary KPI-card family",
+          "borrowed": [
+            "three-card spacing logic",
+            "large metric card shell proportions"
+          ]
+        },
+        {
+          "frameId": "25:7247",
+          "role": "Analytics title and glow family",
+          "borrowed": [
+            "top-left title treatment",
+            "lower red glow",
+            "thin analytic divider language"
+          ]
+        },
+        {
+          "frameId": "25:7544",
+          "role": "Dense information support family",
+          "borrowed": [
+            "controlled density",
+            "bottom supporting information rail"
+          ]
+        }
+      ],
+      "sourceAssetsUsed": [
+        {
+          "assetId": "analytics-red-glow",
+          "usage": "Reuse as ambient lower-stage glow only."
+        },
+        {
+          "assetId": "analytics-line-system",
+          "usage": "Reuse as style logic for restrained divider accents, not as inherited chart data."
+        },
+        {
+          "assetId": "metric-card-shell-family",
+          "usage": "Match source card proportions and shell treatment without cloning old content."
+        }
+      ],
+      "sourceTokensUsed": [
+        "typography.family.primary",
+        "typography.slide.title.size",
+        "typography.card.title.size",
+        "typography.metric.number.size",
+        "typography.body.size",
+        "typography.footnote.size",
+        "grid.analytics.title.box",
+        "grid.layout.three-card",
+        "color.background.analytics",
+        "color.accent.red",
+        "color.accent.orange",
+        "color.accent.amber",
+        "shape.card.radius.lg",
+        "shape.glow.red.ellipse"
+      ],
+      "reviewNotes": [
+        "Three KPI zones are rebuilt from primitives; screenshot review must confirm they still feel native.",
+        "No old chart traces, legends, market labels, or competitor visuals are allowed.",
+        "Lower information rail must stay supportive and not collapse the KPI hierarchy."
+      ]
+    }
+  ]
+}
