@@ -20,6 +20,8 @@ const requiredFiles = [
   'docs/17-production-spec-contract.md',
   'docs/18-runner-readiness-and-fonts.md',
   'docs/19-current-draft-slide-plan-review.md',
+  'docs/20-current-2slides-composer.md',
+  'docs/21-font-fallback-preview-runner.md',
   'src/pipeline/run-current-pipeline.mjs',
   'src/pptx/parse-current-pptx.mjs',
   'src/planner/build-current-slide-plan.mjs',
@@ -43,6 +45,8 @@ const requiredFiles = [
   'src/runners/local-plugin-runner-spec.mjs',
   'src/runners/production-spec-runner.mjs',
   'src/runners/preview-runner.mjs',
+  'src/runners/build-current-2slides-runner.mjs',
+  'src/runners/build-current-2slides-font-fallback-runner.mjs',
   'src/qa/build-qa-report.mjs',
   'src/qa/validate-content-purity.mjs',
   'src/qa/validate-style-token-usage.mjs'
@@ -57,7 +61,10 @@ const outputFiles = [
   'output/production-spec.json',
   'output/runtime-readiness-report.json',
   'output/qa-report.json',
-  'output/figma-mcp-script.generated.js'
+  'output/figma-mcp-script.generated.js',
+  'output/figma-current-2slides.generated.js',
+  'output/current-2slides-qa-report.json',
+  'output/figma-current-2slides-font-fallback.generated.js'
 ];
 
 let ok = true;
@@ -89,6 +96,9 @@ for (const file of ['README.md', 'AGENTS.md', 'docs/00-project-context.md']) {
 const packageJson = JSON.parse(readFileSync('package.json', 'utf8'));
 if (!packageJson.scripts || packageJson.scripts['pipeline:current'] !== 'node src/pipeline/run-current-pipeline.mjs') {
   fail('package.json is missing the pipeline:current script.');
+}
+if (!packageJson.scripts || packageJson.scripts['figma:current-2slides-font-fallback'] !== 'node src/runners/build-current-2slides-font-fallback-runner.mjs') {
+  fail('package.json is missing the figma:current-2slides-font-fallback script.');
 }
 
 const raw = JSON.parse(readFileSync('output/current-draft-raw.json', 'utf8'));
@@ -149,6 +159,38 @@ if (!Array.isArray(qa.slides) || qa.slides.length !== raw.slides.length) {
 const generatedScript = readFileSync('output/figma-mcp-script.generated.js', 'utf8');
 if (!generatedScript.includes("REQUIRED_FONT_FAMILY = 'X5 Sans'")) {
   fail('Generated Figma script must enforce X5 Sans.');
+}
+
+const currentTwoSlidesScript = readFileSync('output/figma-current-2slides.generated.js', 'utf8');
+for (const token of ['Inter', 'figp_', '_authToken', 'PRIVATE KEY', '??', '?.']) {
+  if (currentTwoSlidesScript.includes(token)) {
+    fail(`Forbidden token found in two-slide Figma script: ${token}`);
+  }
+}
+
+const fallbackScript = readFileSync('output/figma-current-2slides-font-fallback.generated.js', 'utf8');
+if (!fallbackScript.includes('TEXT_TO_X5 /')) {
+  fail('Fallback script must mark all text layers with TEXT_TO_X5.');
+}
+if (!fallbackScript.includes('CURRENT / VISUAL / 01 / Cover / FONT-FALLBACK')) {
+  fail('Fallback script is missing the fallback cover frame.');
+}
+if (!fallbackScript.includes('CURRENT / VISUAL / 02 / Year In Numbers / FONT-FALLBACK')) {
+  fail('Fallback script is missing the fallback year-in-numbers frame.');
+}
+if (fallbackScript.includes('CURRENT / VISUAL / 03 /')) {
+  fail('Fallback script must create only two slides.');
+}
+for (const token of ['??', '?.']) {
+  if (fallbackScript.includes(token)) {
+    fail(`Unsupported syntax found in fallback script: ${token}`);
+  }
+}
+if (fallbackScript.includes('remove()') || fallbackScript.includes('figma.currentPage.children =')) {
+  fail('Fallback script appears to modify or replace original frames.');
+}
+if (fallbackScript.includes("25:11279")) {
+  fail('Fallback script must not touch the Icons frame.');
 }
 if (!generatedScript.includes('X5 Sans is required but not available in this Figma environment.')) {
   fail('Generated Figma script must throw the strict X5 Sans blocker.');
