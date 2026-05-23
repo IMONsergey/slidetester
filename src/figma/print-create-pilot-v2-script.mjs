@@ -223,11 +223,11 @@ function collectTextNodes(root, bucket = []) {
 }
 
 function findTextNodeBySignature(frame, replacement) {
-  const sourceText = replacement.sourceText.replace(/\s+/g, ' ').trim();
+  const sourceText = replacement.sourceText.replace(/\\s+/g, ' ').trim();
   const textNodes = collectTextNodes(frame);
 
   const exactTextMatches = textNodes.filter((node) =>
-    (node.characters || '').replace(/\s+/g, ' ').trim() === sourceText
+    (node.characters || '').replace(/\\s+/g, ' ').trim() === sourceText
   );
 
   const candidates = exactTextMatches.length > 0 ? exactTextMatches : textNodes;

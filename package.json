@@ -9,7 +9,8 @@
     "parse:pptx": "node src/pptx/parse-pptx.mjs",
     "classify": "node src/classify-slides.mjs",
     "patterns": "node src/audit/build-pattern-library.mjs",
-    "figma:pilot-script": "node src/figma/print-create-pilot-script.mjs"
+    "figma:pilot-script": "node src/figma/print-create-pilot-script.mjs",
+    "build:figma-plugin": "node src/figma/build-local-plugin.mjs"
   },
   "dependencies": {
     "jszip": "^3.10.1",

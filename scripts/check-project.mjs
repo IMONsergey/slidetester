@@ -23,6 +23,7 @@ const required = [
   'src/audit/build-figma-index-script.mjs',
   'src/audit/build-source-frame-geometry-script.mjs',
   'src/audit/parse-audit-archive.mjs',
+  'src/figma/build-local-plugin.mjs',
   'src/figma/figma-helpers.mjs',
   'src/figma/print-create-pilot-script.mjs',
   'src/figma/print-create-pilot-v2-script.mjs',
@@ -81,6 +82,18 @@ const derivedChecks = [
   {
     file: 'output/figma-create-pilot-v2.generated.js',
     requiredAfter: 'print-create-pilot-v2-script'
+  },
+  {
+    file: 'figma-plugin/manifest.json',
+    requiredAfter: 'build:figma-plugin'
+  },
+  {
+    file: 'figma-plugin/code.js',
+    requiredAfter: 'build:figma-plugin'
+  },
+  {
+    file: 'figma-plugin/README.md',
+    requiredAfter: 'build:figma-plugin'
   }
 ];
 
@@ -154,6 +167,36 @@ if (existsSync(generatedV2Script)) {
 
   if (body.includes("25:11279") && body.includes('clone()') && body.includes('Icons')) {
     console.error('Generated V2 Figma script appears to target the Icons frame.');
+    ok = false;
+  }
+}
+
+const localPluginFiles = ['figma-plugin/manifest.json', 'figma-plugin/code.js', 'figma-plugin/README.md'];
+for (const file of localPluginFiles) {
+  if (existsSync(file)) {
+    const body = readFileSync(file, 'utf8');
+    for (const token of forbidden) {
+      if (body.includes(token)) {
+        console.error(`Forbidden token pattern found in ${file}: ${token}`);
+        ok = false;
+      }
+    }
+  }
+}
+
+const localPluginCode = 'figma-plugin/code.js';
+if (existsSync(localPluginCode)) {
+  const body = readFileSync(localPluginCode, 'utf8');
+  if (!body.includes('X5 Sans is required but not available in this Figma environment.')) {
+    console.error('Local Figma plugin code does not contain the required X5 Sans environment error.');
+    ok = false;
+  }
+  if (body.includes('Inter')) {
+    console.error('Local Figma plugin code must not contain Inter fallback logic.');
+    ok = false;
+  }
+  if (!body.includes('PILOT V2 / 01 / Task Manager / Cover') || !body.includes('PILOT V2 / 05 / Task Manager / Business Effect')) {
+    console.error('Local Figma plugin code is missing required target frame names.');
     ok = false;
   }
 }
